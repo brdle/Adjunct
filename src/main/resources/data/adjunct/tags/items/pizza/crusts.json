@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "#adjunct:pizza/original_doughs",
+    "#adjunct:pizza/gluten_free_doughs",
+    "#adjunct:pizza/blaze_doughs"
+  ]
+}

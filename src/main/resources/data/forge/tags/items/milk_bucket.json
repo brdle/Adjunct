@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "minecraft:milk_bucket",
+      "required": true
+    },
+    {
+      "id": "blue_skies:ventium_milk_bucket",
+      "required": false
+    }
+  ]
+}

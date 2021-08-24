@@ -1,0 +1,32 @@
+{
+  "type": "create:mixing",
+  "conditions": [
+    {
+      "modid": "create",
+      "type": "forge:mod_loaded"
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "forge:sugar"
+    },
+    {
+      "tag": "adjunct:plant_milk_ingredients"
+    },
+    {
+      "tag": "adjunct:plant_milk_ingredients"
+    },
+    {
+      "fluid": "minecraft:water",
+      "nbt": {},
+      "amount": 1000
+    }
+  ],
+  "results": [
+    {
+      "fluid": "minecraft:milk",
+      "amount": 1000
+    }
+  ],
+  "heatRequirement": "none"
+}

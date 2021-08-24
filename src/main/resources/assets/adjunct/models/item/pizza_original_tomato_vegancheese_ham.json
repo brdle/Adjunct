@@ -1,0 +1,6 @@
+{
+  "parent": "adjunct:item/pizza_original_tomato_vegancheese",
+  "textures": {
+    "layer3": "adjunct:item/pizza_ham"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "thermal:pulverizer",
+  "conditions": [
+    {
+      "modid": "thermal",
+      "type": "forge:mod_loaded"
+    }
+  ],
+  "ingredient": {
+    "item": "adjunct:dry_leaf"
+  },
+  "result": [
+    {
+      "item": "adjunct:dry_leaf_dust"
+    }
+  ],
+  "experience": 0.1
+}

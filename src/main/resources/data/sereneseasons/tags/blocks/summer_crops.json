@@ -1,0 +1,45 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "immersiveengineering:seed",
+      "required": false
+    },
+    {
+      "id": "thermal:barley_seeds",
+      "required": false
+    },
+    {
+      "id": "thermal:corn_seeds",
+      "required": false
+    },
+    {
+      "id": "thermal:onion_seeds",
+      "required": false
+    },
+    {
+      "id": "thermal:bell_pepper_seeds",
+      "required": false
+    },
+    {
+      "id": "thermal:eggplant_seeds",
+      "required": false
+    },
+    {
+      "id": "thermal:green_bean_seeds",
+      "required": false
+    },
+    {
+      "id": "thermal:strawberry_seeds",
+      "required": false
+    },
+    {
+      "id": "thermal:tomato_seeds",
+      "required": false
+    },
+    {
+      "id": "thermal:tea_seeds",
+      "required": false
+    }
+  ]
+}

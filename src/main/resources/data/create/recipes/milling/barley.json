@@ -1,0 +1,29 @@
+{
+  "type": "create:milling",
+  "conditions": [
+    {
+      "modid": "create",
+      "type": "forge:mod_loaded"
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "thermal:barley"
+    }
+  ],
+  "results": [
+    {
+      "item": "adjunct:barley_flour"
+    },
+    {
+      "item": "adjunct:barley_flour",
+      "count": 2,
+      "chance": 0.25
+    },
+    {
+      "item": "thermal:barley_seeds",
+      "chance": 0.25
+    }
+  ],
+  "processingTime": 150
+}

@@ -1,0 +1,33 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "blue_skies:brewberry",
+      "required": false
+    },
+    {
+      "id": "blue_skies:pink_brewberry",
+      "required": false
+    },
+    {
+      "id": "blue_skies:black_brewberry",
+      "required": false
+    },
+    {
+      "id": "betterendforge:shadow_berry_raw",
+      "required": false
+    },
+    {
+      "id": "betterendforge:blossom_berry",
+      "required": false
+    },
+    {
+      "id": "#forge:crops/pineapple",
+      "required": true
+    },
+    {
+      "id": "#forge:crops/strawberry",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "type": "thermal:pulverizer",
+  "conditions": [
+    {
+      "modid": "thermal",
+      "type": "forge:mod_loaded"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:crops/barley"
+  },
+  "result": [
+    {
+      "item": "adjunct:barley_flour"
+    },
+    {
+      "item": "adjunct:barley_flour",
+      "count": 2,
+      "chance": 0.25
+    },
+    {
+      "item": "thermal:barley_seeds",
+      "chance": 0.25
+    }
+  ],
+  "experience": 0.1
+}

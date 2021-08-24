@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "conditions": [
+    {
+      "modid": "quark",
+      "type": "forge:mod_loaded"
+    },
+    {
+      "type": "quark:flag",
+      "flag": "vertical_planks"
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "adjunct:vertical_olive_planks"
+    }
+  ],
+  "result": {
+    "item": "adjunct:olive_planks",
+    "count": 1
+  }
+} 

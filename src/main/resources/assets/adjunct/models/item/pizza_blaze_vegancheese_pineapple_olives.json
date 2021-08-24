@@ -1,0 +1,6 @@
+{
+  "parent": "adjunct:item/pizza_blaze_vegancheese_pineapple",
+  "textures": {
+    "layer3": "adjunct:item/pizza_olives"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "modid": "quark",
+      "type": "forge:mod_loaded"
+    },
+    {
+      "type": "quark:flag",
+      "flag": "hedges"
+    }
+  ],
+  "pattern": [
+    "L",
+    "W"
+  ],
+  "key": {
+    "L": {
+      "item": "adjunct:olive_leaves"
+    },
+    "W": {
+      "tag": "adjunct:olive_logs"
+    }
+  },
+  "result": {
+    "item": "adjunct:olive_hedge",
+    "count": 2
+  }
+} 

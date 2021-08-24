@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:eggs"
+    },
+    {
+      "tag": "forge:sugar"
+    },
+    {
+      "tag": "forge:apples"
+    }
+  ],
+  "result": {
+    "item": "adjunct:apple_pie",
+    "count": 1
+  }
+}

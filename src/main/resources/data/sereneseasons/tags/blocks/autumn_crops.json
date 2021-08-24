@@ -1,0 +1,53 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "thermal:barley_seeds",
+      "required": false
+    },
+    {
+      "id": "thermal:corn_seeds",
+      "required": false
+    },
+    {
+      "id": "thermal:onion_seeds",
+      "required": false
+    },
+    {
+      "id": "thermal:radish_seeds",
+      "required": false
+    },
+    {
+      "id": "thermal:rice_seeds",
+      "required": false
+    },
+    {
+      "id": "thermal:sadiroot_seeds",
+      "required": false
+    },
+    {
+      "id": "thermal:spinach_seeds",
+      "required": false
+    },
+    {
+      "id": "thermal:eggplant_seeds",
+      "required": false
+    },
+    {
+      "id": "thermal:peanut_seeds",
+      "required": false
+    },
+    {
+      "id": "thermal:strawberry_seeds",
+      "required": false
+    },
+    {
+      "id": "thermal:hops_seeds",
+      "required": false
+    },
+    {
+      "id": "thermal:tea_seeds",
+      "required": false
+    }
+  ]
+}

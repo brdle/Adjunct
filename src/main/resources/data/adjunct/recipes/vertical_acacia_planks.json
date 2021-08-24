@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "modid": "quark",
+      "type": "forge:mod_loaded"
+    },
+    {
+      "type": "quark:flag",
+      "flag": "vertical_planks"
+    }
+  ],
+  "pattern": [
+    "#",
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "adjunct:olive_planks"
+    }
+  },
+  "result": {
+    "item": "adjunct:vertical_olive_planks",
+    "count": 3
+  }
+} 

@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "conditions": [
+    {
+      "modid": "thermal",
+      "type": "forge:mod_loaded"
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "minecraft:blaze_powder"
+    },
+    {
+      "item": "thermal:basalz_powder"
+    },
+    {
+      "item": "thermal:blizz_powder"
+    },
+    {
+      "item": "thermal:blitz_powder"
+    },
+    {
+      "tag": "forge:glass"
+    },
+    {
+      "tag": "forge:glass"
+    },
+    {
+      "tag": "forge:glass"
+    },
+    {
+      "tag": "forge:glass"
+    },
+    {
+      "tag": "forge:glass"
+    }
+  ],
+  "result": {
+    "item": "adjunct:elemental_light",
+    "count": 5
+  }
+}

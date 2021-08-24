@@ -1,0 +1,19 @@
+{
+  "type": "create:splashing",
+  "conditions": [
+    {
+      "modid": "create",
+      "type": "forge:mod_loaded"
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "adjunct:barley_flour"
+    }
+  ],
+  "results": [
+    {
+      "item": "create:dough"
+    }
+  ]
+}

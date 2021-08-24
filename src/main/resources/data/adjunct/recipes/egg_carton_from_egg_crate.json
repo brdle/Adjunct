@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "adjunct:egg_crate"
+    }
+  ],
+  "result": {
+    "item": "adjunct:egg_carton",
+    "count": 9
+  }
+}

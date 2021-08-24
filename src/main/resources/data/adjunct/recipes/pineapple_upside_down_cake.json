@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ABA",
+    "CEC",
+    "PCP"
+  ],
+  "key": {
+    "A": {
+      "tag": "forge:milk_bucket"
+    },
+    "B": {
+      "tag": "forge:sugar"
+    },
+    "C": {
+      "tag": "forge:crops/wheat"
+    },
+    "E": {
+      "tag": "forge:eggs"
+    },
+    "P": {
+      "tag": "forge:crops/pineapple"
+    }
+  },
+  "result": {
+    "item": "adjunct:pineapple_upside_down_cake"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "adjunct:item/knowledge_syringe"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "adjunct:exp": 1
+      },
+      "model": "adjunct:item/knowledge_syringe_1"
+    },
+    {
+      "predicate": {
+        "adjunct:exp": 349
+      },
+      "model": "adjunct:item/knowledge_syringe_25"
+    },
+    {
+      "predicate": {
+        "adjunct:exp": 698
+      },
+      "model": "adjunct:item/knowledge_syringe_50"
+    },
+    {
+      "predicate": {
+        "adjunct:exp": 1046
+      },
+      "model": "adjunct:item/knowledge_syringe_75"
+    },
+    {
+      "predicate": {
+        "adjunct:exp": 1395
+      },
+      "model": "adjunct:item/knowledge_syringe_full"
+    }
+  ]
+}

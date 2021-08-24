@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "thermal:radish_seeds",
+      "required": false
+    },
+    {
+      "id": "thermal:sadiroot_seeds",
+      "required": false
+    },
+    {
+      "id": "thermal:spinach_seeds",
+      "required": false
+    },
+    {
+      "id": "thermal:frost_melon_seeds",
+      "required": false
+    }
+  ]
+}

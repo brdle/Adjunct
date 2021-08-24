@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "#adjunct:pizza/olives",
+    "#adjunct:pizza/pepperonis",
+    "#adjunct:pizza/pineapples",
+    "#adjunct:pizza/hams",
+    "#adjunct:pizza/peppers",
+    "#adjunct:pizza/mushrooms",
+    "#adjunct:pizza/onions"
+  ]
+}

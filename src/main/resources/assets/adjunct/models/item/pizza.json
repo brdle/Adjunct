@@ -1,0 +1,7073 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "adjunct:item/pizza"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "adjunct:crust": 1
+      },
+      "model": "adjunct:item/pizza_original"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:topping1": 1
+      },
+      "model": "adjunct:item/pizza_original_pepperoni"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:topping1": 2
+      },
+      "model": "adjunct:item/pizza_original_ham"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:topping1": 3
+      },
+      "model": "adjunct:item/pizza_original_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:topping1": 4
+      },
+      "model": "adjunct:item/pizza_original_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:topping1": 5
+      },
+      "model": "adjunct:item/pizza_original_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:topping1": 6
+      },
+      "model": "adjunct:item/pizza_original_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:topping1": 7
+      },
+      "model": "adjunct:item/pizza_original_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1
+      },
+      "model": "adjunct:item/pizza_original_tomato"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2
+      },
+      "model": "adjunct:item/pizza_original_white"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:cheese": 1
+      },
+      "model": "adjunct:item/pizza_original_cheese"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:cheese": 2
+      },
+      "model": "adjunct:item/pizza_original_vegancheese"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 2
+      },
+      "model": "adjunct:item/pizza_original_pepperoni_ham"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 3
+      },
+      "model": "adjunct:item/pizza_original_pepperoni_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_original_pepperoni_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_original_pepperoni_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_original_pepperoni_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_original_pepperoni_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 3
+      },
+      "model": "adjunct:item/pizza_original_ham_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_original_ham_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_original_ham_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_original_ham_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_original_ham_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_original_pineapple_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_original_pineapple_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_original_pineapple_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_original_pineapple_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_original_olives_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_original_olives_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_original_olives_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:topping1": 5,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_original_peppers_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:topping1": 5,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_original_peppers_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:topping1": 6,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_original_onions_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1
+      },
+      "model": "adjunct:item/pizza_original_cheese_pepperoni"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 2
+      },
+      "model": "adjunct:item/pizza_original_cheese_ham"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 3
+      },
+      "model": "adjunct:item/pizza_original_cheese_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 4
+      },
+      "model": "adjunct:item/pizza_original_cheese_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 5
+      },
+      "model": "adjunct:item/pizza_original_cheese_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 6
+      },
+      "model": "adjunct:item/pizza_original_cheese_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 7
+      },
+      "model": "adjunct:item/pizza_original_cheese_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1
+      },
+      "model": "adjunct:item/pizza_original_vegancheese_pepperoni"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 2
+      },
+      "model": "adjunct:item/pizza_original_vegancheese_ham"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 3
+      },
+      "model": "adjunct:item/pizza_original_vegancheese_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 4
+      },
+      "model": "adjunct:item/pizza_original_vegancheese_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 5
+      },
+      "model": "adjunct:item/pizza_original_vegancheese_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 6
+      },
+      "model": "adjunct:item/pizza_original_vegancheese_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 7
+      },
+      "model": "adjunct:item/pizza_original_vegancheese_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1
+      },
+      "model": "adjunct:item/pizza_original_tomato_cheese"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2
+      },
+      "model": "adjunct:item/pizza_original_tomato_vegancheese"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 1
+      },
+      "model": "adjunct:item/pizza_original_tomato_pepperoni"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 2
+      },
+      "model": "adjunct:item/pizza_original_tomato_ham"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 3
+      },
+      "model": "adjunct:item/pizza_original_tomato_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 4
+      },
+      "model": "adjunct:item/pizza_original_tomato_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 5
+      },
+      "model": "adjunct:item/pizza_original_tomato_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 6
+      },
+      "model": "adjunct:item/pizza_original_tomato_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 7
+      },
+      "model": "adjunct:item/pizza_original_tomato_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 2
+      },
+      "model": "adjunct:item/pizza_original_tomato_pepperoni_ham"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 3
+      },
+      "model": "adjunct:item/pizza_original_tomato_pepperoni_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_original_tomato_pepperoni_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_original_tomato_pepperoni_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_original_tomato_pepperoni_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_original_tomato_pepperoni_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 3
+      },
+      "model": "adjunct:item/pizza_original_tomato_ham_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_original_tomato_ham_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_original_tomato_ham_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_original_tomato_ham_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_original_tomato_ham_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_original_tomato_pineapple_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_original_tomato_pineapple_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_original_tomato_pineapple_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_original_tomato_pineapple_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_original_tomato_olives_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_original_tomato_olives_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_original_tomato_olives_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 5,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_original_tomato_peppers_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 5,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_original_tomato_peppers_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 6,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_original_tomato_onions_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1
+      },
+      "model": "adjunct:item/pizza_original_white_cheese"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2
+      },
+      "model": "adjunct:item/pizza_original_white_vegancheese"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 1
+      },
+      "model": "adjunct:item/pizza_original_white_pepperoni"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 2
+      },
+      "model": "adjunct:item/pizza_original_white_ham"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 3
+      },
+      "model": "adjunct:item/pizza_original_white_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 4
+      },
+      "model": "adjunct:item/pizza_original_white_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 5
+      },
+      "model": "adjunct:item/pizza_original_white_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 6
+      },
+      "model": "adjunct:item/pizza_original_white_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 7
+      },
+      "model": "adjunct:item/pizza_original_white_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 2
+      },
+      "model": "adjunct:item/pizza_original_white_pepperoni_ham"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 3
+      },
+      "model": "adjunct:item/pizza_original_white_pepperoni_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_original_white_pepperoni_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_original_white_pepperoni_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_original_white_pepperoni_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_original_white_pepperoni_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 3
+      },
+      "model": "adjunct:item/pizza_original_white_ham_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_original_white_ham_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_original_white_ham_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_original_white_ham_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_original_white_ham_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_original_white_pineapple_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_original_white_pineapple_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_original_white_pineapple_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_original_white_pineapple_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_original_white_olives_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_original_white_olives_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_original_white_olives_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 5,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_original_white_peppers_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 5,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_original_white_peppers_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 6,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_original_white_onions_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 2
+      },
+      "model": "adjunct:item/pizza_original_cheese_pepperoni_ham"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 3
+      },
+      "model": "adjunct:item/pizza_original_cheese_pepperoni_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_original_cheese_pepperoni_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_original_cheese_pepperoni_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_original_cheese_pepperoni_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_original_cheese_pepperoni_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 3
+      },
+      "model": "adjunct:item/pizza_original_cheese_ham_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_original_cheese_ham_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_original_cheese_ham_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_original_cheese_ham_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_original_cheese_ham_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_original_cheese_pineapple_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_original_cheese_pineapple_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_original_cheese_pineapple_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_original_cheese_pineapple_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_original_cheese_olives_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_original_cheese_olives_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_original_cheese_olives_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 5,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_original_cheese_peppers_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 5,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_original_cheese_peppers_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 6,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_original_cheese_onions_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 2
+      },
+      "model": "adjunct:item/pizza_original_vegancheese_pepperoni_ham"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 3
+      },
+      "model": "adjunct:item/pizza_original_vegancheese_pepperoni_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_original_vegancheese_pepperoni_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_original_vegancheese_pepperoni_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_original_vegancheese_pepperoni_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_original_vegancheese_pepperoni_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 3
+      },
+      "model": "adjunct:item/pizza_original_vegancheese_ham_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_original_vegancheese_ham_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_original_vegancheese_ham_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_original_vegancheese_ham_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_original_vegancheese_ham_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_original_vegancheese_pineapple_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_original_vegancheese_pineapple_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_original_vegancheese_pineapple_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_original_vegancheese_pineapple_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_original_vegancheese_olives_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_original_vegancheese_olives_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_original_vegancheese_olives_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 5,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_original_vegancheese_peppers_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 5,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_original_vegancheese_peppers_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 6,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_original_vegancheese_onions_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1
+      },
+      "model": "adjunct:item/pizza_original_tomato_cheese_pepperoni"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 2
+      },
+      "model": "adjunct:item/pizza_original_tomato_cheese_ham"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 3
+      },
+      "model": "adjunct:item/pizza_original_tomato_cheese_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 4
+      },
+      "model": "adjunct:item/pizza_original_tomato_cheese_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 5
+      },
+      "model": "adjunct:item/pizza_original_tomato_cheese_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 6
+      },
+      "model": "adjunct:item/pizza_original_tomato_cheese_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 7
+      },
+      "model": "adjunct:item/pizza_original_tomato_cheese_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 2
+      },
+      "model": "adjunct:item/pizza_original_tomato_cheese_pepperoni_ham"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 3
+      },
+      "model": "adjunct:item/pizza_original_tomato_cheese_pepperoni_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_original_tomato_cheese_pepperoni_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_original_tomato_cheese_pepperoni_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_original_tomato_cheese_pepperoni_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_original_tomato_cheese_pepperoni_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 3
+      },
+      "model": "adjunct:item/pizza_original_tomato_cheese_ham_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_original_tomato_cheese_ham_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_original_tomato_cheese_ham_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_original_tomato_cheese_ham_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_original_tomato_cheese_ham_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_original_tomato_cheese_pineapple_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_original_tomato_cheese_pineapple_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_original_tomato_cheese_pineapple_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_original_tomato_cheese_pineapple_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_original_tomato_cheese_olives_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_original_tomato_cheese_olives_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_original_tomato_cheese_olives_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 5,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_original_tomato_cheese_peppers_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 5,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_original_tomato_cheese_peppers_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 6,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_original_tomato_cheese_onions_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1
+      },
+      "model": "adjunct:item/pizza_original_tomato_vegancheese_pepperoni"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 2
+      },
+      "model": "adjunct:item/pizza_original_tomato_vegancheese_ham"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 3
+      },
+      "model": "adjunct:item/pizza_original_tomato_vegancheese_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 4
+      },
+      "model": "adjunct:item/pizza_original_tomato_vegancheese_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 5
+      },
+      "model": "adjunct:item/pizza_original_tomato_vegancheese_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 6
+      },
+      "model": "adjunct:item/pizza_original_tomato_vegancheese_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 7
+      },
+      "model": "adjunct:item/pizza_original_tomato_vegancheese_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 2
+      },
+      "model": "adjunct:item/pizza_original_tomato_vegancheese_pepperoni_ham"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 3
+      },
+      "model": "adjunct:item/pizza_original_tomato_vegancheese_pepperoni_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_original_tomato_vegancheese_pepperoni_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_original_tomato_vegancheese_pepperoni_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_original_tomato_vegancheese_pepperoni_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_original_tomato_vegancheese_pepperoni_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 3
+      },
+      "model": "adjunct:item/pizza_original_tomato_vegancheese_ham_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_original_tomato_vegancheese_ham_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_original_tomato_vegancheese_ham_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_original_tomato_vegancheese_ham_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_original_tomato_vegancheese_ham_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_original_tomato_vegancheese_pineapple_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_original_tomato_vegancheese_pineapple_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_original_tomato_vegancheese_pineapple_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_original_tomato_vegancheese_pineapple_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_original_tomato_vegancheese_olives_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_original_tomato_vegancheese_olives_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_original_tomato_vegancheese_olives_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 5,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_original_tomato_vegancheese_peppers_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 5,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_original_tomato_vegancheese_peppers_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 6,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_original_tomato_vegancheese_onions_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1
+      },
+      "model": "adjunct:item/pizza_original_white_cheese_pepperoni"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 2
+      },
+      "model": "adjunct:item/pizza_original_white_cheese_ham"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 3
+      },
+      "model": "adjunct:item/pizza_original_white_cheese_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 4
+      },
+      "model": "adjunct:item/pizza_original_white_cheese_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 5
+      },
+      "model": "adjunct:item/pizza_original_white_cheese_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 6
+      },
+      "model": "adjunct:item/pizza_original_white_cheese_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 7
+      },
+      "model": "adjunct:item/pizza_original_white_cheese_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 2
+      },
+      "model": "adjunct:item/pizza_original_white_cheese_pepperoni_ham"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 3
+      },
+      "model": "adjunct:item/pizza_original_white_cheese_pepperoni_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_original_white_cheese_pepperoni_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_original_white_cheese_pepperoni_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_original_white_cheese_pepperoni_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_original_white_cheese_pepperoni_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 3
+      },
+      "model": "adjunct:item/pizza_original_white_cheese_ham_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_original_white_cheese_ham_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_original_white_cheese_ham_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_original_white_cheese_ham_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_original_white_cheese_ham_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_original_white_cheese_pineapple_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_original_white_cheese_pineapple_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_original_white_cheese_pineapple_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_original_white_cheese_pineapple_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_original_white_cheese_olives_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_original_white_cheese_olives_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_original_white_cheese_olives_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 5,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_original_white_cheese_peppers_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 5,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_original_white_cheese_peppers_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 6,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_original_white_cheese_onions_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1
+      },
+      "model": "adjunct:item/pizza_original_white_vegancheese_pepperoni"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 2
+      },
+      "model": "adjunct:item/pizza_original_white_vegancheese_ham"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 3
+      },
+      "model": "adjunct:item/pizza_original_white_vegancheese_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 4
+      },
+      "model": "adjunct:item/pizza_original_white_vegancheese_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 5
+      },
+      "model": "adjunct:item/pizza_original_white_vegancheese_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 6
+      },
+      "model": "adjunct:item/pizza_original_white_vegancheese_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 7
+      },
+      "model": "adjunct:item/pizza_original_white_vegancheese_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 2
+      },
+      "model": "adjunct:item/pizza_original_white_vegancheese_pepperoni_ham"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 3
+      },
+      "model": "adjunct:item/pizza_original_white_vegancheese_pepperoni_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_original_white_vegancheese_pepperoni_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_original_white_vegancheese_pepperoni_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_original_white_vegancheese_pepperoni_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_original_white_vegancheese_pepperoni_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 3
+      },
+      "model": "adjunct:item/pizza_original_white_vegancheese_ham_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_original_white_vegancheese_ham_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_original_white_vegancheese_ham_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_original_white_vegancheese_ham_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_original_white_vegancheese_ham_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_original_white_vegancheese_pineapple_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_original_white_vegancheese_pineapple_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_original_white_vegancheese_pineapple_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_original_white_vegancheese_pineapple_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_original_white_vegancheese_olives_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_original_white_vegancheese_olives_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_original_white_vegancheese_olives_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 5,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_original_white_vegancheese_peppers_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 5,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_original_white_vegancheese_peppers_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 1,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 6,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_original_white_vegancheese_onions_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2
+      },
+      "model": "adjunct:item/pizza_gluten_free"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:topping1": 1
+      },
+      "model": "adjunct:item/pizza_gluten_free_pepperoni"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:topping1": 2
+      },
+      "model": "adjunct:item/pizza_gluten_free_ham"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:topping1": 3
+      },
+      "model": "adjunct:item/pizza_gluten_free_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:topping1": 4
+      },
+      "model": "adjunct:item/pizza_gluten_free_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:topping1": 5
+      },
+      "model": "adjunct:item/pizza_gluten_free_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:topping1": 6
+      },
+      "model": "adjunct:item/pizza_gluten_free_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:topping1": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2
+      },
+      "model": "adjunct:item/pizza_gluten_free_white"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:cheese": 1
+      },
+      "model": "adjunct:item/pizza_gluten_free_cheese"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:cheese": 2
+      },
+      "model": "adjunct:item/pizza_gluten_free_vegancheese"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 2
+      },
+      "model": "adjunct:item/pizza_gluten_free_pepperoni_ham"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 3
+      },
+      "model": "adjunct:item/pizza_gluten_free_pepperoni_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_gluten_free_pepperoni_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_gluten_free_pepperoni_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_gluten_free_pepperoni_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_pepperoni_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 3
+      },
+      "model": "adjunct:item/pizza_gluten_free_ham_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_gluten_free_ham_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_gluten_free_ham_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_gluten_free_ham_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_ham_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_gluten_free_pineapple_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_gluten_free_pineapple_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_gluten_free_pineapple_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_pineapple_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_gluten_free_olives_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_gluten_free_olives_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_olives_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:topping1": 5,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_gluten_free_peppers_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:topping1": 5,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_peppers_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:topping1": 6,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_onions_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1
+      },
+      "model": "adjunct:item/pizza_gluten_free_cheese_pepperoni"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 2
+      },
+      "model": "adjunct:item/pizza_gluten_free_cheese_ham"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 3
+      },
+      "model": "adjunct:item/pizza_gluten_free_cheese_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 4
+      },
+      "model": "adjunct:item/pizza_gluten_free_cheese_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 5
+      },
+      "model": "adjunct:item/pizza_gluten_free_cheese_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 6
+      },
+      "model": "adjunct:item/pizza_gluten_free_cheese_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_cheese_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1
+      },
+      "model": "adjunct:item/pizza_gluten_free_vegancheese_pepperoni"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 2
+      },
+      "model": "adjunct:item/pizza_gluten_free_vegancheese_ham"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 3
+      },
+      "model": "adjunct:item/pizza_gluten_free_vegancheese_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 4
+      },
+      "model": "adjunct:item/pizza_gluten_free_vegancheese_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 5
+      },
+      "model": "adjunct:item/pizza_gluten_free_vegancheese_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 6
+      },
+      "model": "adjunct:item/pizza_gluten_free_vegancheese_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_vegancheese_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_cheese"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_vegancheese"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 1
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_pepperoni"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 2
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_ham"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 3
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 4
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 5
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 6
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 2
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_pepperoni_ham"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 3
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_pepperoni_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_pepperoni_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_pepperoni_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_pepperoni_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_pepperoni_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 3
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_ham_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_ham_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_ham_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_ham_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_ham_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_pineapple_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_pineapple_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_pineapple_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_pineapple_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_olives_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_olives_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_olives_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 5,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_peppers_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 5,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_peppers_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 6,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_onions_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_cheese"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_vegancheese"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 1
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_pepperoni"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 2
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_ham"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 3
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 4
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 5
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 6
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 2
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_pepperoni_ham"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 3
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_pepperoni_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_pepperoni_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_pepperoni_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_pepperoni_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_pepperoni_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 3
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_ham_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_ham_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_ham_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_ham_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_ham_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_pineapple_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_pineapple_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_pineapple_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_pineapple_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_olives_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_olives_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_olives_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 5,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_peppers_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 5,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_peppers_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 6,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_onions_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 2
+      },
+      "model": "adjunct:item/pizza_gluten_free_cheese_pepperoni_ham"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 3
+      },
+      "model": "adjunct:item/pizza_gluten_free_cheese_pepperoni_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_gluten_free_cheese_pepperoni_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_gluten_free_cheese_pepperoni_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_gluten_free_cheese_pepperoni_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_cheese_pepperoni_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 3
+      },
+      "model": "adjunct:item/pizza_gluten_free_cheese_ham_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_gluten_free_cheese_ham_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_gluten_free_cheese_ham_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_gluten_free_cheese_ham_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_cheese_ham_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_gluten_free_cheese_pineapple_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_gluten_free_cheese_pineapple_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_gluten_free_cheese_pineapple_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_cheese_pineapple_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_gluten_free_cheese_olives_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_gluten_free_cheese_olives_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_cheese_olives_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 5,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_gluten_free_cheese_peppers_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 5,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_cheese_peppers_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 6,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_cheese_onions_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 2
+      },
+      "model": "adjunct:item/pizza_gluten_free_vegancheese_pepperoni_ham"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 3
+      },
+      "model": "adjunct:item/pizza_gluten_free_vegancheese_pepperoni_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_gluten_free_vegancheese_pepperoni_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_gluten_free_vegancheese_pepperoni_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_gluten_free_vegancheese_pepperoni_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_vegancheese_pepperoni_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 3
+      },
+      "model": "adjunct:item/pizza_gluten_free_vegancheese_ham_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_gluten_free_vegancheese_ham_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_gluten_free_vegancheese_ham_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_gluten_free_vegancheese_ham_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_vegancheese_ham_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_gluten_free_vegancheese_pineapple_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_gluten_free_vegancheese_pineapple_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_gluten_free_vegancheese_pineapple_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_vegancheese_pineapple_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_gluten_free_vegancheese_olives_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_gluten_free_vegancheese_olives_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_vegancheese_olives_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 5,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_gluten_free_vegancheese_peppers_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 5,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_vegancheese_peppers_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 6,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_vegancheese_onions_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_cheese_pepperoni"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 2
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_cheese_ham"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 3
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_cheese_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 4
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_cheese_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 5
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_cheese_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 6
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_cheese_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_cheese_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 2
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_cheese_pepperoni_ham"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 3
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_cheese_pepperoni_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_cheese_pepperoni_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_cheese_pepperoni_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_cheese_pepperoni_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_cheese_pepperoni_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 3
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_cheese_ham_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_cheese_ham_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_cheese_ham_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_cheese_ham_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_cheese_ham_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_cheese_pineapple_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_cheese_pineapple_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_cheese_pineapple_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_cheese_pineapple_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_cheese_olives_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_cheese_olives_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_cheese_olives_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 5,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_cheese_peppers_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 5,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_cheese_peppers_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 6,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_cheese_onions_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_vegancheese_pepperoni"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 2
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_vegancheese_ham"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 3
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_vegancheese_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 4
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_vegancheese_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 5
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_vegancheese_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 6
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_vegancheese_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_vegancheese_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 2
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_vegancheese_pepperoni_ham"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 3
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_vegancheese_pepperoni_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_vegancheese_pepperoni_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_vegancheese_pepperoni_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_vegancheese_pepperoni_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_vegancheese_pepperoni_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 3
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_vegancheese_ham_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_vegancheese_ham_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_vegancheese_ham_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_vegancheese_ham_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_vegancheese_ham_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_vegancheese_pineapple_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_vegancheese_pineapple_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_vegancheese_pineapple_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_vegancheese_pineapple_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_vegancheese_olives_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_vegancheese_olives_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_vegancheese_olives_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 5,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_vegancheese_peppers_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 5,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_vegancheese_peppers_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 6,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_tomato_vegancheese_onions_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_cheese_pepperoni"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 2
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_cheese_ham"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 3
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_cheese_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 4
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_cheese_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 5
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_cheese_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 6
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_cheese_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_cheese_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 2
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_cheese_pepperoni_ham"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 3
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_cheese_pepperoni_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_cheese_pepperoni_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_cheese_pepperoni_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_cheese_pepperoni_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_cheese_pepperoni_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 3
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_cheese_ham_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_cheese_ham_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_cheese_ham_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_cheese_ham_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_cheese_ham_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_cheese_pineapple_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_cheese_pineapple_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_cheese_pineapple_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_cheese_pineapple_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_cheese_olives_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_cheese_olives_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_cheese_olives_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 5,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_cheese_peppers_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 5,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_cheese_peppers_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 6,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_cheese_onions_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_vegancheese_pepperoni"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 2
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_vegancheese_ham"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 3
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_vegancheese_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 4
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_vegancheese_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 5
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_vegancheese_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 6
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_vegancheese_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_vegancheese_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 2
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_vegancheese_pepperoni_ham"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 3
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_vegancheese_pepperoni_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_vegancheese_pepperoni_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_vegancheese_pepperoni_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_vegancheese_pepperoni_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_vegancheese_pepperoni_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 3
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_vegancheese_ham_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_vegancheese_ham_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_vegancheese_ham_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_vegancheese_ham_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_vegancheese_ham_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_vegancheese_pineapple_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_vegancheese_pineapple_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_vegancheese_pineapple_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_vegancheese_pineapple_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_vegancheese_olives_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_vegancheese_olives_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_vegancheese_olives_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 5,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_vegancheese_peppers_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 5,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_vegancheese_peppers_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 2,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 6,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_gluten_free_white_vegancheese_onions_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3
+      },
+      "model": "adjunct:item/pizza_blaze"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:topping1": 1
+      },
+      "model": "adjunct:item/pizza_blaze_pepperoni"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:topping1": 2
+      },
+      "model": "adjunct:item/pizza_blaze_ham"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:topping1": 3
+      },
+      "model": "adjunct:item/pizza_blaze_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:topping1": 4
+      },
+      "model": "adjunct:item/pizza_blaze_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:topping1": 5
+      },
+      "model": "adjunct:item/pizza_blaze_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:topping1": 6
+      },
+      "model": "adjunct:item/pizza_blaze_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:topping1": 7
+      },
+      "model": "adjunct:item/pizza_blaze_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1
+      },
+      "model": "adjunct:item/pizza_blaze_tomato"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2
+      },
+      "model": "adjunct:item/pizza_blaze_white"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:cheese": 1
+      },
+      "model": "adjunct:item/pizza_blaze_cheese"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:cheese": 2
+      },
+      "model": "adjunct:item/pizza_blaze_vegancheese"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 2
+      },
+      "model": "adjunct:item/pizza_blaze_pepperoni_ham"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 3
+      },
+      "model": "adjunct:item/pizza_blaze_pepperoni_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_blaze_pepperoni_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_blaze_pepperoni_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_blaze_pepperoni_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_blaze_pepperoni_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 3
+      },
+      "model": "adjunct:item/pizza_blaze_ham_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_blaze_ham_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_blaze_ham_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_blaze_ham_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_blaze_ham_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_blaze_pineapple_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_blaze_pineapple_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_blaze_pineapple_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_blaze_pineapple_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_blaze_olives_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_blaze_olives_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_blaze_olives_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:topping1": 5,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_blaze_peppers_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:topping1": 5,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_blaze_peppers_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:topping1": 6,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_blaze_onions_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1
+      },
+      "model": "adjunct:item/pizza_blaze_cheese_pepperoni"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 2
+      },
+      "model": "adjunct:item/pizza_blaze_cheese_ham"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 3
+      },
+      "model": "adjunct:item/pizza_blaze_cheese_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 4
+      },
+      "model": "adjunct:item/pizza_blaze_cheese_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 5
+      },
+      "model": "adjunct:item/pizza_blaze_cheese_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 6
+      },
+      "model": "adjunct:item/pizza_blaze_cheese_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 7
+      },
+      "model": "adjunct:item/pizza_blaze_cheese_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1
+      },
+      "model": "adjunct:item/pizza_blaze_vegancheese_pepperoni"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 2
+      },
+      "model": "adjunct:item/pizza_blaze_vegancheese_ham"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 3
+      },
+      "model": "adjunct:item/pizza_blaze_vegancheese_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 4
+      },
+      "model": "adjunct:item/pizza_blaze_vegancheese_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 5
+      },
+      "model": "adjunct:item/pizza_blaze_vegancheese_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 6
+      },
+      "model": "adjunct:item/pizza_blaze_vegancheese_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 7
+      },
+      "model": "adjunct:item/pizza_blaze_vegancheese_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_cheese"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_vegancheese"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 1
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_pepperoni"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 2
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_ham"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 3
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 4
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 5
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 6
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 7
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 2
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_pepperoni_ham"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 3
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_pepperoni_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_pepperoni_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_pepperoni_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_pepperoni_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_pepperoni_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 3
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_ham_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_ham_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_ham_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_ham_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_ham_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_pineapple_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_pineapple_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_pineapple_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_pineapple_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_olives_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_olives_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_olives_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 5,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_peppers_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 5,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_peppers_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:topping1": 6,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_onions_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1
+      },
+      "model": "adjunct:item/pizza_blaze_white_cheese"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2
+      },
+      "model": "adjunct:item/pizza_blaze_white_vegancheese"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 1
+      },
+      "model": "adjunct:item/pizza_blaze_white_pepperoni"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 2
+      },
+      "model": "adjunct:item/pizza_blaze_white_ham"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 3
+      },
+      "model": "adjunct:item/pizza_blaze_white_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 4
+      },
+      "model": "adjunct:item/pizza_blaze_white_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 5
+      },
+      "model": "adjunct:item/pizza_blaze_white_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 6
+      },
+      "model": "adjunct:item/pizza_blaze_white_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 7
+      },
+      "model": "adjunct:item/pizza_blaze_white_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 2
+      },
+      "model": "adjunct:item/pizza_blaze_white_pepperoni_ham"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 3
+      },
+      "model": "adjunct:item/pizza_blaze_white_pepperoni_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_blaze_white_pepperoni_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_blaze_white_pepperoni_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_blaze_white_pepperoni_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_blaze_white_pepperoni_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 3
+      },
+      "model": "adjunct:item/pizza_blaze_white_ham_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_blaze_white_ham_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_blaze_white_ham_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_blaze_white_ham_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_blaze_white_ham_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_blaze_white_pineapple_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_blaze_white_pineapple_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_blaze_white_pineapple_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_blaze_white_pineapple_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_blaze_white_olives_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_blaze_white_olives_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_blaze_white_olives_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 5,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_blaze_white_peppers_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 5,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_blaze_white_peppers_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:topping1": 6,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_blaze_white_onions_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 2
+      },
+      "model": "adjunct:item/pizza_blaze_cheese_pepperoni_ham"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 3
+      },
+      "model": "adjunct:item/pizza_blaze_cheese_pepperoni_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_blaze_cheese_pepperoni_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_blaze_cheese_pepperoni_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_blaze_cheese_pepperoni_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_blaze_cheese_pepperoni_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 3
+      },
+      "model": "adjunct:item/pizza_blaze_cheese_ham_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_blaze_cheese_ham_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_blaze_cheese_ham_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_blaze_cheese_ham_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_blaze_cheese_ham_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_blaze_cheese_pineapple_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_blaze_cheese_pineapple_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_blaze_cheese_pineapple_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_blaze_cheese_pineapple_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_blaze_cheese_olives_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_blaze_cheese_olives_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_blaze_cheese_olives_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 5,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_blaze_cheese_peppers_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 5,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_blaze_cheese_peppers_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 6,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_blaze_cheese_onions_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 2
+      },
+      "model": "adjunct:item/pizza_blaze_vegancheese_pepperoni_ham"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 3
+      },
+      "model": "adjunct:item/pizza_blaze_vegancheese_pepperoni_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_blaze_vegancheese_pepperoni_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_blaze_vegancheese_pepperoni_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_blaze_vegancheese_pepperoni_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_blaze_vegancheese_pepperoni_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 3
+      },
+      "model": "adjunct:item/pizza_blaze_vegancheese_ham_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_blaze_vegancheese_ham_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_blaze_vegancheese_ham_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_blaze_vegancheese_ham_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_blaze_vegancheese_ham_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_blaze_vegancheese_pineapple_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_blaze_vegancheese_pineapple_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_blaze_vegancheese_pineapple_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_blaze_vegancheese_pineapple_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_blaze_vegancheese_olives_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_blaze_vegancheese_olives_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_blaze_vegancheese_olives_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 5,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_blaze_vegancheese_peppers_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 5,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_blaze_vegancheese_peppers_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 6,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_blaze_vegancheese_onions_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_cheese_pepperoni"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 2
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_cheese_ham"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 3
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_cheese_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 4
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_cheese_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 5
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_cheese_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 6
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_cheese_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 7
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_cheese_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 2
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_cheese_pepperoni_ham"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 3
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_cheese_pepperoni_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_cheese_pepperoni_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_cheese_pepperoni_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_cheese_pepperoni_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_cheese_pepperoni_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 3
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_cheese_ham_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_cheese_ham_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_cheese_ham_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_cheese_ham_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_cheese_ham_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_cheese_pineapple_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_cheese_pineapple_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_cheese_pineapple_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_cheese_pineapple_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_cheese_olives_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_cheese_olives_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_cheese_olives_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 5,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_cheese_peppers_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 5,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_cheese_peppers_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 6,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_cheese_onions_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_vegancheese_pepperoni"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 2
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_vegancheese_ham"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 3
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_vegancheese_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 4
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_vegancheese_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 5
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_vegancheese_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 6
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_vegancheese_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 7
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_vegancheese_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 2
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_vegancheese_pepperoni_ham"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 3
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_vegancheese_pepperoni_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_vegancheese_pepperoni_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_vegancheese_pepperoni_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_vegancheese_pepperoni_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_vegancheese_pepperoni_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 3
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_vegancheese_ham_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_vegancheese_ham_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_vegancheese_ham_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_vegancheese_ham_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_vegancheese_ham_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_vegancheese_pineapple_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_vegancheese_pineapple_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_vegancheese_pineapple_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_vegancheese_pineapple_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_vegancheese_olives_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_vegancheese_olives_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_vegancheese_olives_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 5,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_vegancheese_peppers_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 5,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_vegancheese_peppers_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 1,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 6,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_blaze_tomato_vegancheese_onions_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1
+      },
+      "model": "adjunct:item/pizza_blaze_white_cheese_pepperoni"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 2
+      },
+      "model": "adjunct:item/pizza_blaze_white_cheese_ham"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 3
+      },
+      "model": "adjunct:item/pizza_blaze_white_cheese_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 4
+      },
+      "model": "adjunct:item/pizza_blaze_white_cheese_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 5
+      },
+      "model": "adjunct:item/pizza_blaze_white_cheese_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 6
+      },
+      "model": "adjunct:item/pizza_blaze_white_cheese_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 7
+      },
+      "model": "adjunct:item/pizza_blaze_white_cheese_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 2
+      },
+      "model": "adjunct:item/pizza_blaze_white_cheese_pepperoni_ham"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 3
+      },
+      "model": "adjunct:item/pizza_blaze_white_cheese_pepperoni_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_blaze_white_cheese_pepperoni_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_blaze_white_cheese_pepperoni_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_blaze_white_cheese_pepperoni_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_blaze_white_cheese_pepperoni_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 3
+      },
+      "model": "adjunct:item/pizza_blaze_white_cheese_ham_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_blaze_white_cheese_ham_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_blaze_white_cheese_ham_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_blaze_white_cheese_ham_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_blaze_white_cheese_ham_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_blaze_white_cheese_pineapple_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_blaze_white_cheese_pineapple_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_blaze_white_cheese_pineapple_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_blaze_white_cheese_pineapple_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_blaze_white_cheese_olives_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_blaze_white_cheese_olives_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_blaze_white_cheese_olives_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 5,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_blaze_white_cheese_peppers_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 5,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_blaze_white_cheese_peppers_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 1,
+        "adjunct:topping1": 6,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_blaze_white_cheese_onions_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1
+      },
+      "model": "adjunct:item/pizza_blaze_white_vegancheese_pepperoni"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 2
+      },
+      "model": "adjunct:item/pizza_blaze_white_vegancheese_ham"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 3
+      },
+      "model": "adjunct:item/pizza_blaze_white_vegancheese_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 4
+      },
+      "model": "adjunct:item/pizza_blaze_white_vegancheese_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 5
+      },
+      "model": "adjunct:item/pizza_blaze_white_vegancheese_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 6
+      },
+      "model": "adjunct:item/pizza_blaze_white_vegancheese_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 7
+      },
+      "model": "adjunct:item/pizza_blaze_white_vegancheese_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 2
+      },
+      "model": "adjunct:item/pizza_blaze_white_vegancheese_pepperoni_ham"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 3
+      },
+      "model": "adjunct:item/pizza_blaze_white_vegancheese_pepperoni_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_blaze_white_vegancheese_pepperoni_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_blaze_white_vegancheese_pepperoni_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_blaze_white_vegancheese_pepperoni_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 1,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_blaze_white_vegancheese_pepperoni_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 3
+      },
+      "model": "adjunct:item/pizza_blaze_white_vegancheese_ham_pineapple"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_blaze_white_vegancheese_ham_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_blaze_white_vegancheese_ham_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_blaze_white_vegancheese_ham_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 2,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_blaze_white_vegancheese_ham_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 4
+      },
+      "model": "adjunct:item/pizza_blaze_white_vegancheese_pineapple_olives"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_blaze_white_vegancheese_pineapple_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_blaze_white_vegancheese_pineapple_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 3,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_blaze_white_vegancheese_pineapple_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 5
+      },
+      "model": "adjunct:item/pizza_blaze_white_vegancheese_olives_peppers"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_blaze_white_vegancheese_olives_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 4,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_blaze_white_vegancheese_olives_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 5,
+        "adjunct:topping2": 6
+      },
+      "model": "adjunct:item/pizza_blaze_white_vegancheese_peppers_onions"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 5,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_blaze_white_vegancheese_peppers_mushrooms"
+    },
+    {
+      "predicate": {
+        "adjunct:crust": 3,
+        "adjunct:sauce": 2,
+        "adjunct:cheese": 2,
+        "adjunct:topping1": 6,
+        "adjunct:topping2": 7
+      },
+      "model": "adjunct:item/pizza_blaze_white_vegancheese_onions_mushrooms"
+    }
+  ]
+}

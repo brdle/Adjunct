@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "modid": "quark",
+      "type": "forge:mod_loaded"
+    },
+    {
+      "type": "quark:flag",
+      "flag": "wooden_posts"
+    }
+  ],
+  "pattern": [
+    "F",
+    "F",
+    "F"
+  ],
+  "key": {
+    "F": {
+      "item": "adjunct:olive_wood"
+    }
+  },
+  "result": {
+    "item": "adjunct:olive_post",
+    "count": 8
+  }
+}

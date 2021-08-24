@@ -1,0 +1,41 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "immersiveengineering:seed",
+      "required": false
+    },
+    {
+      "id": "thermal:flax_seeds",
+      "required": false
+    },
+    {
+      "id": "thermal:radish_seeds",
+      "required": false
+    },
+    {
+      "id": "thermal:sadiroot_seeds",
+      "required": false
+    },
+    {
+      "id": "thermal:spinach_seeds",
+      "required": false
+    },
+    {
+      "id": "thermal:bell_pepper_seeds",
+      "required": false
+    },
+    {
+      "id": "thermal:green_bean_seeds",
+      "required": false
+    },
+    {
+      "id": "thermal:strawberry_seeds",
+      "required": false
+    },
+    {
+      "id": "thermal:tea_seeds",
+      "required": false
+    }
+  ]
+}

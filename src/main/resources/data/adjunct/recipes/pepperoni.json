@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:cooked_beef"
+    },
+    {
+      "item": "minecraft:cooked_porkchop"
+    },
+    {
+      "tag": "forge:olive_oil"
+    }
+  ],
+  "result": {
+    "item": "adjunct:pepperoni",
+    "count": 10
+  }
+}

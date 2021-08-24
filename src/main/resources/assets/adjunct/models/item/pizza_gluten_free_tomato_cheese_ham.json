@@ -1,0 +1,6 @@
+{
+  "parent": "adjunct:item/pizza_gluten_free_tomato_cheese",
+  "textures": {
+    "layer3": "adjunct:item/pizza_ham"
+  }
+}

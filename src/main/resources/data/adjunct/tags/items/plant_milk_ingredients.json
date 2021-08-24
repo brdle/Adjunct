@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#forge:nuts",
+      "required": true
+    },
+    {
+      "id": "#forge:crops/oat",
+      "required": true
+    }
+  ]
+}

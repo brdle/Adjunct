@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:cheese"
+    },
+    {
+      "tag": "forge:olive_oil"
+    }
+  ],
+  "result": {
+    "item": "adjunct:white_sauce_bottle",
+    "count": 1
+  }
+}

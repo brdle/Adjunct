@@ -1,0 +1,6 @@
+{
+  "parent": "adjunct:item/pizza_gluten_free_white_vegancheese_pineapple",
+  "textures": {
+    "layer4": "adjunct:item/pizza_mushrooms"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "thermal:barley",
+      "required": false
+    },
+    {
+      "id": "thermal:corn",
+      "required": false
+    },
+    {
+      "id": "thermal:onion",
+      "required": false
+    },
+    {
+      "id": "thermal:radish",
+      "required": false
+    },
+    {
+      "id": "thermal:rice",
+      "required": false
+    },
+    {
+      "id": "thermal:sadiroot",
+      "required": false
+    },
+    {
+      "id": "thermal:spinach",
+      "required": false
+    },
+    {
+      "id": "thermal:eggplant",
+      "required": false
+    },
+    {
+      "id": "thermal:peanut",
+      "required": false
+    },
+    {
+      "id": "thermal:strawberry",
+      "required": false
+    },
+    {
+      "id": "thermal:hops",
+      "required": false
+    },
+    {
+      "id": "thermal:tea",
+      "required": false
+    }
+  ]
+}

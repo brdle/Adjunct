@@ -1,0 +1,38 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "adjunct:item/knowledge_scarab"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "adjunct:exp": 1
+      },
+      "model": "adjunct:item/knowledge_scarab_1"
+    },
+    {
+      "predicate": {
+        "adjunct:exp": 2500
+      },
+      "model": "adjunct:item/knowledge_scarab_25"
+    },
+    {
+      "predicate": {
+        "adjunct:exp": 5000
+      },
+      "model": "adjunct:item/knowledge_scarab_50"
+    },
+    {
+      "predicate": {
+        "adjunct:exp": 7500
+      },
+      "model": "adjunct:item/knowledge_scarab_75"
+    },
+    {
+      "predicate": {
+        "adjunct:exp": 10000
+      },
+      "model": "adjunct:item/knowledge_scarab_full"
+    }
+  ]
+}

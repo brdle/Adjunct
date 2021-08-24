@@ -1,0 +1,6 @@
+{
+  "parent": "adjunct:item/pizza_original_white_olives",
+  "textures": {
+    "layer3": "adjunct:item/pizza_onions"
+  }
+}

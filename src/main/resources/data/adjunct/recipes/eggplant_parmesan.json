@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:crops/eggplant"
+    },
+    {
+      "tag": "forge:cheese"
+    },
+    {
+      "item": "adjunct:tomato_sauce_bottle"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "item": "adjunct:eggplant_parmesan",
+    "count": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thermal"
+    }
+  ],
+  "pattern": [
+    "ADA",
+    "BEB",
+    "CDC"
+  ],
+  "key": {
+    "A": {
+      "tag": "forge:milk_bucket"
+    },
+    "B": {
+      "item": "minecraft:cocoa_beans"
+    },
+    "C": {
+      "tag": "forge:crops/wheat"
+    },
+    "D": {
+      "tag": "forge:crops/strawberry"
+    },
+    "E": {
+      "tag": "forge:eggs"
+    }
+  },
+  "result": {
+    "item": "thermal:chocolate_cake"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "adjunct:olive_log",
+    "adjunct:olive_wood",
+    "adjunct:stripped_olive_log",
+    "adjunct:stripped_olive_wood"
+  ]
+}

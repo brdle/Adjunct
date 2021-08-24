@@ -1,0 +1,6 @@
+{
+  "parent": "quark:block/post",
+  "textures": {
+    "texture": "adjunct:block/stripped_olive_log"
+  }
+}

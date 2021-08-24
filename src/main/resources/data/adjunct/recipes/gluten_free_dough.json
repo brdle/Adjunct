@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "adjunct:dry_leaf_dust"
+    },
+    {
+      "item": "minecraft:water_bucket"
+    },
+    {
+      "tag": "forge:olive_oil"
+    }
+  ],
+  "result": {
+    "item": "adjunct:gluten_free_dough"
+  }
+}

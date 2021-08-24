@@ -1,0 +1,37 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "minecraft:vine",
+      "required": true
+    },
+    {
+      "id": "biomesoplenty:willow_vine",
+      "required": false
+    },
+    {
+      "id": "blue_skies:bluebright_vine",
+      "required": false
+    },
+    {
+      "id": "blue_skies:starlit_vine",
+      "required": false
+    },
+    {
+      "id": "blue_skies:frostbright_vine",
+      "required": false
+    },
+    {
+      "id": "blue_skies:lunar_vine",
+      "required": false
+    },
+    {
+      "id": "blue_skies:dusk_vine",
+      "required": false
+    },
+    {
+      "id": "blue_skies:maple_vine",
+      "required": false
+    }
+  ]
+}

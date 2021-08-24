@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "thermal:radish",
+      "required": false
+    },
+    {
+      "id": "thermal:sadiroot",
+      "required": false
+    },
+    {
+      "id": "thermal:spinach",
+      "required": false
+    },
+    {
+      "id": "thermal:frost_melon",
+      "required": false
+    }
+  ]
+}

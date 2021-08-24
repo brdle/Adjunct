@@ -1,0 +1,6 @@
+{
+  "parent": "adjunct:item/pizza_gluten_free_olives",
+  "textures": {
+    "layer2": "adjunct:item/pizza_onions"
+  }
+}

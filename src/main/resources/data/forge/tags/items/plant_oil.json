@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "bloodmagic:plantoil",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:plantoil_bucket",
+      "required": false
+    },
+    {
+      "id": "#forge:olive_oil",
+      "required": false
+    }
+  ]
+}

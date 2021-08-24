@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "adjunct:block/pizza_oven",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "adjunct:block/pizza_oven"
+    },
+    "facing=south": {
+      "model": "adjunct:block/pizza_oven",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "adjunct:block/pizza_oven",
+      "y": 270
+    }
+  }
+}

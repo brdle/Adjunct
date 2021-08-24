@@ -1,0 +1,6 @@
+{
+  "parent": "adjunct:block/cat_bed",
+  "textures": {
+    "mat": "minecraft:block/cyan_wool"
+  }
+}

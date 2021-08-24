@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "adjunct:black_cat_bed",
+    "adjunct:blue_cat_bed",
+    "adjunct:brown_cat_bed",
+    "adjunct:green_cat_bed",
+    "adjunct:red_cat_bed",
+    "adjunct:white_cat_bed",
+    "adjunct:yellow_cat_bed",
+    "adjunct:light_blue_cat_bed",
+    "adjunct:light_gray_cat_bed",
+    "adjunct:lime_cat_bed",
+    "adjunct:magenta_cat_bed",
+    "adjunct:orange_cat_bed",
+    "adjunct:pink_cat_bed",
+    "adjunct:cyan_cat_bed",
+    "adjunct:gray_cat_bed",
+    "adjunct:purple_cat_bed",
+    "adjunct:olive_cat_bed"
+  ]
+}

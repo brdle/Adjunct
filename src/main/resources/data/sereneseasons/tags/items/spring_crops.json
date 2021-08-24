@@ -1,0 +1,41 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "immersiveengineering:seed",
+      "required": false
+    },
+    {
+      "id": "thermal:flax",
+      "required": false
+    },
+    {
+      "id": "thermal:radish",
+      "required": false
+    },
+    {
+      "id": "thermal:sadiroot",
+      "required": false
+    },
+    {
+      "id": "thermal:spinach",
+      "required": false
+    },
+    {
+      "id": "thermal:bell_pepper",
+      "required": false
+    },
+    {
+      "id": "thermal:green_bean",
+      "required": false
+    },
+    {
+      "id": "thermal:strawberry",
+      "required": false
+    },
+    {
+      "id": "thermal:tea",
+      "required": false
+    }
+  ]
+}

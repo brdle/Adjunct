@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "# #",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "adjunct:olive_planks"
+    }
+  },
+  "result": {
+    "item": "adjunct:olive_chest",
+    "count": 1
+  },
+  "conditions": [
+    {
+      "modid": "quark",
+      "type": "forge:mod_loaded"
+    },
+    {
+      "type": "quark:flag",
+      "flag": "variant_chests"
+    }
+  ]
+} 

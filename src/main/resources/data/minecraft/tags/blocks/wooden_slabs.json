@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "adjunct:olive_slab",
+      "required": false
+    },
+    {
+      "id": "adjunct:vertical_olive_slab",
+      "required": false
+    }
+  ]
+}

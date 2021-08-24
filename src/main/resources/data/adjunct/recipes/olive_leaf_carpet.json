@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "modid": "quark",
+      "type": "forge:mod_loaded"
+    },
+    {
+      "type": "quark:flag",
+      "flag": "leaf_carpet"
+    }
+  ],
+  "pattern": [
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "adjunct:olive_leaves"
+    }
+  },
+  "result": {
+    "item": "adjunct:olive_leaf_carpet",
+    "count": 3
+  }
+} 

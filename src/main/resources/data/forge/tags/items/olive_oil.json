@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "adjunct:olive_oil_bottle",
+      "required": false
+    }
+  ]
+}
