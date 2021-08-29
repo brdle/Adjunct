@@ -16,7 +16,7 @@ public class CatLieOnCatBedGoal extends CatLieOnBedGoal {
 
     @Override
     public double acceptedDistance() {
-        return 1.3D;
+        return 1.4D;
     }
 
     @Override
