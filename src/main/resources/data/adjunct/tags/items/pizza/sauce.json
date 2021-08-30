@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#adjunct:pizza/sauce/tomato",
+      "required": true
+    },
+    {
+      "id": "#adjunct:pizza/sauce/white",
+      "required": true
+    }
+  ]
+}

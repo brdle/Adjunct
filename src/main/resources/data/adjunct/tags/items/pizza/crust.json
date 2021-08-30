@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#adjunct:pizza/crust/original",
+      "required": true
+    },
+    {
+      "id": "#adjunct:pizza/crust/gluten_free",
+      "required": true
+    },
+    {
+      "id": "#adjunct:pizza/crust/blaze",
+      "required": false
+    }
+  ]
+}

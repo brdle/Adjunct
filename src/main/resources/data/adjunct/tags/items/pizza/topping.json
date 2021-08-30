@@ -1,0 +1,33 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#adjunct:pizza/topping/ham",
+      "required": false
+    },
+    {
+      "id": "#adjunct:pizza/topping/mushrooms",
+      "required": false
+    },
+    {
+      "id": "#adjunct:pizza/topping/olives",
+      "required": false
+    },
+    {
+      "id": "#adjunct:pizza/topping/onions",
+      "required": false
+    },
+    {
+      "id": "#adjunct:pizza/topping/pepperoni",
+      "required": false
+    },
+    {
+      "id": "#adjunct:pizza/topping/peppers",
+      "required": false
+    },
+    {
+      "id": "#adjunct:pizza/topping/pineapple",
+      "required": false
+    }
+  ]
+}

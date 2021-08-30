@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#adjunct:pizza/cheese/cheese",
+      "required": true
+    },
+    {
+      "id": "#adjunct:pizza/cheese/vegan",
+      "required": true
+    }
+  ]
+}

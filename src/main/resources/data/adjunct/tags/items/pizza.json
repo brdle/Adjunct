@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#adjunct:pizza/crust",
+      "required": true
+    },
+    {
+      "id": "#adjunct:pizza/cheese",
+      "required": true
+    },
+    {
+      "id": "#adjunct:pizza/sauce",
+      "required": true
+    },
+    {
+      "id": "#adjunct:pizza/topping",
+      "required": true
+    }
+  ]
+}

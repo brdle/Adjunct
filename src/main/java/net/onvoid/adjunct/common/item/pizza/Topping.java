@@ -5,6 +5,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.tags.ITag;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.common.Tags;
 import net.onvoid.adjunct.Adjunct;
 import org.lwjgl.system.CallbackI;
 
@@ -17,19 +18,16 @@ public enum Topping {
     CHEESE,
     TOPPING;
 
-    private static ITag<Item> crustTag;
-    private static ITag<Item> sauceTag;
-    private static ITag<Item> cheeseTag;
-    private static ITag<Item> toppingTag;
-    private static ITag<Item> allTag;
+    public static void registerTags(){}
 
-    public static void registerTags(){
-        crustTag = ItemTags.createOptional(new ResourceLocation(Adjunct.MODID, "pizza/crust"));
-        sauceTag = ItemTags.createOptional(new ResourceLocation(Adjunct.MODID, "pizza/sauce"));
-        cheeseTag = ItemTags.createOptional(new ResourceLocation(Adjunct.MODID, "pizza/cheese"));
-        toppingTag = ItemTags.createOptional(new ResourceLocation(Adjunct.MODID, "pizza/topping"));
-        allTag = ItemTags.createOptional(new ResourceLocation(Adjunct.MODID, "pizza"));
-    }
+    private static Tags.IOptionalNamedTag<Item> allTag = ItemTags.createOptional(new ResourceLocation(Adjunct.MODID, "pizza"));
+    private static Tags.IOptionalNamedTag<Item> crustTag = ItemTags.createOptional(new ResourceLocation(Adjunct.MODID, "pizza/crust"));
+    //private static Tags.IOptionalNamedTag<Item> originalTag = ItemTags.createOptional(new ResourceLocation(Adjunct.MODID, "pizza/crust/original"));
+    //private static Tags.IOptionalNamedTag<Item> glutenfreeTag = ItemTags.createOptional(new ResourceLocation(Adjunct.MODID, "pizza/crust/gluten_free"));
+    //private static Tags.IOptionalNamedTag<Item> blazeTag = ItemTags.createOptional(new ResourceLocation(Adjunct.MODID, "pizza/crust/blaze"));
+    private static Tags.IOptionalNamedTag<Item> sauceTag = ItemTags.createOptional(new ResourceLocation(Adjunct.MODID, "pizza/sauce"));
+    private static Tags.IOptionalNamedTag<Item> cheeseTag = ItemTags.createOptional(new ResourceLocation(Adjunct.MODID, "pizza/cheese"));
+    private static Tags.IOptionalNamedTag<Item> toppingTag = ItemTags.createOptional(new ResourceLocation(Adjunct.MODID, "pizza/topping"));
 
     public static ITag<Item> allTag(){
         return allTag;
@@ -167,7 +165,7 @@ public enum Topping {
             case TOPPING:
                 return toppingTag;
         }
-        return ItemTags.createOptional(new ResourceLocation(Adjunct.MODID, "pizza/" + type.get()));
+        return null;
     }
 
     public static ITag<Item> getTag(Topping type, String topping){
