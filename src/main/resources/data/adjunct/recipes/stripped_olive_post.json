@@ -4,6 +4,10 @@
     {
       "modid": "quark",
       "type": "forge:mod_loaded"
+    },
+    {
+      "type": "quark:flag",
+      "flag": "wooden_posts"
     }
   ],
   "pattern": [
@@ -19,11 +23,5 @@
   "result": {
     "item": "adjunct:stripped_olive_post",
     "count": 8
-  },
-  "conditions": [
-    {
-      "type": "quark:flag",
-      "flag": "wooden_posts"
-    }
-  ]
+  }
 }
