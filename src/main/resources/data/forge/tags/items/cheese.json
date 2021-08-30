@@ -10,7 +10,7 @@
       "required": false
     },
     {
-      "id": "#adjunct:pizza/cheeses",
+      "id": "#adjunct:pizza/cheese",
       "required": true
     }
   ]
