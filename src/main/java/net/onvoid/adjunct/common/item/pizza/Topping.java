@@ -17,11 +17,11 @@ public enum Topping {
     CHEESE,
     TOPPING;
 
-    private static ITag<Item> crustTag = ItemTags.createOptional(new ResourceLocation(Adjunct.MODID, "pizza/crust"));
-    private static ITag<Item> sauceTag = ItemTags.createOptional(new ResourceLocation(Adjunct.MODID, "pizza/sauce"));
-    private static ITag<Item> cheeseTag = ItemTags.createOptional(new ResourceLocation(Adjunct.MODID, "pizza/cheese"));
-    private static ITag<Item> toppingTag = ItemTags.createOptional(new ResourceLocation(Adjunct.MODID, "pizza/topping"));
-    private static ITag<Item> allTag = ItemTags.createOptional(new ResourceLocation(Adjunct.MODID, "pizza"));
+    private static ITag<Item> crustTag;
+    private static ITag<Item> sauceTag;
+    private static ITag<Item> cheeseTag;
+    private static ITag<Item> toppingTag;
+    private static ITag<Item> allTag;
 
     public static void registerTags(){
         crustTag = ItemTags.createOptional(new ResourceLocation(Adjunct.MODID, "pizza/crust"));
