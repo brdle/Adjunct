@@ -12,31 +12,6 @@ import java.util.ArrayList;
 public class PizzaHandler {
 
     public static final int COOK_TIME = 10;
-
-    //private static ArrayList<String> crusts = new ArrayList<String>();
-    //private static ArrayList<String> sauces = new ArrayList<String>();
-    //private static ArrayList<String> cheeses = new ArrayList<String>();
-    //private static ArrayList<String> toppings = new ArrayList<String>();
-    //private static ArrayList<String> types = new ArrayList<String>();
-    private static ITag<Item> ingredientsTag;
-    private static ITag<Item> crustsTag;
-    private static ITag<Item> saucesTag;
-    private static ITag<Item> cheesesTag;
-    private static ITag<Item> toppingsTag;
-    private static ITag<Item> originalDoughsTag;
-    private static ITag<Item> glutenFreeDoughsTag;
-    private static ITag<Item> blazeDoughsTag;
-    private static ITag<Item> tomatoSaucesTag;
-    private static ITag<Item> whiteSaucesTag;
-    private static ITag<Item> mozzarellaCheesesTag;
-    private static ITag<Item> veganCheesesTag;
-    private static ITag<Item> pepperonisTag;
-    private static ITag<Item> hamsTag;
-    private static ITag<Item> pineapplesTag;
-    private static ITag<Item> olivesTag;
-    private static ITag<Item> peppersTag;
-    private static ITag<Item> onionsTag;
-    private static ITag<Item> mushroomsTag;
     private static ArrayList<ItemStack> allUncookedPizzas = new ArrayList<ItemStack>();
     private static ArrayList<ItemStack> allCookedPizzas = new ArrayList<ItemStack>();
 

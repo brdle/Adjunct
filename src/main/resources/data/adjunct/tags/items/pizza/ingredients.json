@@ -1,9 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "#adjunct:pizza/crusts",
-    "#adjunct:pizza/sauces",
-    "#adjunct:pizza/cheeses",
-    "#adjunct:pizza/toppings"
-  ]
-}
