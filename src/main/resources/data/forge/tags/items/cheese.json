@@ -8,10 +8,6 @@
     {
       "id": "rats:cheese",
       "required": false
-    },
-    {
-      "id": "#adjunct:pizza/cheese",
-      "required": true
     }
   ]
 }
