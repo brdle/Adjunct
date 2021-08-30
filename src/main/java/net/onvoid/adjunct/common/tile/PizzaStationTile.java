@@ -2,7 +2,6 @@ package net.onvoid.adjunct.common.tile;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.network.NetworkManager;
 import net.minecraft.network.play.server.SUpdateTileEntityPacket;
@@ -14,15 +13,14 @@ import net.minecraftforge.common.util.INBTSerializable;
 import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandler;
-import net.minecraftforge.items.ItemHandlerHelper;
 import net.minecraftforge.items.ItemStackHandler;
-import net.onvoid.adjunct.AdjunctHelper;
-import net.onvoid.adjunct.common.item.PizzaItem;
-import net.onvoid.adjunct.handlers.PizzaHandler;
+import net.onvoid.adjunct.common.item.pizza.Pizza;
+import net.onvoid.adjunct.common.item.pizza.PizzaItem;
+import net.onvoid.adjunct.common.item.pizza.PizzaHandler;
+import net.onvoid.adjunct.common.item.pizza.Topping;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
-import java.util.ArrayList;
 
 public class PizzaStationTile extends TileEntity implements ICapabilityProvider {
     public PizzaStationTile() {
@@ -45,7 +43,7 @@ public class PizzaStationTile extends TileEntity implements ICapabilityProvider 
             @Override
             public boolean isItemValid(int slot, @Nonnull ItemStack stack)
             {
-                return (PizzaHandler.isIngredient(stack) || (stack.getItem() instanceof PizzaItem && stack.getOrCreateTag().getBoolean("cooked") == false));
+                return (stack.getItem().is(Topping.allTag()) || (stack.getItem() instanceof PizzaItem && !(new Pizza(stack)).isCooked()));
             }
 
             @Override
@@ -70,9 +68,9 @@ public class PizzaStationTile extends TileEntity implements ICapabilityProvider 
                         return existing;
                     }
                 } else {
-                    if (existing.isEmpty() && PizzaHandler.isCrust(stack)) {
+                    if (existing.isEmpty() && Topping.is(stack, Topping.CRUST)) {
                         //Create new pizza
-                        this.stacks.set(slot, PizzaHandler.buildPizza(PizzaHandler.getCrustFromItem(stack), 0, 0, 0, 0, false));
+                        this.stacks.set(slot, new Pizza(stack).getItemStack());
                         onContentsChanged(slot);
                         stack.shrink(1);
                     } else {
@@ -80,11 +78,7 @@ public class PizzaStationTile extends TileEntity implements ICapabilityProvider 
                         if (!(existing.getItem() instanceof PizzaItem)) {
                             return stack;
                         }
-                        CompoundNBT nbt = existing.getOrCreateTag();
-                        if (!PizzaHandler.addItemSafe(nbt, stack)){
-                            return stack;
-                        }
-                        existing.setTag(nbt);
+                        this.stacks.set(slot, new Pizza(existing).addStack(stack).buildStack());
                         stack.shrink(1);
                         onContentsChanged(slot);
                     }

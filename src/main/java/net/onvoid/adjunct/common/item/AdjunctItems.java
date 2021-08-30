@@ -1,7 +1,6 @@
 package net.onvoid.adjunct.common.item;
 
 import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
 import net.minecraft.item.*;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.util.NonNullList;
@@ -15,9 +14,12 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.onvoid.adjunct.Adjunct;
 import net.onvoid.adjunct.common.block.BlockItemAddon;
-import net.onvoid.adjunct.handlers.PizzaHandler;
+import net.onvoid.adjunct.common.item.pizza.Pizza;
+import net.onvoid.adjunct.common.item.pizza.PizzaItem;
+import net.onvoid.adjunct.common.item.pizza.PizzaHandler;
 import net.onvoid.adjunct.common.block.AdjunctBlocks;
 import net.onvoid.adjunct.common.block.BlockItemA;
+import net.onvoid.adjunct.common.item.pizza.Topping;
 
 public class AdjunctItems {
 
@@ -25,7 +27,7 @@ public class AdjunctItems {
     public static final ItemGroup TAB_ADJUNCT = new ItemGroup("adjunct") {
         @OnlyIn(Dist.CLIENT)
         public ItemStack makeIcon() {
-            return PizzaHandler.buildPizza(1, 1, 1, 1, 0, true);
+            return new Pizza().add(Topping.CRUST, 1).add(Topping.SAUCE, 1).add(Topping.CHEESE, 1).add(Topping.TOPPING, 1).bakeStack();
         }
 
         @OnlyIn(Dist.CLIENT)

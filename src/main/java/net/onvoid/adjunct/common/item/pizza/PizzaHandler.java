@@ -1,14 +1,11 @@
-package net.onvoid.adjunct.handlers;
+package net.onvoid.adjunct.common.item.pizza;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.tags.ITag;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.util.ResourceLocation;
 import net.onvoid.adjunct.Adjunct;
-import net.onvoid.adjunct.AdjunctHelper;
-import net.onvoid.adjunct.common.item.AdjunctItems;
 
 import java.util.ArrayList;
 
@@ -16,11 +13,11 @@ public class PizzaHandler {
 
     public static final int COOK_TIME = 10;
 
-    private static ArrayList<String> crusts = new ArrayList<String>();
-    private static ArrayList<String> sauces = new ArrayList<String>();
-    private static ArrayList<String> cheeses = new ArrayList<String>();
-    private static ArrayList<String> toppings = new ArrayList<String>();
-    private static ArrayList<String> types = new ArrayList<String>();
+    //private static ArrayList<String> crusts = new ArrayList<String>();
+    //private static ArrayList<String> sauces = new ArrayList<String>();
+    //private static ArrayList<String> cheeses = new ArrayList<String>();
+    //private static ArrayList<String> toppings = new ArrayList<String>();
+    //private static ArrayList<String> types = new ArrayList<String>();
     private static ITag<Item> ingredientsTag;
     private static ITag<Item> crustsTag;
     private static ITag<Item> saucesTag;
@@ -45,28 +42,23 @@ public class PizzaHandler {
 
 
     public static void createTags(){
-        crusts.add("original");
-        crusts.add("gluten_free");
-        crusts.add("blaze");
-        sauces.add("tomato");
-        sauces.add("white");
-        cheeses.add("cheese");
-        cheeses.add("vegan_cheese");
-        toppings.add("pepperoni");
-        toppings.add("ham");
-        toppings.add("pineapple");
-        toppings.add("olives");
-        toppings.add("peppers");
-        toppings.add("onions");
-        toppings.add("mushrooms");
-        types.add("crust");
-        types.add("sauce");
-        types.add("cheese");
-        types.add("topping1");
-        types.add("topping2");
+        Topping.crusts.add("original");
+        Topping.crusts.add("gluten_free");
+        Topping.crusts.add("blaze");
+        Topping.sauces.add("tomato");
+        Topping.sauces.add("white");
+        Topping.cheeses.add("cheese");
+        Topping.cheeses.add("vegan");
+        Topping.toppings.add("pepperoni");
+        Topping.toppings.add("ham");
+        Topping.toppings.add("pineapple");
+        Topping.toppings.add("olives");
+        Topping.toppings.add("peppers");
+        Topping.toppings.add("onions");
+        Topping.toppings.add("mushrooms");
     }
 
-    public static void createITags(){
+    /*public static void createITags(){
         ingredientsTag = ItemTags.createOptional(new ResourceLocation(Adjunct.MODID, "pizza/ingredients"));
         crustsTag = ItemTags.createOptional(new ResourceLocation(Adjunct.MODID, "pizza/crusts"));
         saucesTag = ItemTags.createOptional(new ResourceLocation(Adjunct.MODID, "pizza/sauces"));
@@ -86,33 +78,14 @@ public class PizzaHandler {
         peppersTag = ItemTags.createOptional(new ResourceLocation(Adjunct.MODID, "pizza/peppers"));
         onionsTag = ItemTags.createOptional(new ResourceLocation(Adjunct.MODID, "pizza/onions"));
         mushroomsTag = ItemTags.createOptional(new ResourceLocation(Adjunct.MODID, "pizza/mushrooms"));
-    }
+    }*/
 
-    public static ArrayList<String> getCrusts(){
-        return crusts;
-    }
-
-    public static ArrayList<String> getSauces(){
-        return sauces;
-    }
-
-    public static ArrayList<String> getCheeses(){
-        return cheeses;
-    }
-
-    public static ArrayList<String> getToppings(){
-        return toppings;
-    }
-
-    public static ArrayList<String> getTypes(){
-        return types;
-    }
 
     public static ITag<Item> getIngredientsTag(){
-        return ingredientsTag;
+        return ItemTags.createOptional(new ResourceLocation(Adjunct.MODID, "pizza"));
     }
 
-    public static ITag<Item> getCrustsTag(){
+    /*public static ITag<Item> getCrustsTag(){
         return crustsTag;
     }
 
@@ -166,7 +139,7 @@ public class PizzaHandler {
 
     public static ITag<Item> getOnionsTag() { return onionsTag; }
 
-    public static ITag<Item> getMushroomsTag() { return mushroomsTag; }
+    public static ITag<Item> getMushroomsTag() { return mushroomsTag; }*/
 
     public static ArrayList<ItemStack> getAllUncookedPizzas() {
         return allUncookedPizzas;
@@ -176,7 +149,7 @@ public class PizzaHandler {
         return allCookedPizzas;
     }
 
-    public static void createPizzaLists(){
+    /*public static void createPizzaLists(){
         for (int crust = 1; crust < getCrusts().size() + 1; crust++){
             for (int sauce = 1; sauce < getSauces().size() + 1; sauce++){
                 for (int cheese = 1; cheese < getCheeses().size() + 1; cheese++){
@@ -192,14 +165,9 @@ public class PizzaHandler {
                 }
             }
         }
-    }
+    }*/
 
-    public static ArrayList<Integer> buildIngredientList(){
-        ArrayList<Integer> ingredients = new ArrayList<Integer>();
-        return ingredients;
-    }
-
-    public static ItemStack buildPizza(int crust, int sauce, int cheese, int topping1, int topping2, boolean cooked){
+    /*public static ItemStack buildPizza(int crust, int sauce, int cheese, int topping1, int topping2, boolean cooked){
         ItemStack pizza = new ItemStack(AdjunctItems.PIZZA_ITEM.get());
         CompoundNBT nbt = pizza.getOrCreateTag();
         nbt.putBoolean("cooked", cooked);
@@ -404,5 +372,5 @@ public class PizzaHandler {
             }
         }
         return false;
-    }
+    }*/
 }

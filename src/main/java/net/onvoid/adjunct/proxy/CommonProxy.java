@@ -19,13 +19,14 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.onvoid.adjunct.Adjunct;
+import net.onvoid.adjunct.common.item.pizza.Topping;
 import net.onvoid.adjunct.compat.quark.AdjunctQuarkBlocks;
 import net.onvoid.adjunct.compat.quark.AdjunctQuarkEvents;
 import net.onvoid.adjunct.compat.quark.AdjunctQuarkItems;
 import net.onvoid.adjunct.common.block.tree.OliveTree;
 import net.onvoid.adjunct.common.tile.AdjunctTiles;
 import net.onvoid.adjunct.handlers.EventHandler;
-import net.onvoid.adjunct.handlers.PizzaHandler;
+import net.onvoid.adjunct.common.item.pizza.PizzaHandler;
 import net.onvoid.adjunct.handlers.TagHandler;
 import net.onvoid.adjunct.common.block.AdjunctBlocks;
 import net.onvoid.adjunct.common.item.AdjunctItems;
@@ -43,7 +44,7 @@ public class CommonProxy {
         //}
         AdjunctTiles.create();
         AdjunctItems.create();
-        PizzaHandler.createITags();
+        Topping.registerTags();
         TagHandler.init();
         registerListeners();
     }

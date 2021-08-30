@@ -16,7 +16,9 @@ import net.minecraft.world.IBlockDisplayReader;
 import net.minecraft.world.biome.BiomeColors;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.client.event.TextureStitchEvent;
+import net.minecraftforge.client.model.ModelLoaderRegistry;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -25,6 +27,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLLoadCompleteEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.onvoid.adjunct.Adjunct;
+import net.onvoid.adjunct.common.item.pizza.Topping;
 import net.onvoid.adjunct.compat.quark.AdjunctVariantChestTileEntityRenderer;
 import net.onvoid.adjunct.client.model.PizzaOvenTileRenderer;
 import net.onvoid.adjunct.client.model.PizzaStationTileRenderer;
@@ -32,7 +35,7 @@ import net.onvoid.adjunct.common.block.AdjunctBlocks;
 import net.onvoid.adjunct.compat.quark.AdjunctQuarkBlocks;
 import net.onvoid.adjunct.common.item.AdjunctItems;
 import net.onvoid.adjunct.common.tile.AdjunctTiles;
-import net.onvoid.adjunct.handlers.PizzaHandler;
+import net.onvoid.adjunct.common.item.pizza.PizzaHandler;
 
 public class ClientProxy extends CommonProxy {
 
@@ -55,11 +58,11 @@ public class ClientProxy extends CommonProxy {
     public void setupClient(FMLClientSetupEvent e){
         e.enqueueWork(() ->
         {
-            for (String topping : PizzaHandler.getTypes()){
+            for (Topping topping : Topping.values()){
                 ItemModelsProperties.register(AdjunctItems.PIZZA_ITEM.get(),
-                        new ResourceLocation(Adjunct.MODID, topping), (stack, world, living) -> {
+                        new ResourceLocation(Adjunct.MODID, topping.get()), (stack, world, living) -> {
                             CompoundNBT tag = stack.getOrCreateTag();
-                            return tag.getInt(topping);
+                            return tag.getInt(topping.get());
                         });
             }
             ItemModelsProperties.register(AdjunctItems.KNOWLEDGE_SYRINGE_ITEM.get(),
@@ -131,6 +134,10 @@ public class ClientProxy extends CommonProxy {
         //}
     }
 
+    /*@SubscribeEvent
+    static void registerModelLoader(ModelRegistryEvent e) {
+        ModelLoaderRegistry.registerLoader(new ResourceLocation(Adjunct.MODID, "quark"), QuarkModel.LOADER);
+    }*/
 
     @OnlyIn(Dist.CLIENT)
     @SubscribeEvent

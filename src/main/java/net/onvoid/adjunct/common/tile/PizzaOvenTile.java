@@ -1,23 +1,17 @@
 package net.onvoid.adjunct.common.tile;
 
 import net.minecraft.block.BlockState;
-import net.minecraft.block.CampfireBlock;
-import net.minecraft.client.world.ClientWorld;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.network.NetworkManager;
 import net.minecraft.network.play.server.SUpdateTileEntityPacket;
 import net.minecraft.particles.BasicParticleType;
 import net.minecraft.particles.ParticleTypes;
-import net.minecraft.state.DirectionProperty;
 import net.minecraft.tileentity.ITickableTileEntity;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.Direction;
-import net.minecraft.util.NonNullList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import net.minecraft.world.server.ServerWorld;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.capabilities.ICapabilityProvider;
 import net.minecraftforge.common.util.Constants;
@@ -25,11 +19,12 @@ import net.minecraftforge.common.util.INBTSerializable;
 import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandler;
-import net.minecraftforge.items.ItemHandlerHelper;
 import net.minecraftforge.items.ItemStackHandler;
-import net.onvoid.adjunct.AdjunctHelper;
-import net.onvoid.adjunct.common.item.PizzaItem;
-import net.onvoid.adjunct.handlers.PizzaHandler;
+import net.onvoid.adjunct.common.item.pizza.Pizza;
+import net.onvoid.adjunct.common.item.pizza.PizzaItem;
+import net.onvoid.adjunct.common.item.pizza.PizzaHandler;
+import net.onvoid.adjunct.common.item.pizza.Topping;
+
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 import java.util.Random;
@@ -101,7 +96,7 @@ public class PizzaOvenTile extends TileEntity implements ICapabilityProvider, IT
             @Override
             public boolean isItemValid(int slot, @Nonnull ItemStack stack)
             {
-                return PizzaHandler.isCrust(stack) || stack.getItem() instanceof PizzaItem;
+                return Topping.is(stack, Topping.CRUST) || stack.getItem() instanceof PizzaItem;
             }
 
             @Override
@@ -113,16 +108,16 @@ public class PizzaOvenTile extends TileEntity implements ICapabilityProvider, IT
                     return stack;
                 }
                 validateSlotIndex(slot);
-                ItemStack pizza;
+                Pizza pizza = new Pizza();
                 if (this.stacks.get(slot).isEmpty()){
-                    if (PizzaHandler.isCrust(stack)){
-                        pizza = PizzaHandler.buildPizza(PizzaHandler.getCrustFromItem(stack), 0, 0, 0, 0, false);
+                    if (Topping.is(stack, Topping.CRUST)){
+                        pizza.add(Topping.CRUST, Topping.getSpecificInt(Topping.CRUST, stack));
                     } else if (stack.getItem() instanceof PizzaItem){
-                        pizza = stack.copy();
+                        pizza = new Pizza(stack.copy());
                     } else {
                         return stack;
                     }
-                    this.stacks.set(slot, pizza);
+                    this.stacks.set(slot, pizza.buildStack());
                     stack.shrink(1);
                     return stack;
                 } else {
