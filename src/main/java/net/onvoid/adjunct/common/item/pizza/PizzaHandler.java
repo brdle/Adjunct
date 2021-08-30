@@ -1,11 +1,6 @@
 package net.onvoid.adjunct.common.item.pizza;
 
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.tags.ITag;
-import net.minecraft.tags.ItemTags;
-import net.minecraft.util.ResourceLocation;
-import net.onvoid.adjunct.Adjunct;
 
 import java.util.ArrayList;
 
