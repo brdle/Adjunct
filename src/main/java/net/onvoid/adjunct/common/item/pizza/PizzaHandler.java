@@ -17,20 +17,20 @@ public class PizzaHandler {
 
 
     public static void createTags(){
-        Topping.crusts.add("original");
-        Topping.crusts.add("gluten_free");
-        Topping.crusts.add("blaze");
-        Topping.sauces.add("tomato");
-        Topping.sauces.add("white");
-        Topping.cheeses.add("cheese");
-        Topping.cheeses.add("vegan");
-        Topping.toppings.add("pepperoni");
-        Topping.toppings.add("ham");
-        Topping.toppings.add("pineapple");
-        Topping.toppings.add("olives");
-        Topping.toppings.add("peppers");
-        Topping.toppings.add("onions");
-        Topping.toppings.add("mushrooms");
+        Topping.register(Topping.CRUST, "original");
+        Topping.register(Topping.CRUST, "gluten_free");
+        Topping.register(Topping.CRUST, "blaze");
+        Topping.register(Topping.SAUCE, "tomato");
+        Topping.register(Topping.SAUCE, "white");
+        Topping.register(Topping.CHEESE, "cheese");
+        Topping.register(Topping.CHEESE, "vegan");
+        Topping.register(Topping.TOPPING, "pepperoni");
+        Topping.register(Topping.TOPPING, "ham");
+        Topping.register(Topping.TOPPING, "pineapple");
+        Topping.register(Topping.TOPPING, "olives");
+        Topping.register(Topping.TOPPING, "peppers");
+        Topping.register(Topping.TOPPING, "onions");
+        Topping.register(Topping.TOPPING, "mushrooms");
     }
 
     /*public static void createITags(){
@@ -55,10 +55,6 @@ public class PizzaHandler {
         mushroomsTag = ItemTags.createOptional(new ResourceLocation(Adjunct.MODID, "pizza/mushrooms"));
     }*/
 
-
-    public static ITag<Item> getIngredientsTag(){
-        return ItemTags.createOptional(new ResourceLocation(Adjunct.MODID, "pizza"));
-    }
 
     /*public static ITag<Item> getCrustsTag(){
         return crustsTag;
