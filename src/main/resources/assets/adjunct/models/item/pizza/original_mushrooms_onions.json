@@ -1,0 +1,6 @@
+{
+  "parent": "adjunct:item/pizza/original_mushrooms",
+  "textures": {
+    "layer2": "adjunct:item/pizza_onions"
+  }
+}

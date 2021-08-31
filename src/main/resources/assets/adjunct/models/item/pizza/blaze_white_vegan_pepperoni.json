@@ -1,0 +1,6 @@
+{
+  "parent": "adjunct:item/pizza/blaze_white_vegan",
+  "textures": {
+    "layer3": "adjunct:item/pizza_pepperoni"
+  }
+}

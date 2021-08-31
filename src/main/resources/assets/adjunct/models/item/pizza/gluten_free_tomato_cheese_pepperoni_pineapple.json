@@ -1,0 +1,6 @@
+{
+  "parent": "adjunct:item/pizza/gluten_free_tomato_cheese_pepperoni",
+  "textures": {
+    "layer4": "adjunct:item/pizza_pineapple"
+  }
+}

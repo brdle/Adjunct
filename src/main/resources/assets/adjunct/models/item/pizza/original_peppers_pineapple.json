@@ -1,0 +1,6 @@
+{
+  "parent": "adjunct:item/pizza/original_peppers",
+  "textures": {
+    "layer2": "adjunct:item/pizza_pineapple"
+  }
+}

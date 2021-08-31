@@ -1,0 +1,6 @@
+{
+  "parent": "adjunct:item/pizza/gluten_free_vegan",
+  "textures": {
+    "layer2": "adjunct:item/pizza_mushrooms"
+  }
+}

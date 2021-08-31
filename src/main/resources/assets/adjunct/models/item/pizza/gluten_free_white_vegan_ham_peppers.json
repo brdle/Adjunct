@@ -1,0 +1,6 @@
+{
+  "parent": "adjunct:item/pizza/gluten_free_white_vegan_ham",
+  "textures": {
+    "layer4": "adjunct:item/pizza_peppers"
+  }
+}

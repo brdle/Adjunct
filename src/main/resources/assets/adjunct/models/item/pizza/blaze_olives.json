@@ -1,0 +1,6 @@
+{
+  "parent": "adjunct:item/pizza/blaze",
+  "textures": {
+    "layer1": "adjunct:item/pizza_olives"
+  }
+}

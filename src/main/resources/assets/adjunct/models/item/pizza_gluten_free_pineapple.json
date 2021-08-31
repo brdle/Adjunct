@@ -1,6 +1,0 @@
-{
-  "parent": "adjunct:item/pizza_gluten_free",
-  "textures": {
-    "layer1": "adjunct:item/pizza_pineapple"
-  }
-}

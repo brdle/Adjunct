@@ -1,6 +1,0 @@
-{
-  "parent": "adjunct:item/pizza_gluten_free_vegancheese_pineapple",
-  "textures": {
-    "layer3": "adjunct:item/pizza_onions"
-  }
-}

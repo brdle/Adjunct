@@ -126,26 +126,17 @@ public enum Topping {
     }
 
     public static String fromInt(Topping type, int topping){
+        if (crusts.size() < topping){
+            return "";
+        }
         switch (type){
             case CRUST:
-                if (!crusts.contains(topping)){
-                    return "";
-                }
                 return crusts.get(topping - 1);
             case SAUCE:
-                if (!sauces.contains(topping)){
-                    return "";
-                }
                 return sauces.get(topping - 1);
             case CHEESE:
-                if (!cheeses.contains(topping)){
-                    return "";
-                }
                 return cheeses.get(topping - 1);
             case TOPPING:
-                if (!toppings.contains(topping)){
-                    return "";
-                }
                 return toppings.get(topping - 1);
         }
         return "";

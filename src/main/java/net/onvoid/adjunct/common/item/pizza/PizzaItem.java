@@ -80,7 +80,7 @@ public class PizzaItem extends Item {
         }
         int toppings = 0;
         for (Topping type : Topping.values()) {
-            if (p.has(type)) {
+            if (p.has(type) && !type.equals(Topping.CRUST)) {
                 tooltip.add(new TranslationTextComponent(this.getRegistryName().toString() + "." + type.get() + "." + Topping.fromInt(type, p.get(type))).withStyle(TextFormatting.YELLOW));
             }
         }

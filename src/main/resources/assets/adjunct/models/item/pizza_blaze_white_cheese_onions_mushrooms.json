@@ -1,6 +1,0 @@
-{
-  "parent": "adjunct:item/pizza_blaze_white_cheese_onions",
-  "textures": {
-    "layer4": "adjunct:item/pizza_mushrooms"
-  }
-}

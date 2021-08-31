@@ -1,0 +1,6 @@
+{
+  "parent": "adjunct:item/pizza/original_tomato_vegan_pepperoni",
+  "textures": {
+    "layer4": "adjunct:item/pizza_pineapple"
+  }
+}
