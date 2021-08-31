@@ -73,16 +73,19 @@ public class PizzaItem extends Item {
         } else {
             tooltip.add(new TranslationTextComponent(this.getRegistryName().toString() + ".uncooked").withStyle(TextFormatting.RED));
         }
-        if (p.has(Topping.CRUST)) {
-            tooltip.add(new TranslationTextComponent(this.getRegistryName().toString() + "." + Topping.CRUST.get() + "." + Topping.fromInt(Topping.CRUST, p.get(Topping.CRUST))).withStyle(TextFormatting.YELLOW));
-        } else {
-            tooltip.add(new TranslationTextComponent(this.getRegistryName().toString() + "." + Topping.CRUST.get() + ".none").withStyle(TextFormatting.YELLOW));
-        }
         int toppings = 0;
         for (Topping type : Topping.values()) {
-            if (p.has(type) && !type.equals(Topping.CRUST)) {
-                tooltip.add(new TranslationTextComponent(this.getRegistryName().toString() + "." + type.get() + "." + Topping.fromInt(type, p.get(type))).withStyle(TextFormatting.YELLOW));
+            if (p.has(type)) {
+                tooltip.add(new TranslationTextComponent(this.getRegistryName().toString() + "." + type.get() + "." + Topping.retrieve(p, type)).withStyle(TextFormatting.YELLOW));
+                if (!type.equals(Topping.CRUST)) {
+                    toppings++;
+                }
+            } else if (type.equals(Topping.CRUST)){
+                tooltip.add(new TranslationTextComponent(this.getRegistryName().toString() + "." + Topping.CRUST.get() + ".none").withStyle(TextFormatting.YELLOW));
             }
+        }
+        if (toppings == 0){
+            tooltip.add(new TranslationTextComponent(this.getRegistryName().toString() + "." + Topping.TOPPING.get() + ".none").withStyle(TextFormatting.YELLOW));
         }
     }
 }

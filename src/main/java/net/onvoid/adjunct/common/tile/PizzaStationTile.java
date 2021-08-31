@@ -68,17 +68,21 @@ public class PizzaStationTile extends TileEntity implements ICapabilityProvider 
                         return existing;
                     }
                 } else {
-                    if (existing.isEmpty() && Topping.is(stack, Topping.CRUST)) {
+                    if (existing.isEmpty()) {
+                        if (!Topping.is(stack, Topping.CRUST)){
+                            return stack;
+                        }
                         //Create new pizza
-                        this.stacks.set(slot, new Pizza(stack).getItemStack());
+                        this.stacks.set(slot, new Pizza(stack).buildStack());
                         onContentsChanged(slot);
                         stack.shrink(1);
                     } else {
-                        //Modify existing pizza
                         if (!(existing.getItem() instanceof PizzaItem)) {
                             return stack;
                         }
-                        this.stacks.set(slot, new Pizza(existing).addStack(stack).buildStack());
+                        //Modify existing pizza
+                        ItemStack modified = new Pizza(existing).addStack(stack).buildStack();
+                        this.stacks.set(slot, modified);
                         stack.shrink(1);
                         onContentsChanged(slot);
                     }

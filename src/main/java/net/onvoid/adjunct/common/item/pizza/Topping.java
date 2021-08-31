@@ -126,20 +126,36 @@ public enum Topping {
     }
 
     public static String fromInt(Topping type, int topping){
-        if (crusts.size() < topping){
-            return "";
-        }
         switch (type){
             case CRUST:
+                if (crusts.size() < topping){
+                    return "";
+                }
                 return crusts.get(topping - 1);
             case SAUCE:
+                if (sauces.size() < topping){
+                    return "";
+                }
                 return sauces.get(topping - 1);
             case CHEESE:
+                if (cheeses.size() < topping){
+                    return "";
+                }
                 return cheeses.get(topping - 1);
             case TOPPING:
+                if (toppings.size() < topping){
+                    return "";
+                }
                 return toppings.get(topping - 1);
         }
         return "";
+    }
+
+    public static String retrieve(Pizza p, Topping type){
+        if (!p.has(type)){
+            return "";
+        }
+       return Topping.fromInt(type, p.get(type));
     }
 
     public static ITag<Item> getTag(Topping type){

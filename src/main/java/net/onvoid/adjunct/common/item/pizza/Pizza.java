@@ -94,16 +94,20 @@ public class Pizza {
     }
 
     public Pizza add(Topping type, String topping){
-        nbt.putInt(type.get(), Topping.fromStr(type, topping));
-        this.update();
+        return this.add(type, Topping.fromStr(type, topping));
+    }
+
+    public Pizza addStack(Topping type, ItemStack topping){
+        if (type != Topping.CRUST && topping.getItem().is(Topping.getTag(type))){
+            this.add(type, Topping.getSpecificInt(type, topping));
+        }
         return this;
     }
 
     public Pizza addStack(ItemStack topping){
         for (Topping type : Topping.values()){
-            if (topping.getItem().is(Topping.getTag(type))){
-                this.add(type, Topping.fromInt(type, Topping.getSpecificInt(type, topping)));
-                break;
+            if (type != Topping.CRUST && topping.getItem().is(Topping.getTag(type))) {
+                this.add(type, Topping.getSpecificInt(type, topping));
             }
         }
         return this;
@@ -122,7 +126,7 @@ public class Pizza {
         if (!nbt.contains(type.get())){
             return false;
         }
-        // Checks that the Pizza's specific topping
+        // Checks if the Pizza has specific topping
         return nbt.getInt(type.get()) > 0;
     }
 
