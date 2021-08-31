@@ -1,6 +1,6 @@
 {
   "parent": "adjunct:item/pizza/blaze_tomato_vegan_ham",
   "textures": {
-    "layer4": "adjunct:item/pizza_olives"
+    "layer4": "adjunct:item/pizza/olives"
   }
 }

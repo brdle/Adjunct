@@ -1,6 +1,6 @@
 {
   "parent": "adjunct:item/pizza/gluten_free_tomato",
   "textures": {
-    "layer2": "adjunct:item/pizza_vegan"
+    "layer2": "adjunct:item/pizza/vegan"
   }
 }

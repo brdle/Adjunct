@@ -1,6 +1,6 @@
 {
   "parent": "adjunct:item/pizza/original_tomato_cheese",
   "textures": {
-    "layer3": "adjunct:item/pizza_peppers"
+    "layer3": "adjunct:item/pizza/peppers"
   }
 }

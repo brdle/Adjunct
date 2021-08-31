@@ -1,6 +1,6 @@
 {
   "parent": "adjunct:item/pizza/original_white_vegan_peppers",
   "textures": {
-    "layer4": "adjunct:item/pizza_pineapple"
+    "layer4": "adjunct:item/pizza/pineapple"
   }
 }

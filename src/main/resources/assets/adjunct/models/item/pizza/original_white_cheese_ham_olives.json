@@ -1,6 +1,6 @@
 {
   "parent": "adjunct:item/pizza/original_white_cheese_ham",
   "textures": {
-    "layer4": "adjunct:item/pizza_olives"
+    "layer4": "adjunct:item/pizza/olives"
   }
 }

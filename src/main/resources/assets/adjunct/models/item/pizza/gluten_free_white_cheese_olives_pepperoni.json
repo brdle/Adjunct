@@ -1,6 +1,6 @@
 {
   "parent": "adjunct:item/pizza/gluten_free_white_cheese_olives",
   "textures": {
-    "layer4": "adjunct:item/pizza_pepperoni"
+    "layer4": "adjunct:item/pizza/pepperoni"
   }
 }

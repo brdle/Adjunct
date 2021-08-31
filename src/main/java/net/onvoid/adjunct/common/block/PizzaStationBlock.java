@@ -107,7 +107,6 @@ public class PizzaStationBlock extends FlammableBlock implements IForgeBlock {
             IItemHandler handler = (IItemHandler) pizzaStation.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).orElse(null);
             if (handler != null) {
                 ItemStack retrieved = handler.getStackInSlot(0);
-                ((ServerPlayerEntity)player).sendMessage(new StringTextComponent(Topping.crusts.toString()), Util.NIL_UUID);
                 if (!retrieved.isEmpty()) {
                     retrieved = handler.extractItem(0, 1, false);
                     AdjunctHelper.giveToHand(player, player.getUsedItemHand(), retrieved);

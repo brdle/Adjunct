@@ -1,6 +1,6 @@
 {
   "parent": "adjunct:item/pizza/blaze_cheese",
   "textures": {
-    "layer2": "adjunct:item/pizza_onions"
+    "layer2": "adjunct:item/pizza/onions"
   }
 }

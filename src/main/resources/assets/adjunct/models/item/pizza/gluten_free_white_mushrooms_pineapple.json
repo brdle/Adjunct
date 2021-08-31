@@ -1,6 +1,6 @@
 {
   "parent": "adjunct:item/pizza/gluten_free_white_mushrooms",
   "textures": {
-    "layer3": "adjunct:item/pizza_pineapple"
+    "layer3": "adjunct:item/pizza/pineapple"
   }
 }

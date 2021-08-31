@@ -1,6 +1,6 @@
 {
   "parent": "adjunct:item/pizza/blaze_tomato_vegan_pepperoni",
   "textures": {
-    "layer4": "adjunct:item/pizza_peppers"
+    "layer4": "adjunct:item/pizza/peppers"
   }
 }

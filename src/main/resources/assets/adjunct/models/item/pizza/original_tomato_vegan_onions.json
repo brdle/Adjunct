@@ -1,6 +1,6 @@
 {
   "parent": "adjunct:item/pizza/original_tomato_vegan",
   "textures": {
-    "layer3": "adjunct:item/pizza_onions"
+    "layer3": "adjunct:item/pizza/onions"
   }
 }
