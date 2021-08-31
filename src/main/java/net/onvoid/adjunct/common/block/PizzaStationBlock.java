@@ -7,6 +7,7 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.item.BlockItemUseContext;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -19,6 +20,7 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.ActionResultType;
 import net.minecraft.util.Direction;
 import net.minecraft.util.Hand;
+import net.minecraft.util.Util;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.util.text.ITextComponent;
@@ -32,7 +34,10 @@ import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.ItemHandlerHelper;
 import net.onvoid.adjunct.AdjunctHelper;
+import net.onvoid.adjunct.common.item.pizza.Topping;
 import net.onvoid.adjunct.common.tile.PizzaStationTile;
+
+import java.util.UUID;
 
 public class PizzaStationBlock extends FlammableBlock implements IForgeBlock {
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
@@ -102,6 +107,7 @@ public class PizzaStationBlock extends FlammableBlock implements IForgeBlock {
             IItemHandler handler = (IItemHandler) pizzaStation.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).orElse(null);
             if (handler != null) {
                 ItemStack retrieved = handler.getStackInSlot(0);
+                ((ServerPlayerEntity)player).sendMessage(new StringTextComponent(Topping.crusts.toString()), Util.NIL_UUID);
                 if (!retrieved.isEmpty()) {
                     retrieved = handler.extractItem(0, 1, false);
                     AdjunctHelper.giveToHand(player, player.getUsedItemHand(), retrieved);

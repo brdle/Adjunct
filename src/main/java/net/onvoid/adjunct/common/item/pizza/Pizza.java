@@ -20,7 +20,7 @@ public class Pizza {
             this.pizzaStack = pizzaOrCrustStack;
             this.nbt = this.pizzaStack.getOrCreateTag();
             this.nbt.putBoolean("cooked", false);
-        } else if (pizzaOrCrustStack.getItem().is(Topping.getTag(Topping.CRUST))){
+        } else if (Topping.is(pizzaOrCrustStack, Topping.CRUST)){
             this.pizzaStack = new ItemStack(AdjunctItems.PIZZA_ITEM.get(), 1);
             this.nbt = this.pizzaStack.getOrCreateTag();
             this.nbt.putBoolean("cooked", false);
@@ -110,6 +110,7 @@ public class Pizza {
     }
 
     public boolean has(Topping type){
+        // Check if the Pizza has topping in 1 or 2 slot
         if (type.equals(Topping.TOPPING)){
             if (nbt.contains(Topping.TOPPING.get() + "1")){
                 return nbt.getInt(Topping.TOPPING.get() + "1") > 0;
@@ -117,9 +118,11 @@ public class Pizza {
                 return nbt.getInt(Topping.TOPPING.get() + "2") > 0;
             }
         }
+        // Checks if the Pizza has topping type data at all
         if (!nbt.contains(type.get())){
             return false;
         }
+        // Checks that the Pizza's specific topping
         return nbt.getInt(type.get()) > 0;
     }
 

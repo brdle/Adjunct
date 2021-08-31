@@ -172,6 +172,7 @@ public enum Topping {
         // ex: "data/adjunct/tags/items/pizza/cheese/cheese"
         // ex:                           ..."/cheese/vegan"
         // ex:                           ..."/sauce/tomato"
+        // PROBABLY NEEDS TO BE FIXED VVV
         return ItemTags.createOptional(new ResourceLocation(Adjunct.MODID, "pizza/" + type.get() + "/" + topping));
     }
 
