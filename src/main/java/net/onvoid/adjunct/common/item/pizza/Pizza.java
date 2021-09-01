@@ -87,6 +87,26 @@ public class Pizza {
         return nbt.getBoolean("cooked");
     }
 
+    public void orderToppings(){
+        boolean hasT1 = this.hasTopping(1);
+        boolean hasT2 = this.hasTopping(2);
+        if (hasT1 && hasT2){
+            int t1 = this.getTopping(1);
+            int t2 = this.getTopping(2);
+            if (t1 > t2){
+                this.nbt.putInt(Topping.TOPPING + "1", t2);
+                this.nbt.putInt(Topping.TOPPING + "2", t1);
+                this.update();
+                return;
+            }
+        } else if (hasT2){
+            this.nbt.putInt(Topping.TOPPING + "1", this.getTopping(2));
+            this.nbt.remove(Topping.TOPPING + "2");
+            this.update();
+            return;
+        }
+    }
+
     public Pizza add(Topping type, int topping){
         if (type.equals(Topping.TOPPING)){
             boolean hasT1 = this.hasTopping(1);
@@ -97,9 +117,11 @@ public class Pizza {
             } else if (hasT1 && !hasT2){
                 // Only topping 1
                 nbt.putInt(type.get() + "2", topping);
+                this.orderToppings();
             } else if (hasT2 && !hasT1){
                 // Only topping 2 (Shouldn't be possible, but...)
                 nbt.putInt(type.get() + "1", topping);
+                this.orderToppings();
             }
         } else if (!this.has(type)) {
             nbt.putInt(type.get(), topping);
