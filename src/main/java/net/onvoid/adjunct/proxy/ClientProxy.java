@@ -58,11 +58,11 @@ public class ClientProxy extends CommonProxy {
     public void setupClient(FMLClientSetupEvent e){
         e.enqueueWork(() ->
         {
-            for (Topping topping : Topping.values()){
+            for (String topping : Topping.allKeys){
                 ItemModelsProperties.register(AdjunctItems.PIZZA_ITEM.get(),
-                        new ResourceLocation(Adjunct.MODID, topping.get()), (stack, world, living) -> {
+                        new ResourceLocation(Adjunct.MODID, topping), (stack, world, living) -> {
                             CompoundNBT tag = stack.getOrCreateTag();
-                            return tag.getInt(topping.get());
+                            return tag.getInt(topping);
                         });
             }
             ItemModelsProperties.register(AdjunctItems.KNOWLEDGE_SYRINGE_ITEM.get(),

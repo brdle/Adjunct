@@ -88,26 +88,23 @@ public class Pizza {
     }
 
     public Pizza add(Topping type, int topping){
-        if (!this.has(type)) {
-            if (type.equals(Topping.TOPPING)) {
-                boolean hasT1 = this.hasTopping(1);
-                boolean hasT2 = this.hasTopping(2);
-                if (!hasT1 && !hasT2){
-                    // No toppings
-                    nbt.putInt(type.get() + "1", topping);
-                } else if (hasT1 && !hasT2){
-                    // Only topping 1
-                    nbt.putInt(type.get() + "2", topping);
-                } else if (hasT2 && !hasT1){
-                    // Only topping 2 (Shouldn't be possible, but...)
-                    nbt.putInt(type.get() + "1", topping);
-                }
-            } else {
-                nbt.putInt(type.get(), topping);
+        if (type.equals(Topping.TOPPING)){
+            boolean hasT1 = this.hasTopping(1);
+            boolean hasT2 = this.hasTopping(2);
+            if (!hasT1 && !hasT2){
+                // No toppings
+                nbt.putInt(type.get() + "1", topping);
+            } else if (hasT1 && !hasT2){
+                // Only topping 1
+                nbt.putInt(type.get() + "2", topping);
+            } else if (hasT2 && !hasT1){
+                // Only topping 2 (Shouldn't be possible, but...)
+                nbt.putInt(type.get() + "1", topping);
             }
-            this.update();
+        } else if (!this.has(type)) {
+            nbt.putInt(type.get(), topping);
         }
-        return this;
+        return this.build();
     }
 
     public Pizza add(Topping type, String topping){

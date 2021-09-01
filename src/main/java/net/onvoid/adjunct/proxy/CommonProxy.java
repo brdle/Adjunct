@@ -45,6 +45,7 @@ public class CommonProxy {
         AdjunctTiles.create();
         AdjunctItems.create();
         Topping.registerTags();
+        Topping.initKeys();
         TagHandler.init();
         registerListeners();
     }

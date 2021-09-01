@@ -25,6 +25,19 @@ public enum Topping {
     private static Tags.IOptionalNamedTag<Item> sauceTag = ItemTags.createOptional(new ResourceLocation(Adjunct.MODID, "pizza/sauce"));
     private static Tags.IOptionalNamedTag<Item> cheeseTag = ItemTags.createOptional(new ResourceLocation(Adjunct.MODID, "pizza/cheese"));
     private static Tags.IOptionalNamedTag<Item> toppingTag = ItemTags.createOptional(new ResourceLocation(Adjunct.MODID, "pizza/topping"));
+    public static ArrayList<String> allKeys = new ArrayList<String>();
+
+    public static void initKeys(){
+        for (Topping top : Topping.values()){
+            String name = top.get();
+            if (name.equals("topping")){
+                allKeys.add(top.get() + "1");
+                allKeys.add(top.get() + "2");
+            } else {
+                allKeys.add(top.get());
+            }
+        }
+    }
 
     public static ITag<Item> allTag(){
         return allTag;
