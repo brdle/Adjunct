@@ -76,7 +76,16 @@ public class PizzaItem extends Item {
         int toppings = 0;
         for (Topping type : Topping.values()) {
             if (p.has(type)) {
-                tooltip.add(new TranslationTextComponent(this.getRegistryName().toString() + "." + type.get() + "." + Topping.retrieve(p, type)).withStyle(TextFormatting.YELLOW));
+                if (type.equals(Topping.TOPPING)){
+                    if (p.hasTopping(1)){
+                        tooltip.add(new TranslationTextComponent(this.getRegistryName().toString() + "." + type.get() + "." + Topping.retrieveTopping(p, 1)).withStyle(TextFormatting.YELLOW));
+                    }
+                    if (p.hasTopping(2)){
+                        tooltip.add(new TranslationTextComponent(this.getRegistryName().toString() + "." + type.get() + "." + Topping.retrieveTopping(p, 2)).withStyle(TextFormatting.YELLOW));
+                    }
+                } else {
+                    tooltip.add(new TranslationTextComponent(this.getRegistryName().toString() + "." + type.get() + "." + Topping.retrieve(p, type)).withStyle(TextFormatting.YELLOW));
+                }
                 if (!type.equals(Topping.CRUST)) {
                     toppings++;
                 }

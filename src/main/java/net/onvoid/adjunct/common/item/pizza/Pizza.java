@@ -88,8 +88,25 @@ public class Pizza {
     }
 
     public Pizza add(Topping type, int topping){
-        nbt.putInt(type.get(), topping);
-        this.update();
+        if (!this.has(type)) {
+            if (type.equals(Topping.TOPPING)) {
+                boolean hasT1 = this.hasTopping(1);
+                boolean hasT2 = this.hasTopping(2);
+                if (!hasT1 && !hasT2){
+                    // No toppings
+                    nbt.putInt(type.get() + "1", topping);
+                } else if (hasT1 && !hasT2){
+                    // Only topping 1
+                    nbt.putInt(type.get() + "2", topping);
+                } else if (hasT2 && !hasT1){
+                    // Only topping 2 (Shouldn't be possible, but...)
+                    nbt.putInt(type.get() + "1", topping);
+                }
+            } else {
+                nbt.putInt(type.get(), topping);
+            }
+            this.update();
+        }
         return this;
     }
 
@@ -145,11 +162,25 @@ public class Pizza {
         return topping.equals(Topping.fromInt(type, nbt.getInt(type.get())));
     }
 
+    public boolean hasTopping(int number){
+        return this.nbt.contains(Topping.TOPPING.get() + number) && this.nbt.getInt(Topping.TOPPING.get() + number) > 0;
+    }
+
     public int get(Topping type){
         if (!this.has(type)){
             return -1;
         }
+        if (type.equals(Topping.TOPPING)){
+            return this.getTopping(1);
+        }
         return nbt.getInt(type.get());
+    }
+
+    public int getTopping(int number){
+        if (!nbt.contains(Topping.TOPPING.get() + number)){
+            return -1;
+        }
+        return nbt.getInt(Topping.TOPPING.get() + number);
     }
 
     public CompoundNBT getNbt() {

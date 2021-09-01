@@ -22,9 +22,6 @@ public enum Topping {
 
     private static Tags.IOptionalNamedTag<Item> allTag = ItemTags.createOptional(new ResourceLocation(Adjunct.MODID, "pizza"));
     private static Tags.IOptionalNamedTag<Item> crustTag = ItemTags.createOptional(new ResourceLocation(Adjunct.MODID, "pizza/crust"));
-    //private static Tags.IOptionalNamedTag<Item> originalTag = ItemTags.createOptional(new ResourceLocation(Adjunct.MODID, "pizza/crust/original"));
-    //private static Tags.IOptionalNamedTag<Item> glutenfreeTag = ItemTags.createOptional(new ResourceLocation(Adjunct.MODID, "pizza/crust/gluten_free"));
-    //private static Tags.IOptionalNamedTag<Item> blazeTag = ItemTags.createOptional(new ResourceLocation(Adjunct.MODID, "pizza/crust/blaze"));
     private static Tags.IOptionalNamedTag<Item> sauceTag = ItemTags.createOptional(new ResourceLocation(Adjunct.MODID, "pizza/sauce"));
     private static Tags.IOptionalNamedTag<Item> cheeseTag = ItemTags.createOptional(new ResourceLocation(Adjunct.MODID, "pizza/cheese"));
     private static Tags.IOptionalNamedTag<Item> toppingTag = ItemTags.createOptional(new ResourceLocation(Adjunct.MODID, "pizza/topping"));
@@ -158,6 +155,16 @@ public enum Topping {
        return Topping.fromInt(type, p.get(type));
     }
 
+    public static String retrieveTopping(Pizza p, int number){
+        if (!p.has(Topping.TOPPING)){
+            return "";
+        }
+        if (!p.hasTopping(number)){
+            return "";
+        }
+        return Topping.fromInt(Topping.TOPPING, p.getTopping(number));
+    }
+
     public static ITag<Item> getTag(Topping type){
         // ex: "data/adjunct/tags/items/pizza/cheese"
         // ex:                           ..."/sauce"
@@ -180,7 +187,7 @@ public enum Topping {
         // ex:                           ..."/cheese/vegan"
         // ex:                           ..."/sauce/tomato"
         // PROBABLY NEEDS TO BE FIXED VVV
-        return ItemTags.createOptional(new ResourceLocation(Adjunct.MODID, "pizza/" + type.get() + "/" + topping));
+        return ItemTags.getAllTags().getTagOrEmpty(new ResourceLocation(Adjunct.MODID, "pizza/" + type.get() + "/" + topping));
     }
 
     public static boolean is(ItemStack stack, Topping type){
