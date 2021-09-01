@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "conditions": [
+    {
+      "type": "forge:tag_empty",
+      "tag": "forge:salt"
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "adjunct:noodle_bowl"
+    },
+    {
+      "tag": "minecraft:cooked_chicken"
+    },
+    {
+      "item": "minecraft:water_bucket"
+    }
+  ],
+  "result": {
+    "item": "adjunct:chicken_ramen",
+    "count": 1
+  }
+}

@@ -20,4 +20,5 @@ public class AdjunctFoods {
     public static final Food MACARONI_AND_CHEESE = (new Food.Builder()).nutrition(6).saturationMod(0.4F).build();
     public static final Food EGGPLANT_PARMESAN = (new Food.Builder()).nutrition(8).saturationMod(0.6F).build();
     public static final Food HAM_AND_CHEESE_SANDWICH = (new Food.Builder()).nutrition(10).saturationMod(0.6F).build();
+    public static final Food CHICKEN_RAMEN = (new Food.Builder()).nutrition(10).saturationMod(0.5F).build();
 }

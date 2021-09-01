@@ -81,12 +81,13 @@ public class AdjunctItems {
     public static final RegistryObject<Item> BERRY_PIE_ITEM = ITEMS.register("berry_pie", () -> new Item(new Item.Properties().tab(AdjunctItems.TAB_ADJUNCT).food(AdjunctFoods.BERRY_PIE)));
     public static final RegistryObject<Item> PEANUT_BUTTER_AND_JELLY_SANDWICH_ITEM = ITEMS.register("peanut_butter_and_jelly_sandwich", () -> new Item(new Item.Properties().tab(AdjunctItems.TAB_ADJUNCT).food(AdjunctFoods.PEANUT_BUTTER_AND_JELLY_SANDWICH)));
     public static final RegistryObject<Item> CHEESY_BREAD_ITEM = ITEMS.register("cheesy_bread", () -> new Item(new Item.Properties().tab(AdjunctItems.TAB_ADJUNCT).food(AdjunctFoods.CHEESY_BREAD)));
-    public static final RegistryObject<Item> NOODLE_BOWL_ITEM = ITEMS.register("noodle_bowl", () -> new Item(new Item.Properties().tab(AdjunctItems.TAB_ADJUNCT).food(AdjunctFoods.NOODLE_BOWL).craftRemainder(Items.BOWL).stacksTo(8)));
-    public static final RegistryObject<Item> SPAGHETTI_ITEM = ITEMS.register("spaghetti", () -> new Item(new Item.Properties().tab(AdjunctItems.TAB_ADJUNCT).food(AdjunctFoods.SPAGHETTI).craftRemainder(Items.BOWL).stacksTo(8)));
-    public static final RegistryObject<Item> MACARONI_AND_CHEESE_ITEM = ITEMS.register("macaroni_and_cheese", () -> new Item(new Item.Properties().tab(AdjunctItems.TAB_ADJUNCT).food(AdjunctFoods.MACARONI_AND_CHEESE).craftRemainder(Items.BOWL).stacksTo(8)));
-    public static final RegistryObject<Item> EGGPLANT_PARMESAN_ITEM = ITEMS.register("eggplant_parmesan", () -> new Item(new Item.Properties().tab(AdjunctItems.TAB_ADJUNCT).food(AdjunctFoods.EGGPLANT_PARMESAN).craftRemainder(Items.BOWL)));
+    public static final RegistryObject<Item> NOODLE_BOWL_ITEM = ITEMS.register("noodle_bowl", () -> new Item(new Item.Properties().tab(AdjunctItems.TAB_ADJUNCT).food(AdjunctFoods.NOODLE_BOWL).stacksTo(8)));
+    public static final RegistryObject<Item> SPAGHETTI_ITEM = ITEMS.register("spaghetti", () -> new Item(new Item.Properties().tab(AdjunctItems.TAB_ADJUNCT).food(AdjunctFoods.SPAGHETTI).stacksTo(8)));
+    public static final RegistryObject<Item> MACARONI_AND_CHEESE_ITEM = ITEMS.register("macaroni_and_cheese", () -> new Item(new Item.Properties().tab(AdjunctItems.TAB_ADJUNCT).food(AdjunctFoods.MACARONI_AND_CHEESE).stacksTo(8)));
+    public static final RegistryObject<Item> EGGPLANT_PARMESAN_ITEM = ITEMS.register("eggplant_parmesan", () -> new Item(new Item.Properties().tab(AdjunctItems.TAB_ADJUNCT).food(AdjunctFoods.EGGPLANT_PARMESAN)));
     public static final RegistryObject<Item> HAM_SLICE_ITEM = ITEMS.register("ham_slice", () -> new Item(new Item.Properties().tab(AdjunctItems.TAB_ADJUNCT).food(AdjunctFoods.HAM_SLICE)));
     public static final RegistryObject<Item> HAM_AND_CHEESE_SANDWICH_ITEM = ITEMS.register("ham_and_cheese_sandwich", () -> new Item(new Item.Properties().tab(AdjunctItems.TAB_ADJUNCT).food(AdjunctFoods.HAM_AND_CHEESE_SANDWICH)));
+    public static final RegistryObject<Item> CHICKEN_RAMEN_ITEM = ITEMS.register("chicken_ramen", () -> new Item(new Item.Properties().tab(AdjunctItems.TAB_ADJUNCT).food(AdjunctFoods.CHICKEN_RAMEN).stacksTo(8)));
     public static final RegistryObject<Item> JUMP_ROCKET = ITEMS.register("jump_rocket", () -> new JumpRocketItem(new Item.Properties().tab(AdjunctItems.TAB_ADJUNCT).stacksTo(1)));
 
     public static final RegistryObject<BlockItem> PIZZA_STATION_ITEM = bi(AdjunctBlocks.PIZZA_STATION);
