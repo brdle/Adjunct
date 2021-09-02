@@ -140,7 +140,7 @@ public class PizzaOvenTile extends TileEntity implements ICapabilityProvider, IT
         if (handler != null && !handler.getStackInSlot(0).isEmpty()) {
             if (!this.getLevel().isClientSide()) {
                 if (this.getFuelTicks() > 0) {
-                    if (this.getPizzaTicks() == PizzaHandler.COOK_TIME * 40) {
+                    if (this.getPizzaTicks() == PizzaHandler.COOK_TIME * 60) {
                         if (this.isPizzaBurning()) {
                             handler.extractItem(0, 1, false);
                             this.setChanged();
