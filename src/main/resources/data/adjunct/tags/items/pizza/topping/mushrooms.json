@@ -3,11 +3,11 @@
   "values": [
     {
       "id": "minecraft:red_mushroom",
-      "required": true
+      "required": false
     },
     {
       "id": "minecraft:brown_mushroom",
-      "required": true
+      "required": false
     }
   ]
 }

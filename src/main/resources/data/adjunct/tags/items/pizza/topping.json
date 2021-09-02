@@ -3,31 +3,31 @@
   "values": [
     {
       "id": "#adjunct:pizza/topping/ham",
-      "required": false
+      "required": true
     },
     {
       "id": "#adjunct:pizza/topping/mushrooms",
-      "required": false
+      "required": true
     },
     {
       "id": "#adjunct:pizza/topping/olives",
-      "required": false
+      "required": true
     },
     {
       "id": "#adjunct:pizza/topping/onions",
-      "required": false
+      "required": true
     },
     {
       "id": "#adjunct:pizza/topping/pepperoni",
-      "required": false
+      "required": true
     },
     {
       "id": "#adjunct:pizza/topping/peppers",
-      "required": false
+      "required": true
     },
     {
       "id": "#adjunct:pizza/topping/pineapple",
-      "required": false
+      "required": true
     }
   ]
 }

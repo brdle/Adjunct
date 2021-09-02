@@ -54,6 +54,7 @@ public class PizzaStationTile extends TileEntity implements ICapabilityProvider 
                 if (stack.isEmpty()) {
                     return ItemStack.EMPTY;
                 }
+                Adjunct.LOGGER.info("A_B");
                 if (!isItemValid(slot, stack)) {
                     return stack;
                 }
@@ -88,9 +89,11 @@ public class PizzaStationTile extends TileEntity implements ICapabilityProvider 
                         }
                         //Modify existing pizza
                         ItemStack modified = new Pizza(existing).addStack(stack).buildStack();
-                        this.stacks.set(slot, modified);
-                        stack.shrink(1);
-                        onContentsChanged(slot);
+                        if (!modified.equals(existing, false)) {
+                            this.stacks.set(slot, modified);
+                            stack.shrink(1);
+                            onContentsChanged(slot);
+                        }
                     }
                 }
                 return stack;

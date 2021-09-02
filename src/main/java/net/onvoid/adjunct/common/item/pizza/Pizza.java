@@ -18,7 +18,7 @@ public class Pizza {
 
     public Pizza(ItemStack pizzaOrCrustStack){
         if (pizzaOrCrustStack.getItem() instanceof PizzaItem){
-            this.pizzaStack = pizzaOrCrustStack;
+            this.pizzaStack = pizzaOrCrustStack.copy();
             this.nbt = this.pizzaStack.getOrCreateTag();
             this.nbt.putBoolean("cooked", false);
         } else if (Topping.is(pizzaOrCrustStack, Topping.CRUST)){
