@@ -33,6 +33,7 @@ import net.minecraftforge.common.util.Constants;
 import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.ItemHandlerHelper;
+import net.onvoid.adjunct.Adjunct;
 import net.onvoid.adjunct.AdjunctHelper;
 import net.onvoid.adjunct.common.item.pizza.Topping;
 import net.onvoid.adjunct.common.tile.PizzaStationTile;
@@ -75,6 +76,7 @@ public class PizzaStationBlock extends FlammableBlock implements IForgeBlock {
             return ActionResultType.SUCCESS;
         }
         ItemStack insert = player.getItemInHand(hand);
+        Adjunct.LOGGER.info("BB");
         if (!insert.isEmpty() && insert.getCount() >= 1 && world.getBlockEntity(pos) instanceof PizzaStationTile) {
             PizzaStationTile pizzaStation = (PizzaStationTile) world.getBlockEntity(pos);
             IItemHandler handler = (IItemHandler) pizzaStation.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).orElse(null);
@@ -83,6 +85,7 @@ public class PizzaStationBlock extends FlammableBlock implements IForgeBlock {
                 if (insert.hasContainerItem()){
                     remaining = insert.getContainerItem();
                 }
+                Adjunct.LOGGER.info("BBB");
                 ItemStack retrieved = handler.insertItem(0, insert, false);
                 if (!player.isCreative()){
                     player.setItemInHand(hand, retrieved);

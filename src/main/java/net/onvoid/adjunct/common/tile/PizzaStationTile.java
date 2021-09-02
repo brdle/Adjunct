@@ -14,6 +14,7 @@ import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
+import net.onvoid.adjunct.Adjunct;
 import net.onvoid.adjunct.common.item.pizza.Pizza;
 import net.onvoid.adjunct.common.item.pizza.PizzaItem;
 import net.onvoid.adjunct.common.item.pizza.PizzaHandler;
@@ -49,14 +50,18 @@ public class PizzaStationTile extends TileEntity implements ICapabilityProvider 
             @Override
             public ItemStack insertItem(int slot, @Nonnull ItemStack stack, boolean simulate)
             {
+                Adjunct.LOGGER.info("A");
                 if (stack.isEmpty()) {
                     return ItemStack.EMPTY;
                 }
                 if (!isItemValid(slot, stack)) {
                     return stack;
                 }
+                Adjunct.LOGGER.info("AB");
                 validateSlotIndex(slot);
+                Adjunct.LOGGER.info("ABC");
                 ItemStack existing = this.stacks.get(slot);
+                Adjunct.LOGGER.info("AA");
                 if (stack.getItem() instanceof PizzaItem){
                     if (existing.isEmpty()){
                         this.stacks.set(slot, stack);
@@ -68,6 +73,7 @@ public class PizzaStationTile extends TileEntity implements ICapabilityProvider 
                         return existing;
                     }
                 } else {
+                    Adjunct.LOGGER.info("AAA");
                     if (existing.isEmpty()) {
                         if (!Topping.is(stack, Topping.CRUST)){
                             return stack;

@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "adjunct:tomato_sauce_bottle"
+    {
+      "id": "adjunct:tomato_sauce_bottle",
+      "required": false
+    }
   ]
 }

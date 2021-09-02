@@ -2,6 +2,7 @@ package net.onvoid.adjunct.common.item.pizza;
 
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.CompoundNBT;
+import net.onvoid.adjunct.Adjunct;
 import net.onvoid.adjunct.common.item.AdjunctItems;
 
 public class Pizza {
@@ -72,36 +73,34 @@ public class Pizza {
     }
 
     public Pizza cooked(){
-        nbt.putBoolean("cooked", true);
+        this.nbt.putBoolean("cooked", true);
         this.update();
         return this;
     }
 
     public Pizza uncooked(){
-        nbt.putBoolean("cooked", false);
+        this.nbt.putBoolean("cooked", false);
         this.update();
         return this;
     }
 
     public boolean isCooked(){
-        return nbt.getBoolean("cooked");
+        return this.nbt.getBoolean("cooked");
     }
 
     public void orderToppings(){
-        boolean hasT1 = this.hasTopping(1);
-        boolean hasT2 = this.hasTopping(2);
-        if (hasT1 && hasT2){
-            int t1 = this.getTopping(1);
-            int t2 = this.getTopping(2);
+        int t1 = this.getTopping(1);
+        int t2 = this.getTopping(2);
+        if (t1 > 0 && t2 > 0){
             if (t1 > t2){
-                this.nbt.putInt(Topping.TOPPING + "1", t2);
-                this.nbt.putInt(Topping.TOPPING + "2", t1);
+                this.nbt.putInt(Topping.TOPPING.get() + "1", t2);
+                this.nbt.putInt(Topping.TOPPING.get() + "2", t1);
                 this.update();
                 return;
             }
-        } else if (hasT2){
-            this.nbt.putInt(Topping.TOPPING + "1", this.getTopping(2));
-            this.nbt.remove(Topping.TOPPING + "2");
+        } else if (t2 > 0){
+            this.nbt.putInt(Topping.TOPPING.get() + "1", this.getTopping(2));
+            this.nbt.remove(Topping.TOPPING.get() + "2");
             this.update();
             return;
         }
@@ -113,18 +112,18 @@ public class Pizza {
             boolean hasT2 = this.hasTopping(2);
             if (!hasT1 && !hasT2){
                 // No toppings
-                nbt.putInt(type.get() + "1", topping);
+                this.nbt.putInt(type.get() + "1", topping);
             } else if (hasT1 && !hasT2){
                 // Only topping 1
-                nbt.putInt(type.get() + "2", topping);
+                this.nbt.putInt(type.get() + "2", topping);
                 this.orderToppings();
             } else if (hasT2 && !hasT1){
                 // Only topping 2 (Shouldn't be possible, but...)
-                nbt.putInt(type.get() + "1", topping);
+                this.nbt.putInt(type.get() + "1", topping);
                 this.orderToppings();
             }
         } else if (!this.has(type)) {
-            nbt.putInt(type.get(), topping);
+            this.nbt.putInt(type.get(), topping);
         }
         return this.build();
     }
@@ -142,7 +141,8 @@ public class Pizza {
 
     public Pizza addStack(ItemStack topping){
         for (Topping type : Topping.values()){
-            if (type != Topping.CRUST && topping.getItem().is(Topping.getTag(type))) {
+            if (type != Topping.CRUST && Topping.is(topping, type)) {
+                Adjunct.LOGGER.info(Topping.getSpecificInt(type, topping));
                 this.add(type, Topping.getSpecificInt(type, topping));
             }
         }

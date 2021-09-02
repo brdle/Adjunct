@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "adjunct:ham_slice"
+    {
+      "id": "adjunct:ham_slice",
+      "required": false
+    }
   ]
 }

@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "adjunct:original_dough"
+    {
+      "id": "adjunct:original_dough",
+      "required": false
+    }
   ]
 }

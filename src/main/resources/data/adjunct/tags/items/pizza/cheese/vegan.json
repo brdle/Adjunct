@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "adjunct:vegan_cheese"
+    {
+      "id": "adjunct:vegan_cheese",
+      "required": false
+    }
   ]
 }

@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "adjunct:blaze_dough"
+    {
+      "id": "adjunct:blaze_dough",
+      "required": false
+    }
   ]
 }

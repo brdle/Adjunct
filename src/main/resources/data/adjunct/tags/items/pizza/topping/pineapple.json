@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "adjunct:pineapple"
+    {
+      "id": "adjunct:pineapple",
+      "required": false
+    }
   ]
 }

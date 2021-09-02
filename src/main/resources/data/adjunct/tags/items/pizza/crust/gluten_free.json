@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "adjunct:gluten_free_dough"
+    {
+      "id": "adjunct:gluten_free_dough",
+      "required": false
+    }
   ]
 }
