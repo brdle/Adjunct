@@ -113,11 +113,11 @@ public class Pizza {
             if (!hasT1 && !hasT2){
                 // No toppings
                 this.nbt.putInt(type.get() + "1", topping);
-            } else if (hasT1 && !hasT2){
+            } else if (hasT1 && !hasT2 && this.getTopping(1) != topping){
                 // Only topping 1
                 this.nbt.putInt(type.get() + "2", topping);
                 this.orderToppings();
-            } else if (hasT2 && !hasT1){
+            } else if (hasT2 && !hasT1 && this.getTopping(2) != topping){
                 // Only topping 2 (Shouldn't be possible, but...)
                 this.nbt.putInt(type.get() + "1", topping);
                 this.orderToppings();

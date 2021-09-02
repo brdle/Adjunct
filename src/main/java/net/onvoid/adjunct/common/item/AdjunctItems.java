@@ -28,7 +28,7 @@ public class AdjunctItems {
     public static final ItemGroup TAB_ADJUNCT = new ItemGroup("adjunct") {
         @OnlyIn(Dist.CLIENT)
         public ItemStack makeIcon() {
-            return new Pizza().add(Topping.CRUST, 1).add(Topping.SAUCE, 1).add(Topping.CHEESE, 1).add(Topping.TOPPING, 1).bakeStack();
+            return new Pizza().add(Topping.CRUST, "original").add(Topping.SAUCE, "tomato").add(Topping.CHEESE, "cheese").add(Topping.TOPPING, "pepperoni").bakeStack();
         }
 
         @OnlyIn(Dist.CLIENT)
