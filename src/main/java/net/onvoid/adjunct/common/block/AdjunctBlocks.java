@@ -67,6 +67,7 @@ public class AdjunctBlocks {
     public static final RegistryObject<Block> GRAY_CAT_BED = BLOCKS.register("gray_cat_bed", () -> new CatBedBlock(AbstractBlock.Properties.of(Material.WOOL, MaterialColor.COLOR_GRAY).strength(1.0F).sound(SoundType.WOOL).noOcclusion(), DyeColor.GRAY));
     public static final RegistryObject<Block> PURPLE_CAT_BED = BLOCKS.register("purple_cat_bed", () -> new CatBedBlock(AbstractBlock.Properties.of(Material.WOOL, MaterialColor.COLOR_PURPLE).strength(1.0F).sound(SoundType.WOOL).noOcclusion(), DyeColor.PURPLE));
     public static final RegistryObject<Block> OLIVE_CAT_BED = BLOCKS.register("olive_cat_bed", () -> new CatBedBlock(AbstractBlock.Properties.of(Material.WOOD, MaterialColor.WOOD).strength(2.0F).sound(SoundType.WOOD).noOcclusion(), null));
+    public static final RegistryObject<Block> DISPLAY_CLOTH = BLOCKS.register("display_cloth", () -> new DisplayClothBlock(AbstractBlock.Properties.of(Material.CLOTH_DECORATION, MaterialColor.SNOW).strength(0.1F).sound(SoundType.WOOL)));
 
     private static boolean never (BlockState state, IBlockReader reader, BlockPos pos) {
         return false;
