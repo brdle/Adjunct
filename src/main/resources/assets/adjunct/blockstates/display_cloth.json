@@ -1,7 +1,19 @@
 {
   "variants": {
-    "": {
+    "facing=east": {
+      "model": "adjunct:block/display_cloth",
+      "y": 90
+    },
+    "facing=north": {
       "model": "adjunct:block/display_cloth"
+    },
+    "facing=south": {
+      "model": "adjunct:block/display_cloth",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "adjunct:block/display_cloth",
+      "y": 270
     }
   }
 }

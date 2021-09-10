@@ -27,6 +27,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLLoadCompleteEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.onvoid.adjunct.Adjunct;
+import net.onvoid.adjunct.client.model.DisplayClothTileRenderer;
 import net.onvoid.adjunct.common.item.pizza.Topping;
 import net.onvoid.adjunct.compat.quark.AdjunctVariantChestTileEntityRenderer;
 import net.onvoid.adjunct.client.model.PizzaOvenTileRenderer;
@@ -88,6 +89,7 @@ public class ClientProxy extends CommonProxy {
         ClientRegistry.bindTileEntityRenderer(AdjunctTiles.OLIVE_SIGN.get(), SignTileEntityRenderer::new);
         ClientRegistry.bindTileEntityRenderer(AdjunctTiles.OLIVE_CHEST.get(), AdjunctVariantChestTileEntityRenderer::new);
         ClientRegistry.bindTileEntityRenderer(AdjunctTiles.OLIVE_TRAPPED_CHEST.get(), AdjunctVariantChestTileEntityRenderer::new);
+        ClientRegistry.bindTileEntityRenderer(AdjunctTiles.DISPLAY_CLOTH_TILE.get(), DisplayClothTileRenderer::new);
         Atlases.addWoodType(AdjunctBlocks.OLIVE);
         RenderTypeLookup.setRenderLayer(AdjunctBlocks.PIZZA_OVEN.get(), RenderType.cutout());
         RenderTypeLookup.setRenderLayer(AdjunctBlocks.BLACK_CAT_BED.get(), RenderType.cutout());
@@ -111,6 +113,7 @@ public class ClientProxy extends CommonProxy {
         RenderTypeLookup.setRenderLayer(AdjunctBlocks.OLIVE_SAPLING.get(), RenderType.cutout());
         RenderTypeLookup.setRenderLayer(AdjunctBlocks.DECORATIVE_PINK_DOOR.get(), RenderType.cutout());
         RenderTypeLookup.setRenderLayer(AdjunctBlocks.DECORATIVE_PINK_GLASS.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(AdjunctBlocks.DISPLAY_CLOTH.get(), RenderType.cutout());
         //if (ModList.get().isLoaded("quark")) {
             RenderTypeLookup.setRenderLayer(AdjunctQuarkBlocks.OLIVE_LADDER.get(), RenderType.cutout());
             RenderTypeLookup.setRenderLayer(AdjunctQuarkBlocks.OLIVE_LEAF_CARPET.get(), RenderType.cutoutMipped());

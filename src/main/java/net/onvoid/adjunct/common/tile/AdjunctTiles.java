@@ -19,6 +19,7 @@ public class AdjunctTiles {
     public static final RegistryObject<TileEntityType<OliveSignTileEntity>> OLIVE_SIGN = TILES.register("olive_sign", () -> TileEntityType.Builder.of(OliveSignTileEntity::new, AdjunctBlocks.OLIVE_WALL_SIGN.get(), AdjunctBlocks.OLIVE_SIGN.get()).build(null));
     public static final RegistryObject<TileEntityType<AdjunctVariantChestTileEntity>> OLIVE_CHEST = TILES.register("olive_chest", () -> TileEntityType.Builder.of(AdjunctVariantChestTileEntity::new, AdjunctQuarkBlocks.OLIVE_CHEST.get()).build(null));
     public static final RegistryObject<TileEntityType<AdjunctVariantTrappedChestTileEntity>> OLIVE_TRAPPED_CHEST = TILES.register("olive_trapped_chest", () -> TileEntityType.Builder.of(AdjunctVariantTrappedChestTileEntity::new, AdjunctQuarkBlocks.OLIVE_TRAPPED_CHEST.get()).build(null));
+    public static final RegistryObject<TileEntityType<DisplayClothTile>> DISPLAY_CLOTH_TILE = TILES.register("display_cloth", () -> TileEntityType.Builder.of(DisplayClothTile::new, AdjunctBlocks.DISPLAY_CLOTH.get()).build(null));
 
     public static void create(){
         TILES.register(FMLJavaModLoadingContext.get().getModEventBus());
