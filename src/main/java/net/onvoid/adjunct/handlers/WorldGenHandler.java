@@ -10,18 +10,31 @@ import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.onvoid.adjunct.common.block.tree.OliveTree;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class WorldGenHandler {
     public static ConfiguredFeature<?, ?> PATCH_PINEAPPLE_BUSH;
     public static ConfiguredFeature<?, ?> PATCH_PINEAPPLE_SPARSE;
     public static ConfiguredFeature<?, ?> PATCH_PINEAPPLE_DECORATED;
 
+    public static ArrayList<String> PINEAPPLE_BIOMESOP = (ArrayList<String>) Arrays.asList(
+            "rainforest");
+
+    public static ArrayList<String> OLIVE_TREE_BIOMESOP = (ArrayList<String>) Arrays.asList(
+            "woodland");
+
     @SubscribeEvent
     public void biomeLoading(BiomeLoadingEvent e){
-        if (e.getCategory().equals(Biome.Category.JUNGLE)){
+        // PINEAPPLE GENERATION
+        if (e.getCategory().equals(Biome.Category.JUNGLE) || e.getCategory().equals(Biome.Category.SAVANNA) ||
+        PINEAPPLE_BIOMESOP.contains(e.getCategory().getName())){
             e.getGeneration().addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, PATCH_PINEAPPLE_BUSH);
             e.getGeneration().addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, PATCH_PINEAPPLE_SPARSE);
             e.getGeneration().addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, PATCH_PINEAPPLE_DECORATED);
-        } else if (e.getCategory().equals(Biome.Category.SAVANNA)){
+        // OLIVE TREE GENERATION
+        } else if (e.getCategory().equals(Biome.Category.FOREST) || e.getCategory().equals(Biome.Category.SAVANNA) ||
+        OLIVE_TREE_BIOMESOP.contains(e.getCategory().getName())){
             e.getGeneration().addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, OliveTree.OLIVE);
             e.getGeneration().addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, OliveTree.OLIVE_BEES_0002);
             e.getGeneration().addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, OliveTree.OLIVE_BEES_002);
