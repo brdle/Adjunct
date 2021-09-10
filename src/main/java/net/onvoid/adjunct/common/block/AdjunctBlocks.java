@@ -24,7 +24,7 @@ public class AdjunctBlocks {
     public static final RegistryObject<Block> PIZZA_STATION = BLOCKS.register("pizza_station", () -> new PizzaStationBlock(Material.WOOD, MaterialColor.COLOR_BROWN, 1.75F, 2.5F, SoundType.WOOD, ToolType.AXE, 5, 5));
     public static final RegistryObject<Block> PIZZA_OVEN = BLOCKS.register("pizza_oven", () -> new PizzaOvenBlock(AbstractBlock.Properties.of(Material.STONE, MaterialColor.COLOR_RED).strength(1.75F, 6.0F).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE)));
     public static final RegistryObject<Block> PINEAPPLE_BUSH = BLOCKS.register("pineapple_bush", () -> new PineappleBushBlock(Material.PLANT, ToolType.HOE, 0.0F, SoundType.SWEET_BERRY_BUSH));
-    public static final RegistryObject<Block> PINEAPPLE_UPSIDE_DOWN_CAKE = BLOCKS.register("pineapple_upside_down_cake", () -> new CakeBlockA(AbstractBlock.Properties.copy(Blocks.CAKE), 20, 1.0f));
+    public static final RegistryObject<Block> PINEAPPLE_UPSIDE_DOWN_CAKE = BLOCKS.register("pineapple_upside_down_cake", () -> new CakeBlockA(AbstractBlock.Properties.copy(Blocks.CAKE), 3, 1.1f));
 
     public static final RegistryObject<Block> DECORATIVE_PINK_DOOR = BLOCKS.register("decorative_pink_door", () -> new DoorBlock(AbstractBlock.Properties.of(Material.WOOD, MaterialColor.COLOR_PINK).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
     public static final RegistryObject<Block> EGG_CRATE = BLOCKS.register("egg_crate", () -> new Block(AbstractBlock.Properties.of(Material.WOOD, MaterialColor.SAND).strength(2.0F, 3.0F).sound(SoundType.WOOD).harvestTool(ToolType.AXE)));
