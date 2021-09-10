@@ -11,6 +11,7 @@ import net.minecraft.client.renderer.Atlases;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.tileentity.SignTileEntityRenderer;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.passive.CatEntity;
 import net.minecraft.entity.passive.SheepEntity;
 import net.minecraft.item.BlockItem;
@@ -33,6 +34,7 @@ import net.minecraft.world.gen.trunkplacer.StraightTrunkPlacer;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.client.event.RenderGameOverlayEvent;
+import net.minecraftforge.event.AttachCapabilitiesEvent;
 import net.minecraftforge.event.entity.EntityJoinWorldEvent;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -40,6 +42,7 @@ import net.minecraftforge.fml.client.registry.ClientRegistry;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.onvoid.adjunct.Adjunct;
+import net.onvoid.adjunct.AdjunctHelper;
 import net.onvoid.adjunct.client.model.PizzaOvenTileRenderer;
 import net.onvoid.adjunct.client.model.PizzaStationTileRenderer;
 import net.onvoid.adjunct.common.block.AdjunctBlocks;
@@ -68,24 +71,15 @@ public class EventHandler {
     }
 
     @SubscribeEvent
-    public void onRightClick(PlayerInteractEvent.EntityInteract e){
-        if (e.getEntity() instanceof SheepEntity && e.getPlayer().getItemInHand(e.getHand()).getContainerItem().getItem().equals(Items.BUCKET)){
-            SheepEntity sheep = (SheepEntity) e.getEntity();
-            CompoundNBT nbt = sheep.serializeNBT();
-            int currentDay = (int) (e.getWorld().getGameTime() / 24000);
-            if (nbt.contains("milked")){
-                int lastMilked = nbt.getInt("milked");
-                if (currentDay > lastMilked){
-                    e.getPlayer().setItemInHand(e.getHand(), new ItemStack(Items.MILK_BUCKET));
-                    nbt.putInt("milked", currentDay);
-                    sheep.save(nbt);
+    public void onRightClick(PlayerInteractEvent.EntityInteract e) {
+        if (e.getTarget() instanceof SheepEntity && !e.getWorld().isClientSide()) {
+            if (e.getPlayer().getItemInHand(e.getHand()).getItem().equals(Items.BUCKET)) {
+                SheepEntity sheep = (SheepEntity) e.getTarget();
+                if (!sheep.isBaby() && sheep.isAlive()) {
+                    e.getPlayer().getItemInHand(e.getHand()).shrink(1);
+                    AdjunctHelper.giveToHand(e.getPlayer(), e.getHand(), new ItemStack(Items.MILK_BUCKET));
                     return;
                 }
-            } else {
-                e.getPlayer().setItemInHand(e.getHand(), new ItemStack(Items.MILK_BUCKET));
-                nbt.putInt("milked", currentDay);
-                sheep.save(nbt);
-                return;
             }
         }
     }
