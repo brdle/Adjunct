@@ -38,6 +38,7 @@ public class CommonProxy {
     public void start() {
         PizzaHandler.createTags();
         AdjunctBlocks.create();
+        // Practice is to register all blocks and items
         //if (ModList.get().isLoaded("quark")){
             AdjunctQuarkBlocks.create();
             AdjunctQuarkItems.create();
