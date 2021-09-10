@@ -12,8 +12,11 @@ import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.tileentity.SignTileEntityRenderer;
 import net.minecraft.entity.passive.CatEntity;
+import net.minecraft.entity.passive.SheepEntity;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.ItemModelsProperties;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.util.ResourceLocation;
@@ -31,6 +34,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.client.event.RenderGameOverlayEvent;
 import net.minecraftforge.event.entity.EntityJoinWorldEvent;
+import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.client.registry.ClientRegistry;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -60,6 +64,29 @@ public class EventHandler {
         if (e.getEntity() instanceof CatEntity){
             CatEntity cat = (CatEntity) e.getEntity();
             cat.goalSelector.addGoal(5, new CatLieOnCatBedGoal(cat, 1.1D, 10));
+        }
+    }
+
+    @SubscribeEvent
+    public void onRightClick(PlayerInteractEvent.EntityInteract e){
+        if (e.getEntity() instanceof SheepEntity && e.getPlayer().getItemInHand(e.getHand()).getContainerItem().getItem().equals(Items.BUCKET)){
+            SheepEntity sheep = (SheepEntity) e.getEntity();
+            CompoundNBT nbt = sheep.serializeNBT();
+            int currentDay = (int) (e.getWorld().getGameTime() / 24000);
+            if (nbt.contains("milked")){
+                int lastMilked = nbt.getInt("milked");
+                if (currentDay > lastMilked){
+                    e.getPlayer().setItemInHand(e.getHand(), new ItemStack(Items.MILK_BUCKET));
+                    nbt.putInt("milked", currentDay);
+                    sheep.save(nbt);
+                    return;
+                }
+            } else {
+                e.getPlayer().setItemInHand(e.getHand(), new ItemStack(Items.MILK_BUCKET));
+                nbt.putInt("milked", currentDay);
+                sheep.save(nbt);
+                return;
+            }
         }
     }
 }
