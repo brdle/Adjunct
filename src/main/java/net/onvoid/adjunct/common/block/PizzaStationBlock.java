@@ -73,10 +73,9 @@ public class PizzaStationBlock extends FlammableBlock implements IForgeBlock {
     @Override
     public ActionResultType use(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockRayTraceResult hit) {
         if (world.isClientSide()) {
-            return ActionResultType.SUCCESS;
+            return ActionResultType.CONSUME;
         }
         ItemStack insert = player.getItemInHand(hand);
-        Adjunct.LOGGER.info("BB");
         if (!insert.isEmpty() && insert.getCount() >= 1 && world.getBlockEntity(pos) instanceof PizzaStationTile) {
             PizzaStationTile pizzaStation = (PizzaStationTile) world.getBlockEntity(pos);
             IItemHandler handler = (IItemHandler) pizzaStation.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).orElse(null);
@@ -85,7 +84,6 @@ public class PizzaStationBlock extends FlammableBlock implements IForgeBlock {
                 if (insert.hasContainerItem()){
                     remaining = insert.getContainerItem();
                 }
-                Adjunct.LOGGER.info("BBB");
                 ItemStack retrieved = handler.insertItem(0, insert, false);
                 if (!player.isCreative()){
                     player.setItemInHand(hand, retrieved);

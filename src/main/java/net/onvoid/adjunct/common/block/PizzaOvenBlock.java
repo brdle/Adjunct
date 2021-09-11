@@ -68,7 +68,7 @@ public class PizzaOvenBlock extends Block implements IForgeBlock {
     @Override
     public ActionResultType use(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockRayTraceResult hit) {
         if (world.isClientSide()) {
-            return ActionResultType.SUCCESS;
+            return ActionResultType.CONSUME;
         }
         ItemStack insert = player.getItemInHand(hand);
         TileEntity entity = world.getBlockEntity(pos);
