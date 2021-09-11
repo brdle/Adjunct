@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "adjunct:item/conductive_alloy_ingot"
+  }
+}

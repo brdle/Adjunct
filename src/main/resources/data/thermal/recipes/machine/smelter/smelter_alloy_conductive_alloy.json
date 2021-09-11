@@ -1,0 +1,33 @@
+{
+  "type": "thermal:smelter",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thermal"
+    }
+  ],
+  "ingredients": [
+    {
+      "value": [
+        {
+          "tag": "forge:ingots/copper"
+        },
+        {
+          "tag": "forge:dusts/copper"
+        }
+      ],
+      "count": 3
+    },
+    {
+      "tag": "forge:dusts/redstone",
+      "count": 4
+    }
+  ],
+  "result": [
+    {
+      "item": "adjunct:conductive_alloy_ingot",
+      "count": 3
+    }
+  ],
+  "energy": 12000
+}

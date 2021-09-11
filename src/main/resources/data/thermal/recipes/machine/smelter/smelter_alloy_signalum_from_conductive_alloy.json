@@ -1,0 +1,37 @@
+{
+  "type": "thermal:smelter",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thermal"
+    }
+  ],
+  "ingredients": [
+    {
+      "value": [
+        {
+          "tag": "forge:ingots/conductive_alloy"
+        }
+      ],
+      "count": 3
+    },
+    {
+      "value": [
+        {
+          "tag": "forge:ingots/silver"
+        },
+        {
+          "tag": "forge:dusts/silver"
+        }
+      ],
+      "count": 1
+    }
+  ],
+  "result": [
+    {
+      "item": "thermal:signalum_ingot",
+      "count": 4
+    }
+  ],
+  "energy": 12000
+}

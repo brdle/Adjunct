@@ -89,6 +89,8 @@ public class AdjunctItems {
     public static final RegistryObject<Item> HAM_AND_CHEESE_SANDWICH_ITEM = ITEMS.register("ham_and_cheese_sandwich", () -> new Item(new Item.Properties().tab(AdjunctItems.TAB_ADJUNCT).food(AdjunctFoods.HAM_AND_CHEESE_SANDWICH)));
     public static final RegistryObject<Item> CHICKEN_RAMEN_ITEM = ITEMS.register("chicken_ramen", () -> new Item(new Item.Properties().tab(AdjunctItems.TAB_ADJUNCT).food(AdjunctFoods.CHICKEN_RAMEN).stacksTo(8)));
     public static final RegistryObject<Item> JUMP_ROCKET = ITEMS.register("jump_rocket", () -> new JumpRocketItem(new Item.Properties().tab(AdjunctItems.TAB_ADJUNCT).stacksTo(1)));
+    public static final RegistryObject<Item> CONDUCTIVE_ALLOY_INGOT = ITEMS.register("conductive_alloy_ingot", () -> new Item(new Item.Properties().tab(AdjunctItems.TAB_ADJUNCT)));
+
 
     public static final RegistryObject<BlockItem> PIZZA_STATION_ITEM = bi(AdjunctBlocks.PIZZA_STATION);
     public static final RegistryObject<BlockItem> PIZZA_OVEN_ITEM = bi(AdjunctBlocks.PIZZA_OVEN);
