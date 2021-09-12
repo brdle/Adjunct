@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "astralsorcery:marble_raw",
+      "required": false
+    },
+    {
+      "id": "chisel:marble/raw",
+      "required": false
+    }
+  ]
+}

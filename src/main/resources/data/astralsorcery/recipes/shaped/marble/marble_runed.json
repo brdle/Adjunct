@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "MCM"
+  ],
+  "key": {
+    "M": {
+      "tag": "forge:stone/marble/raw"
+    },
+    "C": {
+      "item": "astralsorcery:marble_chiseled"
+    }
+  },
+  "result": {
+    "item": "astralsorcery:marble_runed",
+    "count": 3
+  }
+}

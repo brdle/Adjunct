@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "tag": "forge:stone/marble/raw"
+  },
+  "result": "astralsorcery:marble_chiseled",
+  "count": 1
+}
