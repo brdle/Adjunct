@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "minecraft:saplings"
+    },
+    {
+      "tag": "forge:slimeballs"
+    },
+    {
+      "tag": "forge:crops/olive"
+    }
+  ],
+  "result": {
+    "item": "adjunct:olive_sapling",
+    "count": 1
+  }
+}
