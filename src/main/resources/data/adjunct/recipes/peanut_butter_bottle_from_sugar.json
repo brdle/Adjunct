@@ -5,11 +5,17 @@
       "item": "minecraft:glass_bottle"
     },
     {
-      "tag": "forge:crops/olive"
+      "tag": "forge:crops/peanut"
+    },
+    {
+      "tag": "forge:sugar"
+    },
+    {
+      "tag": "forge:sugar"
     }
   ],
   "result": {
-    "item": "adjunct:olive_oil_bottle",
+    "item": "adjunct:peanut_butter_bottle",
     "count": 1
   }
 }
