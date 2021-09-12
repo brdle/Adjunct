@@ -1,0 +1,20 @@
+{
+  "type": "botania:mana_infusion",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "botania"
+    }
+  ],
+  "input": {
+    "tag": "forge:stone/marble/raw"
+  },
+  "output": {
+    "item": "minecraft:sandstone"
+  },
+  "mana": 240,
+  "catalyst": {
+    "type": "block",
+    "block": "botania:alchemy_catalyst"
+  }
+}
