@@ -1,0 +1,24 @@
+{
+  "type": "botania:mana_infusion",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "botania"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thermal"
+    }
+  ],
+  "input": {
+    "tag": "forge:crops/wheat"
+  },
+  "output": {
+    "item": "thermal:barley"
+  },
+  "mana": 240,
+  "catalyst": {
+    "type": "block",
+    "block": "botania:alchemy_catalyst"
+  }
+}
