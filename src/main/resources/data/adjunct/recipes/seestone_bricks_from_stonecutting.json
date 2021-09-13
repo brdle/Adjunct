@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "adjunct:seestone"
+  },
+  "result": "adjunct:seestone_bricks",
+  "count": 1
+}

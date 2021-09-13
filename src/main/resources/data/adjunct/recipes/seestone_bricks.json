@@ -1,8 +1,16 @@
 {
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "adjunct:seestone"
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "adjunct:seestone"
+    }
   },
-  "result": "adjunct:seestone_bricks",
-  "count": 1
+  "result": {
+    "item": "adjunct:seestone_bricks",
+    "count": 4
+  }
 }
