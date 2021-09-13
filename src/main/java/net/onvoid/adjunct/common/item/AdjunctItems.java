@@ -136,6 +136,7 @@ public class AdjunctItems {
     public static final RegistryObject<BlockItem> DISPLAY_CLOTH_ITEM = bi(AdjunctBlocks.DISPLAY_CLOTH);
     public static final RegistryObject<BlockItem> SEESTONE_ITEM = bi(AdjunctBlocks.SEESTONE);
     public static final RegistryObject<BlockItem> SEESTONE_BRICKS_ITEM = bi(AdjunctBlocks.SEESTONE_BRICKS);
+    public static final RegistryObject<BlockItem> PINK_SEESTONE_ITEM = bi(AdjunctBlocks.PINK_SEESTONE);
 
     public static RegistryObject<BlockItem> bi(RegistryObject<Block> blockObject){
         return ITEMS.register(blockObject.getId().getPath(), () -> new BlockItemA(blockObject.get()));

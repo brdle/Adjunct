@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "adjunct:pink_seestone"
+  },
+  "result": "adjunct:seestone",
+  "count": 1
+}

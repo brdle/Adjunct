@@ -71,6 +71,7 @@ public class AdjunctBlocks {
     public static final RegistryObject<Block> DISPLAY_CLOTH = BLOCKS.register("display_cloth", () -> new DisplayClothBlock(AbstractBlock.Properties.of(Material.CLOTH_DECORATION, MaterialColor.SNOW).strength(0.1F).sound(SoundType.WOOL)));
     public static final RegistryObject<Block> SEESTONE = BLOCKS.register("seestone", () -> new GlassBlock(AbstractBlock.Properties.of(Material.STONE, MaterialColor.STONE).harvestTool(ToolType.PICKAXE).strength(2.0F, 3.0F).sound(SoundType.STONE).noOcclusion()));
     public static final RegistryObject<Block> SEESTONE_BRICKS = BLOCKS.register("seestone_bricks", () -> new GlassBlock(AbstractBlock.Properties.of(Material.STONE, MaterialColor.STONE).harvestTool(ToolType.PICKAXE).strength(2.0F, 3.0F).sound(SoundType.STONE).noOcclusion()));
+    public static final RegistryObject<Block> PINK_SEESTONE = BLOCKS.register("pink_seestone", () -> new GlassBlock(AbstractBlock.Properties.of(Material.STONE, MaterialColor.COLOR_PINK).harvestTool(ToolType.PICKAXE).strength(2.0F, 3.0F).sound(SoundType.STONE).noOcclusion()));
 
     private static boolean never (BlockState state, IBlockReader reader, BlockPos pos) {
         return false;

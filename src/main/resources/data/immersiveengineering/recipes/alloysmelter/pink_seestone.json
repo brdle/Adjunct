@@ -4,7 +4,7 @@
   "result": {
     "count": 1,
     "base_ingredient": {
-      "item": "adjunct:seestone"
+      "item": "adjunct:pink_seestone"
     }
   },
   "conditions": [
@@ -29,7 +29,7 @@
   "input1": {
     "count": 1,
     "base_ingredient": {
-      "item": "quark:clear_shard"
+      "item": "quark:pink_shard"
     }
   }
 }

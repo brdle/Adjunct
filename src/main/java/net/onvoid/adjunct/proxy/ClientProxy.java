@@ -116,6 +116,7 @@ public class ClientProxy extends CommonProxy {
         RenderTypeLookup.setRenderLayer(AdjunctBlocks.DISPLAY_CLOTH.get(), RenderType.cutout());
         RenderTypeLookup.setRenderLayer(AdjunctBlocks.SEESTONE.get(), RenderType.translucent());
         RenderTypeLookup.setRenderLayer(AdjunctBlocks.SEESTONE_BRICKS.get(), RenderType.translucent());
+        RenderTypeLookup.setRenderLayer(AdjunctBlocks.PINK_SEESTONE.get(), RenderType.translucent());
         //if (ModList.get().isLoaded("quark")) {
             RenderTypeLookup.setRenderLayer(AdjunctQuarkBlocks.OLIVE_LADDER.get(), RenderType.cutout());
             RenderTypeLookup.setRenderLayer(AdjunctQuarkBlocks.OLIVE_LEAF_CARPET.get(), RenderType.cutoutMipped());
