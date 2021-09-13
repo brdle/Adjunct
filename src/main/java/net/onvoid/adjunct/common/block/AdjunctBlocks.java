@@ -28,6 +28,7 @@ public class AdjunctBlocks {
 
     public static final RegistryObject<Block> DECORATIVE_PINK_DOOR = BLOCKS.register("decorative_pink_door", () -> new DoorBlock(AbstractBlock.Properties.of(Material.WOOD, MaterialColor.COLOR_PINK).strength(3.0F).sound(SoundType.WOOD).noOcclusion()));
     public static final RegistryObject<Block> EGG_CRATE = BLOCKS.register("egg_crate", () -> new Block(AbstractBlock.Properties.of(Material.WOOD, MaterialColor.SAND).strength(2.0F, 3.0F).sound(SoundType.WOOD).harvestTool(ToolType.AXE)));
+    public static final RegistryObject<Block> EGG_CRATE_EGGLESS = BLOCKS.register("egg_crate_eggless", () -> new Block(AbstractBlock.Properties.of(Material.WOOD, MaterialColor.SAND).strength(2.0F, 3.0F).sound(SoundType.WOOD).harvestTool(ToolType.AXE)));
     public static final RegistryObject<Block> ELEMENTAL_LIGHT = BLOCKS.register("elemental_light", () -> new Block(AbstractBlock.Properties.of(Material.STONE, MaterialColor.SAND).strength(2.0F, 3.0F).sound(SoundType.GLASS).harvestTool(ToolType.PICKAXE).lightLevel((p_235464_0_) -> { return 15; })));
     public static final RegistryObject<Block> DECORATIVE_PINK_GLASS = BLOCKS.register("decorative_pink_glass", () -> new GlassBlock(AbstractBlock.Properties.of(Material.GLASS, MaterialColor.COLOR_PINK).harvestTool(ToolType.PICKAXE).strength(1.0F, 3.0F).sound(SoundType.GLASS).noOcclusion()));
 
@@ -68,6 +69,7 @@ public class AdjunctBlocks {
     public static final RegistryObject<Block> PURPLE_CAT_BED = BLOCKS.register("purple_cat_bed", () -> new CatBedBlock(AbstractBlock.Properties.of(Material.WOOL, MaterialColor.COLOR_PURPLE).strength(1.0F).sound(SoundType.WOOL).noOcclusion(), DyeColor.PURPLE));
     public static final RegistryObject<Block> OLIVE_CAT_BED = BLOCKS.register("olive_cat_bed", () -> new CatBedBlock(AbstractBlock.Properties.of(Material.WOOD, MaterialColor.WOOD).strength(2.0F).sound(SoundType.WOOD).noOcclusion(), null));
     public static final RegistryObject<Block> DISPLAY_CLOTH = BLOCKS.register("display_cloth", () -> new DisplayClothBlock(AbstractBlock.Properties.of(Material.CLOTH_DECORATION, MaterialColor.SNOW).strength(0.1F).sound(SoundType.WOOL)));
+    public static final RegistryObject<Block> SEESTONE = BLOCKS.register("seestone", () -> new GlassBlock(AbstractBlock.Properties.of(Material.STONE, MaterialColor.STONE).harvestTool(ToolType.PICKAXE).strength(2.0F, 3.0F).sound(SoundType.STONE).noOcclusion()));
 
     private static boolean never (BlockState state, IBlockReader reader, BlockPos pos) {
         return false;

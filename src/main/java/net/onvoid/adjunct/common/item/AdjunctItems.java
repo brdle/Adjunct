@@ -113,6 +113,7 @@ public class AdjunctItems {
     public static final RegistryObject<BlockItem> OLIVE_DOOR = bi(AdjunctBlocks.OLIVE_DOOR);
     public static final RegistryObject<BlockItem> DECORATIVE_PINK_DOOR = bi(AdjunctBlocks.DECORATIVE_PINK_DOOR);
     public static final RegistryObject<BlockItem> EGG_CRATE = bi(AdjunctBlocks.EGG_CRATE);
+    public static final RegistryObject<BlockItem> EGG_CRATE_EGGLESS = bi(AdjunctBlocks.EGG_CRATE_EGGLESS, "desc");
     public static final RegistryObject<BlockItem> ELEMENTAL_LIGHT_ITEM = bi(AdjunctBlocks.ELEMENTAL_LIGHT);
     public static final RegistryObject<BlockItem> DECORATIVE_PINK_GLASS_ITEM = bi(AdjunctBlocks.DECORATIVE_PINK_GLASS);
     public static final RegistryObject<BlockItem> BLACK_CAT_BED_ITEM = bi(AdjunctBlocks.BLACK_CAT_BED);
@@ -133,9 +134,15 @@ public class AdjunctItems {
     public static final RegistryObject<BlockItem> PURPLE_CAT_BED_ITEM = bi(AdjunctBlocks.PURPLE_CAT_BED);
     public static final RegistryObject<BlockItem> OLIVE_CAT_BED_ITEM = bi(AdjunctBlocks.OLIVE_CAT_BED);
     public static final RegistryObject<BlockItem> DISPLAY_CLOTH_ITEM = bi(AdjunctBlocks.DISPLAY_CLOTH);
+    public static final RegistryObject<BlockItem> SEESTONE_ITEM = bi(AdjunctBlocks.SEESTONE);
+
 
     public static RegistryObject<BlockItem> bi(RegistryObject<Block> blockObject){
         return ITEMS.register(blockObject.getId().getPath(), () -> new BlockItemA(blockObject.get()));
+    }
+
+    public static RegistryObject<BlockItem> bi(RegistryObject<Block> blockObject, String descKey){
+        return ITEMS.register(blockObject.getId().getPath(), () -> new BlockItemA(blockObject.get(), descKey));
     }
 
     public static void create(){

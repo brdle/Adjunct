@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "up": "adjunct:block/egg_crate_top",
+    "down": "adjunct:block/egg_crate_bottom",
+    "north": "adjunct:block/egg_crate_bottom",
+    "south": "adjunct:block/egg_crate_bottom",
+    "east": "adjunct:block/egg_crate_side",
+    "west": "adjunct:block/egg_crate_side",
+    "particle": "adjunct:block/egg_crate_bottom"
+  }
+}

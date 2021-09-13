@@ -1,8 +1,8 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": {
-    "tag": "forge:glass/pink"
+    "item": "adjunct:egg_crate_eggless"
   },
-  "result": "adjunct:decorative_pink_glass",
+  "result": "adjunct:egg_crate",
   "count": 1
 }

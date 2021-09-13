@@ -1,0 +1,30 @@
+{
+  "type": "thermal:smelter",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thermal"
+    },
+    {
+      "type": "forge:tag_empty",
+      "tag": "quark:shards"
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "forge:stone",
+      "count": 1
+    },
+    {
+      "tag": "forge:glass",
+      "count": 1
+    }
+  ],
+  "result": [
+    {
+      "item": "adjunct:seestone",
+      "count": 1
+    }
+  ],
+  "energy": 12000
+}

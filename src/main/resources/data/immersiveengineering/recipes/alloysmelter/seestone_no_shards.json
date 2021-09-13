@@ -2,9 +2,9 @@
   "type": "immersiveengineering:alloy",
   "time": 200,
   "result": {
-    "count": 3,
+    "count": 1,
     "base_ingredient": {
-      "tag": "forge:ingots/conductive_alloy"
+      "item": "adjunct:seestone"
     }
   },
   "conditions": [
@@ -13,22 +13,20 @@
       "modid": "immersiveengineering"
     },
     {
-      "value": {
-        "tag": "forge:ingots/copper",
-        "type": "forge:tag_empty"
-      },
-      "type": "forge:not"
+      "type": "forge:tag_empty",
+      "tag": "quark:shards"
     }
   ],
   "input0": {
-    "count": 3,
+    "count": 1,
     "base_ingredient": {
-      "tag": "forge:ingots/copper"
+      "tag": "forge:stone"
     }
   },
   "input1": {
-    "count": 4,
+    "count": 1,
     "base_ingredient": {
-      "tag": "forge:dusts/redstone"}
+      "tag": "forge:glass"
+    }
   }
 }
