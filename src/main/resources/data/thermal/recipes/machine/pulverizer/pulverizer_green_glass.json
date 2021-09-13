@@ -1,0 +1,23 @@
+{
+  "type": "thermal:pulverizer",
+  "conditions": [
+    {
+      "modid": "thermal",
+      "type": "forge:mod_loaded"
+    },
+    {
+      "modid": "quark",
+      "type": "forge:mod_loaded"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:glass/green"
+  },
+  "result": [
+    {
+      "item": "quark:green_shard",
+      "count": 4
+    }
+  ],
+  "experience": 0.1
+}

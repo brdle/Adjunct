@@ -1,0 +1,23 @@
+{
+  "type": "thermal:pulverizer",
+  "conditions": [
+    {
+      "modid": "thermal",
+      "type": "forge:mod_loaded"
+    },
+    {
+      "modid": "quark",
+      "type": "forge:mod_loaded"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:glass/colorless"
+  },
+  "result": [
+    {
+      "item": "quark:clear_shard",
+      "count": 4
+    }
+  ],
+  "experience": 0.1
+}
