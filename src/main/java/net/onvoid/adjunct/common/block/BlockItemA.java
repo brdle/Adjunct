@@ -21,7 +21,7 @@ import javax.annotation.Nullable;
 import java.util.List;
 
 public class BlockItemA extends BlockItem {
-    private String desc = "";
+    private String descKey = "";
 
     public BlockItemA(Block block) {
         super(block, new Item.Properties().tab(AdjunctItems.TAB_ADJUNCT));
@@ -29,14 +29,14 @@ public class BlockItemA extends BlockItem {
 
     public BlockItemA(Block block, String descKey){
         super(block, new Item.Properties().tab(AdjunctItems.TAB_ADJUNCT));
-        this.desc = desc;
+        this.descKey = descKey;
     }
 
     @OnlyIn(Dist.CLIENT)
     @Override
     public void appendHoverText(ItemStack stack, @Nullable World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
-        if (!this.desc.equals("")) {
-            tooltip.add(new TranslationTextComponent(this.getRegistryName().toString() + "." + desc).withStyle(TextFormatting.GRAY));
+        if (!this.descKey.equals("")) {
+            tooltip.add(new TranslationTextComponent(this.getRegistryName().toString() + "." + descKey).withStyle(TextFormatting.GRAY));
         }
     }
 }
