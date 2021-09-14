@@ -20,7 +20,6 @@ public class Pizza {
         if (pizzaOrCrustStack.getItem() instanceof PizzaItem){
             this.pizzaStack = pizzaOrCrustStack.copy();
             this.nbt = this.pizzaStack.getOrCreateTag();
-            this.nbt.putBoolean("cooked", false);
         } else if (Topping.is(pizzaOrCrustStack, Topping.CRUST)){
             this.pizzaStack = new ItemStack(AdjunctItems.PIZZA_ITEM.get(), 1);
             this.nbt = this.pizzaStack.getOrCreateTag();
@@ -40,12 +39,11 @@ public class Pizza {
     }
 
     public ItemStack buildStack(){
-        return this.build().getItemStack();
+        return this.build().getItemStack().copy();
     }
 
     public ItemStack bakeStack(){
-        this.cooked();
-        return buildStack();
+        return this.cooked().buildStack();
     }
 
     public ItemStack getItemStack(){

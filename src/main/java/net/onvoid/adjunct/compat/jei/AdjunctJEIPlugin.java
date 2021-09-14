@@ -12,6 +12,7 @@ import net.onvoid.adjunct.common.item.pizza.PizzaHandler;
 import net.onvoid.adjunct.common.item.pizza.Topping;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 @JeiPlugin
@@ -48,20 +49,23 @@ public class AdjunctJEIPlugin implements IModPlugin {
         bases.add(new Pizza().add(Topping.CRUST, "blaze").buildStack());
         List<ItemStack> toppings = new ArrayList<ItemStack>();
         toppings.add(new ItemStack(AdjunctItems.TOMATO_SAUCE_ITEM.get()));
+        toppings.add(new ItemStack(AdjunctItems.TOMATO_SAUCE_ITEM.get()));
         toppings.add(new ItemStack(AdjunctItems.WHITE_SAUCE_ITEM.get()));
         List<ItemStack> pizzas = new ArrayList<ItemStack>();
-        pizzas.add(new Pizza().add(Topping.CRUST, "original").buildStack());
-        pizzas.add(new Pizza().add(Topping.CRUST, "gluten_free").buildStack());
-        pizzas.add(new Pizza().add(Topping.CRUST, "blaze").buildStack());
-        //pizzas.add(PizzaHandler.buildPizza(1, 1, 0, 0, 0, false));
-        //pizzas.add(PizzaHandler.buildPizza(1, 2, 0, 0, 0, false));
-        //pizzas.add(PizzaHandler.buildPizza(2, 1, 0, 0, 0, false));
-        //pizzas.add(PizzaHandler.buildPizza(2, 2, 0, 0, 0, false));
-        pizzaStationRecipes.add(new PizzaStationRecipe(bases, toppings, pizzas));
+        pizzas.add(new Pizza().add(Topping.CRUST, "original").add(Topping.SAUCE, "tomato").buildStack());
+        pizzas.add(new Pizza().add(Topping.CRUST, "gluten_free").add(Topping.SAUCE, "tomato").buildStack());
+        pizzas.add(new Pizza().add(Topping.CRUST, "blaze").add(Topping.SAUCE, "white").buildStack());
+        for (int i = 0; i < bases.size(); i++){
+            pizzaStationRecipes.add(new PizzaStationRecipe(Collections.singletonList(bases.get(i)), Collections.singletonList(toppings.get(i)), Collections.singletonList(pizzas.get(i))));
+        }
         registration.addRecipes(pizzaStationRecipes, PizzaStationRecipeCategory.UID);
         //
         PizzaHandler.createPizzaLists();
-        pizzaOvenRecipes.add(new PizzaOvenRecipe(PizzaHandler.getAllUncookedPizzas(), PizzaHandler.getAllCookedPizzas()));
+        List<ItemStack> uncooked = PizzaHandler.getAllUncookedPizzas();
+        List<ItemStack> cooked = PizzaHandler.getAllCookedPizzas();
+        for (int i = 0; i < uncooked.size(); i++){
+            pizzaOvenRecipes.add(new PizzaOvenRecipe(Collections.singletonList(uncooked.get(i)), Collections.singletonList(cooked.get(i))));
+        }
         registration.addRecipes(pizzaOvenRecipes, PizzaOvenRecipeCategory.UID);
     }
 
