@@ -43,16 +43,16 @@ public class AdjunctJEIPlugin implements IModPlugin {
     public void registerRecipes(IRecipeRegistration registration) {
         IModPlugin.super.registerRecipes(registration);
         List<ItemStack> bases = new ArrayList<ItemStack>();
-        bases.add(new Pizza().add(Topping.CRUST, "original").getItemStack());
-        bases.add(new Pizza().add(Topping.CRUST, "gluten_free").getItemStack());
-        bases.add(new Pizza().add(Topping.CRUST, "blaze").getItemStack());
+        bases.add(new Pizza().add(Topping.CRUST, "original").buildStack());
+        bases.add(new Pizza().add(Topping.CRUST, "gluten_free").buildStack());
+        bases.add(new Pizza().add(Topping.CRUST, "blaze").buildStack());
         List<ItemStack> toppings = new ArrayList<ItemStack>();
         toppings.add(new ItemStack(AdjunctItems.TOMATO_SAUCE_ITEM.get()));
         toppings.add(new ItemStack(AdjunctItems.WHITE_SAUCE_ITEM.get()));
         List<ItemStack> pizzas = new ArrayList<ItemStack>();
-        pizzas.add(new Pizza().add(Topping.CRUST, "original").getItemStack());
-        bases.add(new Pizza().add(Topping.CRUST, "gluten_free").getItemStack());
-        bases.add(new Pizza().add(Topping.CRUST, "blaze").getItemStack());
+        pizzas.add(new Pizza().add(Topping.CRUST, "original").buildStack());
+        pizzas.add(new Pizza().add(Topping.CRUST, "gluten_free").buildStack());
+        pizzas.add(new Pizza().add(Topping.CRUST, "blaze").buildStack());
         //pizzas.add(PizzaHandler.buildPizza(1, 1, 0, 0, 0, false));
         //pizzas.add(PizzaHandler.buildPizza(1, 2, 0, 0, 0, false));
         //pizzas.add(PizzaHandler.buildPizza(2, 1, 0, 0, 0, false));
@@ -60,7 +60,7 @@ public class AdjunctJEIPlugin implements IModPlugin {
         pizzaStationRecipes.add(new PizzaStationRecipe(bases, toppings, pizzas));
         registration.addRecipes(pizzaStationRecipes, PizzaStationRecipeCategory.UID);
         //
-        //PizzaHandler.createPizzaLists();
+        PizzaHandler.createPizzaLists();
         pizzaOvenRecipes.add(new PizzaOvenRecipe(PizzaHandler.getAllUncookedPizzas(), PizzaHandler.getAllCookedPizzas()));
         registration.addRecipes(pizzaOvenRecipes, PizzaOvenRecipeCategory.UID);
     }

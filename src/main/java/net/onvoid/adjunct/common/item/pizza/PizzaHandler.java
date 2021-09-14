@@ -115,23 +115,51 @@ public class PizzaHandler {
         return allCookedPizzas;
     }
 
-    /*public static void createPizzaLists(){
-        for (int crust = 1; crust < getCrusts().size() + 1; crust++){
-            for (int sauce = 1; sauce < getSauces().size() + 1; sauce++){
-                for (int cheese = 1; cheese < getCheeses().size() + 1; cheese++){
-                    for (int topping1 = 1; topping1 < getToppings().size() + 1; topping1++){
-                        for (int topping2 = 1; topping2 < getToppings().size() + 1; topping2++){
+    public static void createPizzaLists(){
+        for (int crust = 1; crust < Topping.crusts.size() + 1; crust++){
+            Pizza pizza4 = new Pizza()
+                    .add(Topping.CRUST, crust);
+            allUncookedPizzas.add(pizza4.buildStack());
+            allCookedPizzas.add(pizza4.bakeStack());
+            for (int sauce = 1; sauce < Topping.sauces.size() + 1; sauce++){
+                Pizza pizza3 = new Pizza()
+                        .add(Topping.CRUST, crust)
+                        .add(Topping.SAUCE, crust);
+                allUncookedPizzas.add(pizza3.buildStack());
+                allCookedPizzas.add(pizza3.bakeStack());
+                for (int cheese = 1; cheese < Topping.cheeses.size() + 1; cheese++){
+                    Pizza pizza2 = new Pizza()
+                            .add(Topping.CRUST, crust)
+                            .add(Topping.SAUCE, crust)
+                            .add(Topping.CHEESE, cheese);
+                    allUncookedPizzas.add(pizza2.buildStack());
+                    allCookedPizzas.add(pizza2.bakeStack());
+                    for (int topping1 = 1; topping1 < Topping.toppings.size() + 1; topping1++){
+                        Pizza pizza1 = new Pizza()
+                                .add(Topping.CRUST, crust)
+                                .add(Topping.SAUCE, crust)
+                                .add(Topping.CHEESE, cheese)
+                                .add(Topping.TOPPING, topping1);
+                        allUncookedPizzas.add(pizza1.buildStack());
+                        allCookedPizzas.add(pizza1.bakeStack());
+                        for (int topping2 = 1; topping2 < Topping.toppings.size() + 1; topping2++){
                             if (topping1 == topping2){
                                 continue;
                             }
-                            allUncookedPizzas.add(buildPizza(crust, sauce, cheese, topping1, topping2, false));
-                            allCookedPizzas.add(buildPizza(crust, sauce, cheese, topping1, topping2, true));
+                            Pizza pizza = new Pizza()
+                                    .add(Topping.CRUST, crust)
+                                    .add(Topping.SAUCE, crust)
+                                    .add(Topping.CHEESE, cheese)
+                                    .add(Topping.TOPPING, topping1)
+                                    .add(Topping.TOPPING, topping2);
+                            allUncookedPizzas.add(pizza.buildStack());
+                            allCookedPizzas.add(pizza.bakeStack());
                         }
                     }
                 }
             }
         }
-    }*/
+    }
 
     /*public static ItemStack buildPizza(int crust, int sauce, int cheese, int topping1, int topping2, boolean cooked){
         ItemStack pizza = new ItemStack(AdjunctItems.PIZZA_ITEM.get());
