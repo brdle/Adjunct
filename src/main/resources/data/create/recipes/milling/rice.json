@@ -12,20 +12,20 @@
   ],
   "ingredients": [
     {
-      "tag": "forge:crops/barley"
+      "tag": "forge:crops/rice"
     }
   ],
   "results": [
     {
-      "item": "adjunct:barley_flour"
+      "item": "adjunct:rice_flour"
     },
     {
-      "item": "adjunct:barley_flour",
+      "item": "adjunct:rice_flour",
       "count": 2,
       "chance": 0.25
     },
     {
-      "item": "thermal:barley_seeds",
+      "item": "thermal:rice_seeds",
       "chance": 0.25
     }
   ],

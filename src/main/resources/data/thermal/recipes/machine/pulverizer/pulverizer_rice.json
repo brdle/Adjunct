@@ -1,0 +1,27 @@
+{
+  "type": "thermal:pulverizer",
+  "conditions": [
+    {
+      "modid": "thermal",
+      "type": "forge:mod_loaded"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:crops/rice"
+  },
+  "result": [
+    {
+      "item": "adjunct:rice_flour"
+    },
+    {
+      "item": "adjunct:rice_flour",
+      "count": 2,
+      "chance": 0.25
+    },
+    {
+      "item": "thermal:rice_seeds",
+      "chance": 0.25
+    }
+  ],
+  "experience": 0.1
+}

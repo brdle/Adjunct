@@ -77,6 +77,7 @@ public class AdjunctItems {
     public static final RegistryObject<Item> PEANUT_BUTTER_ITEM = ITEMS.register("peanut_butter_bottle", () -> new Item(new Item.Properties().tab(AdjunctItems.TAB_ADJUNCT).craftRemainder(Items.GLASS_BOTTLE)));
     public static final RegistryObject<Item> BERRY_PRESERVES_ITEM = ITEMS.register("berry_preserves_bottle", () -> new Item(new Item.Properties().tab(AdjunctItems.TAB_ADJUNCT).craftRemainder(Items.GLASS_BOTTLE)));
     public static final RegistryObject<Item> BARLEY_FLOUR_ITEM = ITEMS.register("barley_flour", () -> new Item(new Item.Properties().tab(AdjunctItems.TAB_ADJUNCT)));
+    public static final RegistryObject<Item> RICE_FLOUR_ITEM = ITEMS.register("rice_flour", () -> new Item(new Item.Properties().tab(AdjunctItems.TAB_ADJUNCT)));
     public static final RegistryObject<Item> APPLE_PIE_ITEM = ITEMS.register("apple_pie", () -> new Item(new Item.Properties().tab(AdjunctItems.TAB_ADJUNCT).food(AdjunctFoods.APPLE_PIE)));
     public static final RegistryObject<Item> BERRY_PIE_ITEM = ITEMS.register("berry_pie", () -> new Item(new Item.Properties().tab(AdjunctItems.TAB_ADJUNCT).food(AdjunctFoods.BERRY_PIE)));
     public static final RegistryObject<Item> PEANUT_BUTTER_AND_JELLY_SANDWICH_ITEM = ITEMS.register("peanut_butter_and_jelly_sandwich", () -> new Item(new Item.Properties().tab(AdjunctItems.TAB_ADJUNCT).food(AdjunctFoods.PEANUT_BUTTER_AND_JELLY_SANDWICH)));
