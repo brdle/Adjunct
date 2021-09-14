@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "adjunct:barley_flour",
+      "required": true
+    },
+    {
+      "id": "create:wheat_flour",
+      "required": false
+    }
+  ]
+}

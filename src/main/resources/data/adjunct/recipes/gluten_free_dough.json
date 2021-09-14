@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "adjunct:dry_leaf_dust"
+      "tag": "forge:flour/gluten_free"
     },
     {
       "item": "minecraft:water_bucket"

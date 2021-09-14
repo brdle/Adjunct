@@ -8,7 +8,7 @@
   ],
   "ingredients": [
     {
-      "item": "adjunct:barley_flour"
+      "tag": "forge:flour/gluten"
     },
     {
       "item": "minecraft:water_bucket"

@@ -2,11 +2,11 @@
   "replace": false,
   "values": [
     {
-      "id": "#forge:flour/gluten",
+      "id": "adjunct:dry_leaf_dust",
       "required": true
     },
     {
-      "id": "#forge:flour/gluten_free",
+      "id": "adjunct:rice_flour",
       "required": true
     }
   ]

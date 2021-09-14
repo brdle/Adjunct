@@ -4,14 +4,17 @@
     {
       "type": "forge:not",
       "value": {
-        "type": "forge:tag_empty",
-        "tag": "forge:dough"
+        "modid": "create",
+        "type": "forge:mod_loaded"
       }
     }
   ],
   "ingredients": [
     {
-      "tag": "forge:dough"
+      "tag": "forge:flour/gluten"
+    },
+    {
+      "item": "minecraft:water_bucket"
     },
     {
       "tag": "forge:olive_oil"
