@@ -113,7 +113,7 @@ public class PizzaOvenTile extends TileEntity implements ICapabilityProvider, IT
                     if (Topping.is(stack, Topping.CRUST)){
                         pizza.add(Topping.CRUST, Topping.getSpecificInt(Topping.CRUST, stack));
                     } else if (stack.getItem() instanceof PizzaItem){
-                        pizza = new Pizza(stack.copy());
+                        pizza = new Pizza(stack, true);
                     } else {
                         return stack;
                     }

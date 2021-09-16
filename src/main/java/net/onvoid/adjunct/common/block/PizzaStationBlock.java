@@ -83,6 +83,7 @@ public class PizzaStationBlock extends FlammableBlock implements IForgeBlock {
                 ItemStack remaining = null;
                 if (insert.hasContainerItem()){
                     remaining = insert.getContainerItem();
+                    Adjunct.LOGGER.debug("Container Item!: " + remaining.toString());
                 }
                 ItemStack retrieved = handler.insertItem(0, insert, false);
                 if (!player.isCreative()){

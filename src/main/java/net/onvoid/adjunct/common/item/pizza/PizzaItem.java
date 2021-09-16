@@ -28,7 +28,7 @@ public class PizzaItem extends Item {
     public ItemStack finishUsingItem(ItemStack stack, World worldIn, LivingEntity entity) {
         if (entity instanceof PlayerEntity && !((PlayerEntity) entity).isCreative() && stack.getItem() instanceof PizzaItem) {
             PlayerEntity player = (PlayerEntity) entity;
-            Pizza p = new Pizza(stack);
+            Pizza p = new Pizza(stack, true);
             player.getFoodData().eat(p.getNutrition(), p.getSaturation());
             stack.shrink(1);
         }
@@ -36,14 +36,14 @@ public class PizzaItem extends Item {
     }
 
     private Color getNameColor(ItemStack stack){
-        Pizza p = new Pizza(stack);
+        Pizza p = new Pizza(stack, true);
         int toppings = 0;
         for (Topping topping : Topping.values()){
             if (p.has(topping)){
                 toppings++;
             }
         }
-        switch (toppings){
+        switch (toppings) {
             case 1:
                 return ONE_TOPPING;
             case 2:
@@ -67,7 +67,7 @@ public class PizzaItem extends Item {
     @Override
     public void appendHoverText(ItemStack stack, @Nullable World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
         AdjunctHelper.setDisplayNameColor(tooltip, getNameColor(stack));
-        Pizza p = new Pizza(stack);
+        Pizza p = new Pizza(stack, true);
         if (p.isCooked()) {
             tooltip.add(new TranslationTextComponent(this.getRegistryName().toString() + ".cooked").withStyle(TextFormatting.GREEN));
         } else {

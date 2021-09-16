@@ -44,7 +44,7 @@ public class PizzaStationTile extends TileEntity implements ICapabilityProvider 
             @Override
             public boolean isItemValid(int slot, @Nonnull ItemStack stack)
             {
-                return (stack.getItem().is(Topping.allTag()) || (stack.getItem() instanceof PizzaItem && !(new Pizza(stack)).isCooked()));
+                return (stack.getItem().is(Topping.allTag()) || (stack.getItem() instanceof PizzaItem && !(new Pizza(stack, true)).isCooked()));
             }
 
             @Override
@@ -80,7 +80,7 @@ public class PizzaStationTile extends TileEntity implements ICapabilityProvider 
                             return stack;
                         }
                         //Create new pizza
-                        this.stacks.set(slot, new Pizza(stack).buildStack());
+                        this.stacks.set(slot, new Pizza(stack, false).buildStack());
                         onContentsChanged(slot);
                         stack.shrink(1);
                     } else {
@@ -88,7 +88,7 @@ public class PizzaStationTile extends TileEntity implements ICapabilityProvider 
                             return stack;
                         }
                         //Modify existing pizza
-                        ItemStack modified = new Pizza(existing).addStack(stack).buildStack();
+                        ItemStack modified = new Pizza(existing, true).addStack(stack).buildStack();
                         if (!modified.equals(existing, false)) {
                             this.stacks.set(slot, modified);
                             stack.shrink(1);

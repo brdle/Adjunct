@@ -1,25 +1,34 @@
 package net.onvoid.adjunct.compat.jei;
 
 import com.google.common.collect.ImmutableList;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 public class PizzaStationRecipe {
-    private final List<List<ItemStack>> inputs;
-    private final List<List<ItemStack>> outputs;
+    private final ItemStack base;
+    private final List<ItemStack> addons;
+    private final ItemStack output;
 
-    public PizzaStationRecipe(List<ItemStack> leftInput, List<ItemStack> rightInputs, List<ItemStack> outputs) {
-        this.inputs = ImmutableList.of(leftInput, rightInputs);
-        this.outputs = Collections.singletonList(outputs);
+    public PizzaStationRecipe(ItemStack base, List<ItemStack> addons, ItemStack output) {
+        this.base = base;
+        this.addons = addons;
+        this.output = output;
     }
 
-    public List<List<ItemStack>> getInputs() {
-        return inputs;
+    public ItemStack getBase() {
+        return this.base;
     }
 
-    public List<List<ItemStack>> getOutputs() {
-        return outputs;
+    public List<ItemStack> getAddons(){
+        return this.addons;
+    }
+
+    public ItemStack getOutput() {
+        return this.output;
     }
 }

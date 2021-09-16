@@ -6,19 +6,19 @@ import java.util.Collections;
 import java.util.List;
 
 public class PizzaOvenRecipe {
-    private final List<List<ItemStack>> inputs;
-    private final List<List<ItemStack>> outputs;
+    private final ItemStack input;
+    private final ItemStack output;
 
-    public PizzaOvenRecipe(List<ItemStack> inputs, List<ItemStack> outputs) {
-        this.inputs = Collections.singletonList(inputs);
-        this.outputs = Collections.singletonList(outputs);
+    public PizzaOvenRecipe(ItemStack input, ItemStack output) {
+        this.input = input;
+        this.output = output;
     }
 
-    public List<List<ItemStack>> getInputs() {
-        return inputs;
+    public ItemStack getInput() {
+        return this.input;
     }
 
-    public List<List<ItemStack>> getOutputs() {
-        return outputs;
+    public ItemStack getOutput() {
+        return this.output;
     }
 }

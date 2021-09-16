@@ -1,45 +1,57 @@
 package net.onvoid.adjunct.common.item.pizza;
 
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.CompoundNBT;
+import net.minecraft.tags.ITag;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.util.ResourceLocation;
 import net.onvoid.adjunct.Adjunct;
 import net.onvoid.adjunct.common.item.AdjunctItems;
 
+import java.util.List;
+
 public class Pizza {
-    private ItemStack pizzaStack;
-    private CompoundNBT nbt;
+    private ItemStack pizzaStack = null;
 
     public Pizza() {
         this.pizzaStack = new ItemStack(AdjunctItems.PIZZA_ITEM.get(), 1);
-        this.nbt = this.pizzaStack.getOrCreateTag();
-        this.nbt.putBoolean("cooked", false);
-        this.update();
+        this.getNbt().putBoolean("cooked", false);
+        this.pizzaStack.setTag(this.getNbt());
     }
 
-    public Pizza(ItemStack pizzaOrCrustStack){
-        if (pizzaOrCrustStack.getItem() instanceof PizzaItem){
-            this.pizzaStack = pizzaOrCrustStack.copy();
-            this.nbt = this.pizzaStack.getOrCreateTag();
-        } else if (Topping.is(pizzaOrCrustStack, Topping.CRUST)){
-            this.pizzaStack = new ItemStack(AdjunctItems.PIZZA_ITEM.get(), 1);
-            this.nbt = this.pizzaStack.getOrCreateTag();
-            this.nbt.putBoolean("cooked", false);
-            this.nbt.putInt(Topping.CRUST.get(), Topping.getSpecificInt(Topping.CRUST, pizzaOrCrustStack));
+    public Pizza(ItemStack stack, boolean pizza){
+        this.pizzaStack = new ItemStack(AdjunctItems.PIZZA_ITEM.get(), 1);
+        this.getNbt().putBoolean("cooked", false);
+        if (pizza && stack.getItem() instanceof PizzaItem && stack.hasTag()) {
+                CompoundNBT nbt = stack.getTag();
+                if (nbt.contains(Topping.CRUST.get())) {
+                    this.getNbt().putInt(Topping.CRUST.get(), nbt.getInt(Topping.CRUST.get()));
+                }
+                if (nbt.contains(Topping.SAUCE.get())) {
+                    this.getNbt().putInt(Topping.SAUCE.get(), nbt.getInt(Topping.SAUCE.get()));
+                }
+                if (nbt.contains(Topping.CHEESE.get())) {
+                    this.getNbt().putInt(Topping.CHEESE.get(), nbt.getInt(Topping.CHEESE.get()));
+                }
+                if (nbt.contains(Topping.TOPPING.get() + "1")) {
+                    this.getNbt().putInt(Topping.TOPPING.get() + "1", nbt.getInt((Topping.TOPPING.get() + "1")));
+                }
+                if (nbt.contains(Topping.TOPPING.get() + "2")) {
+                    this.getNbt().putInt(Topping.TOPPING.get() + "2", nbt.getInt((Topping.TOPPING.get() + "2")));
+                }
+                if (nbt.contains("cooked")) {
+                    this.getNbt().putBoolean("cooked", nbt.getBoolean("cooked"));
+                }
+        } else if (!pizza && Topping.is(stack, Topping.CRUST)){
+            this.getNbt().putInt(Topping.CRUST.get(), Topping.getSpecificInt(Topping.CRUST, stack));
         }
-        this.update();
-    }
-
-    public void update(){
-        this.pizzaStack.setTag(this.nbt);
-    }
-
-    public Pizza build(){
-        this.update();
-        return this;
+        this.pizzaStack.setTag(this.getNbt());
     }
 
     public ItemStack buildStack(){
-        return this.build().getItemStack().copy();
+        this.getItemStack().setTag(this.getNbt());
+        return this.getItemStack().copy();
     }
 
     public ItemStack bakeStack(){
@@ -71,19 +83,17 @@ public class Pizza {
     }
 
     public Pizza cooked(){
-        this.nbt.putBoolean("cooked", true);
-        this.update();
+        this.getNbt().putBoolean("cooked", true);
         return this;
     }
 
     public Pizza uncooked(){
-        this.nbt.putBoolean("cooked", false);
-        this.update();
+        this.getNbt().putBoolean("cooked", false);
         return this;
     }
 
     public boolean isCooked(){
-        return this.nbt.getBoolean("cooked");
+        return this.getNbt().getBoolean("cooked");
     }
 
     public void orderToppings(){
@@ -91,15 +101,15 @@ public class Pizza {
         int t2 = this.getTopping(2);
         if (t1 > 0 && t2 > 0){
             if (t1 > t2){
-                this.nbt.putInt(Topping.TOPPING.get() + "1", t2);
-                this.nbt.putInt(Topping.TOPPING.get() + "2", t1);
-                this.update();
+                this.getNbt().remove(Topping.TOPPING.get() + "1");
+                this.getNbt().remove(Topping.TOPPING.get() + "2");
+                this.getNbt().putInt(Topping.TOPPING.get() + "1", t2);
+                this.getNbt().putInt(Topping.TOPPING.get() + "2", t1);
                 return;
             }
         } else if (t2 > 0){
-            this.nbt.putInt(Topping.TOPPING.get() + "1", this.getTopping(2));
-            this.nbt.remove(Topping.TOPPING.get() + "2");
-            this.update();
+            this.getNbt().putInt(Topping.TOPPING.get() + "1", this.getTopping(2));
+            this.getNbt().remove(Topping.TOPPING.get() + "2");
             return;
         }
     }
@@ -110,20 +120,20 @@ public class Pizza {
             boolean hasT2 = this.hasTopping(2);
             if (!hasT1 && !hasT2){
                 // No toppings
-                this.nbt.putInt(type.get() + "1", topping);
+                this.getNbt().putInt(type.get() + "1", topping);
             } else if (hasT1 && !hasT2 && this.getTopping(1) != topping){
                 // Only topping 1
-                this.nbt.putInt(type.get() + "2", topping);
+                this.getNbt().putInt(type.get() + "2", topping);
                 this.orderToppings();
             } else if (hasT2 && !hasT1 && this.getTopping(2) != topping){
                 // Only topping 2 (Shouldn't be possible, but...)
-                this.nbt.putInt(type.get() + "1", topping);
+                this.getNbt().putInt(type.get() + "1", topping);
                 this.orderToppings();
             }
         } else if (!this.has(type)) {
-            this.nbt.putInt(type.get(), topping);
+            this.getNbt().putInt(type.get(), topping);
         }
-        return this.build();
+        return this;
     }
 
     public Pizza add(Topping type, String topping){
@@ -150,37 +160,33 @@ public class Pizza {
     public boolean has(Topping type){
         // Check if the Pizza has topping in 1 or 2 slot
         if (type.equals(Topping.TOPPING)){
-            if (nbt.contains(Topping.TOPPING.get() + "1")){
-                return nbt.getInt(Topping.TOPPING.get() + "1") > 0;
-            } else if (nbt.contains(Topping.TOPPING.get() + "2")){
-                return nbt.getInt(Topping.TOPPING.get() + "2") > 0;
-            }
+            return (this.hasTopping(1) || this.hasTopping(2));
         }
         // Checks if the Pizza has topping type data at all
-        if (!nbt.contains(type.get())){
+        if (!this.getNbt().contains(type.get())){
             return false;
         }
         // Checks if the Pizza has specific topping
-        return nbt.getInt(type.get()) > 0;
+        return this.getNbt().getInt(type.get()) > 0;
     }
 
     public boolean has(Topping type, String topping){
         if (type.equals(Topping.TOPPING)){
-            if (nbt.contains(Topping.TOPPING.get() + "1")){
-                return Topping.fromInt(type, nbt.getInt(Topping.TOPPING.get() + "1")).equals(topping);
-            } else if (nbt.contains(Topping.TOPPING.get() + "2")){
-                return Topping.fromInt(type, nbt.getInt(Topping.TOPPING.get() + "2")).equals(topping);
+            if (this.hasTopping(1)){
+                return Topping.fromInt(type, this.getNbt().getInt(Topping.TOPPING.get() + "1")).equals(topping);
+            } else if (this.hasTopping(2)){
+                return Topping.fromInt(type, this.getNbt().getInt(Topping.TOPPING.get() + "2")).equals(topping);
             }
             return false;
         }
-        if (!nbt.contains(type.get())){
+        if (!this.getNbt().contains(type.get())){
             return false;
         }
-        return topping.equals(Topping.fromInt(type, nbt.getInt(type.get())));
+        return topping.equals(Topping.fromInt(type, this.getNbt().getInt(type.get())));
     }
 
     public boolean hasTopping(int number){
-        return this.nbt.contains(Topping.TOPPING.get() + number) && this.nbt.getInt(Topping.TOPPING.get() + number) > 0;
+        return this.getNbt().contains(Topping.TOPPING.get() + number) && this.getNbt().getInt(Topping.TOPPING.get() + number) > 0;
     }
 
     public int get(Topping type){
@@ -190,17 +196,81 @@ public class Pizza {
         if (type.equals(Topping.TOPPING)){
             return this.getTopping(1);
         }
-        return nbt.getInt(type.get());
+        return this.getNbt().getInt(type.get());
     }
 
     public int getTopping(int number){
-        if (!nbt.contains(Topping.TOPPING.get() + number)){
+        if (!this.getNbt().contains(Topping.TOPPING.get() + number)){
             return -1;
         }
-        return nbt.getInt(Topping.TOPPING.get() + number);
+        return this.getNbt().getInt(Topping.TOPPING.get() + number);
     }
 
     public CompoundNBT getNbt() {
-        return this.nbt;
+        return this.pizzaStack.getOrCreateTag();
+    }
+
+    public ITag<Item> getHighestTag(){
+        if (this.hasTopping(2)){
+            return ItemTags.getAllTags().getTagOrEmpty(new ResourceLocation(Adjunct.MODID, "pizza/topping/" + Topping.fromInt(Topping.TOPPING, this.getTopping(2))));
+        } else if (this.hasTopping(1)){
+            return ItemTags.getAllTags().getTagOrEmpty(new ResourceLocation(Adjunct.MODID, "pizza/topping/" + Topping.fromInt(Topping.TOPPING, this.getTopping(1))));
+        } else if (this.has(Topping.CHEESE)){
+            return ItemTags.getAllTags().getTagOrEmpty(new ResourceLocation(Adjunct.MODID, "pizza/cheese/" + Topping.fromInt(Topping.CHEESE, this.get(Topping.CHEESE))));
+        } else if (this.has(Topping.SAUCE)){
+            return ItemTags.getAllTags().getTagOrEmpty(new ResourceLocation(Adjunct.MODID, "pizza/sauce/" + Topping.fromInt(Topping.SAUCE, this.get(Topping.SAUCE))));
+        } else if (this.has(Topping.CRUST)){
+            return ItemTags.getAllTags().getTagOrEmpty(new ResourceLocation(Adjunct.MODID, "pizza/crust/" + Topping.fromInt(Topping.CRUST, this.get(Topping.CRUST))));
+        } else {
+            return new ITag<Item>() {
+                @Override
+                public boolean contains(Item pElement) {
+                    return false;
+                }
+
+                @Override
+                public List<Item> getValues() {
+                    return null;
+                }
+            };
+        }
+    }
+
+    public ItemStack getLesserPizza(){
+        ItemStack stack = this.buildStack();
+        if (this.hasTopping(2)){
+            stack.getOrCreateTag().remove("topping2");
+            return stack;
+        } else if (this.hasTopping(1)){
+            stack.getOrCreateTag().remove("topping1");
+            return stack;
+        } else if (this.has(Topping.CHEESE)){
+            stack.getOrCreateTag().remove("cheese");
+            return stack;
+        } else if (this.has(Topping.SAUCE)){
+            stack.getOrCreateTag().remove("sauce");
+            return stack;
+        }
+        return ItemStack.EMPTY;
+    }
+
+    public int getNumToppings(){
+        int num = 0;
+        if (this.hasTopping(2)){
+            num++;
+        }
+        if (this.hasTopping(1)){
+            num++;
+        }
+        if (this.has(Topping.CHEESE)){
+            num++;
+        }
+        if (this.has(Topping.SAUCE)){
+            num++;
+        }
+        if (this.has(Topping.CRUST)){
+            num++;
+        }
+        return num;
     }
 }

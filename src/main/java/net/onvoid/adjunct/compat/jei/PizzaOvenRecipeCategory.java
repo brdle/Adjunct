@@ -55,17 +55,15 @@ public class PizzaOvenRecipeCategory implements IRecipeCategory<PizzaOvenRecipe>
 
     @Override
     public void setIngredients(PizzaOvenRecipe recipe, IIngredients ingredients) {
-        ingredients.setInputLists(VanillaTypes.ITEM, recipe.getInputs());
-        ingredients.setOutputLists(VanillaTypes.ITEM, recipe.getOutputs());
+        ingredients.setInput(VanillaTypes.ITEM, recipe.getInput());
+        ingredients.setOutput(VanillaTypes.ITEM, recipe.getOutput());
     }
 
     @Override
-    public void setRecipe(IRecipeLayout recipeLayout, PizzaOvenRecipe recipe, IIngredients ingredients) {
-        IGuiItemStackGroup guiItemStacks = recipeLayout.getItemStacks();
+    public void setRecipe(IRecipeLayout layout, PizzaOvenRecipe recipe, IIngredients ingredients) {
+        IGuiItemStackGroup guiItemStacks = layout.getItemStacks();
         guiItemStacks.init(0, true, 5, 5);
         guiItemStacks.init(1, false, 57, 5);
-        //guiItemStacks.set(0, ingredients.getInputs(VanillaTypes.ITEM).get(0));
-        //guiItemStacks.set(1, ingredients.getOutputs(VanillaTypes.ITEM).get(0));
         guiItemStacks.set(ingredients);
     }
 }

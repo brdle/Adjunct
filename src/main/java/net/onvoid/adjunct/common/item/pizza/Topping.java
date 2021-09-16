@@ -18,14 +18,20 @@ public enum Topping {
     CHEESE,
     TOPPING;
 
-    public static void registerTags(){}
-
-    private static Tags.IOptionalNamedTag<Item> allTag = ItemTags.createOptional(new ResourceLocation(Adjunct.MODID, "pizza"));
-    private static Tags.IOptionalNamedTag<Item> crustTag = ItemTags.createOptional(new ResourceLocation(Adjunct.MODID, "pizza/crust"));
-    private static Tags.IOptionalNamedTag<Item> sauceTag = ItemTags.createOptional(new ResourceLocation(Adjunct.MODID, "pizza/sauce"));
-    private static Tags.IOptionalNamedTag<Item> cheeseTag = ItemTags.createOptional(new ResourceLocation(Adjunct.MODID, "pizza/cheese"));
-    private static Tags.IOptionalNamedTag<Item> toppingTag = ItemTags.createOptional(new ResourceLocation(Adjunct.MODID, "pizza/topping"));
+    private static Tags.IOptionalNamedTag<Item> allTag;
+    private static Tags.IOptionalNamedTag<Item> crustTag;
+    private static Tags.IOptionalNamedTag<Item> sauceTag;
+    private static Tags.IOptionalNamedTag<Item> cheeseTag;
+    private static Tags.IOptionalNamedTag<Item> toppingTag;
     public static ArrayList<String> allKeys = new ArrayList<String>();
+
+    public static void registerTags(){
+        allTag = ItemTags.createOptional(new ResourceLocation(Adjunct.MODID, "pizza"));
+        crustTag = ItemTags.createOptional(new ResourceLocation(Adjunct.MODID, "pizza/crust"));
+        sauceTag = ItemTags.createOptional(new ResourceLocation(Adjunct.MODID, "pizza/sauce"));
+        cheeseTag = ItemTags.createOptional(new ResourceLocation(Adjunct.MODID, "pizza/cheese"));
+        toppingTag = ItemTags.createOptional(new ResourceLocation(Adjunct.MODID, "pizza/topping"));
+    }
 
     public static void initKeys(){
         for (Topping top : Topping.values()){

@@ -12,7 +12,7 @@ public class PizzaHandler {
     private static ArrayList<ItemStack> allUncookedPizzas = new ArrayList<ItemStack>();
     private static ArrayList<ItemStack> allCookedPizzas = new ArrayList<ItemStack>();
 
-    public static void createTags(){
+    public static void registerToppings(){
         Topping.register(Topping.CRUST, "original");
         Topping.register(Topping.CRUST, "gluten_free");
         Topping.register(Topping.CRUST, "blaze");
@@ -39,8 +39,8 @@ public class PizzaHandler {
 
     public static ArrayList<ArrayList<Integer>> createPairs() {
         ArrayList<ArrayList<Integer>> pairs = new ArrayList<ArrayList<Integer>>();
-        for (int i = 0; i < Topping.toppings.size(); i++) {
-            for (int j = i; j < Topping.toppings.size(); j++) {
+        for (int i = 1; i < Topping.toppings.size(); i++) {
+            for (int j = i + 1; j < Topping.toppings.size() + 1 ; j++) {
                 if (i == j){
                     continue;
                 }

@@ -36,7 +36,9 @@ import net.onvoid.adjunct.handlers.WorldGenHandler;
 public class CommonProxy {
 
     public void start() {
-        PizzaHandler.createTags();
+        PizzaHandler.registerToppings();
+        Topping.registerTags();
+        TagHandler.init();
         AdjunctBlocks.create();
         // Practice is to register all blocks and items
         //if (ModList.get().isLoaded("quark")){
@@ -45,9 +47,7 @@ public class CommonProxy {
         //}
         AdjunctTiles.create();
         AdjunctItems.create();
-        Topping.registerTags();
         Topping.initKeys();
-        TagHandler.init();
         registerListeners();
     }
 

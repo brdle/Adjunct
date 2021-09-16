@@ -3,7 +3,9 @@ import mezz.jei.api.IModPlugin;
 import mezz.jei.api.JeiPlugin;
 import mezz.jei.api.helpers.IJeiHelpers;
 import mezz.jei.api.registration.*;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.util.ResourceLocation;
 import net.onvoid.adjunct.Adjunct;
 import net.onvoid.adjunct.common.item.AdjunctItems;
@@ -43,28 +45,29 @@ public class AdjunctJEIPlugin implements IModPlugin {
     @Override
     public void registerRecipes(IRecipeRegistration registration) {
         IModPlugin.super.registerRecipes(registration);
-        List<ItemStack> bases = new ArrayList<ItemStack>();
-        bases.add(new Pizza().add(Topping.CRUST, "original").buildStack());
-        bases.add(new Pizza().add(Topping.CRUST, "gluten_free").buildStack());
-        bases.add(new Pizza().add(Topping.CRUST, "blaze").buildStack());
-        List<ItemStack> toppings = new ArrayList<ItemStack>();
-        toppings.add(new ItemStack(AdjunctItems.TOMATO_SAUCE_ITEM.get()));
-        toppings.add(new ItemStack(AdjunctItems.TOMATO_SAUCE_ITEM.get()));
-        toppings.add(new ItemStack(AdjunctItems.WHITE_SAUCE_ITEM.get()));
-        List<ItemStack> pizzas = new ArrayList<ItemStack>();
-        pizzas.add(new Pizza().add(Topping.CRUST, "original").add(Topping.SAUCE, "tomato").buildStack());
-        pizzas.add(new Pizza().add(Topping.CRUST, "gluten_free").add(Topping.SAUCE, "tomato").buildStack());
-        pizzas.add(new Pizza().add(Topping.CRUST, "blaze").add(Topping.SAUCE, "white").buildStack());
-        for (int i = 0; i < bases.size(); i++){
-            pizzaStationRecipes.add(new PizzaStationRecipe(Collections.singletonList(bases.get(i)), Collections.singletonList(toppings.get(i)), Collections.singletonList(pizzas.get(i))));
-        }
-        registration.addRecipes(pizzaStationRecipes, PizzaStationRecipeCategory.UID);
-        //
         PizzaHandler.createPizzaLists();
         List<ItemStack> uncooked = PizzaHandler.getAllUncookedPizzas();
         List<ItemStack> cooked = PizzaHandler.getAllCookedPizzas();
+        // PIZZA STATION
         for (int i = 0; i < uncooked.size(); i++){
-            pizzaOvenRecipes.add(new PizzaOvenRecipe(Collections.singletonList(uncooked.get(i)), Collections.singletonList(cooked.get(i))));
+            ItemStack outputStack = uncooked.get(i);
+            Pizza output = new Pizza(outputStack, true);
+            ItemStack lesser = output.getLesserPizza();
+            List<ItemStack> addonStacks = new ArrayList<ItemStack>();
+            for (Item item : output.getHighestTag().getValues()){
+                addonStacks.add(new ItemStack(item));
+            }
+            //if (lesser.equals(ItemStack.EMPTY)){
+            //    pizzaStationRecipes.add(new PizzaStationRecipe(ItemStack.EMPTY, addonStacks, outputStack));
+            //} else
+                if (!outputStack.equals(ItemStack.EMPTY) && !addonStacks.isEmpty()) {
+                pizzaStationRecipes.add(new PizzaStationRecipe(lesser, addonStacks, outputStack));
+            }
+        }
+        registration.addRecipes(pizzaStationRecipes, PizzaStationRecipeCategory.UID);
+        // PIZZA OVEN
+        for (int i = 0; i < uncooked.size(); i++){
+            pizzaOvenRecipes.add(new PizzaOvenRecipe(uncooked.get(i), cooked.get(i)));
         }
         registration.addRecipes(pizzaOvenRecipes, PizzaOvenRecipeCategory.UID);
     }
