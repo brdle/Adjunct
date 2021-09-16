@@ -1,14 +1,5 @@
 {
   "type": "minecraft:block",
-  "conditions": [
-    {
-      "type": "forge:not",
-      "value": {
-        "type": "forge:tag_empty",
-        "tag": "quark:shards"
-      }
-    }
-  ],
   "pools": [
     {
       "rolls": 1,
@@ -39,7 +30,18 @@
               "type": "minecraft:item",
               "conditions": [
                 {
-                  "condition": "quark:flag",
+                  "type": "forge:mod_loaded",
+                  "modid": "quark"
+                },
+                {
+                  "type": "forge:not",
+                  "value": {
+                    "type": "forge:tag_empty",
+                    "tag": "quark:shards"
+                  }
+                },
+                {
+                  "type": "quark:flag",
                   "flag": "glass_shard"
                 }
               ],
