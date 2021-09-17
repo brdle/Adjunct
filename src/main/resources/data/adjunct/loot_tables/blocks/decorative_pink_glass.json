@@ -30,18 +30,18 @@
               "type": "minecraft:item",
               "conditions": [
                 {
-                  "type": "forge:mod_loaded",
+                  "condition": "forge:mod_loaded",
                   "modid": "quark"
                 },
                 {
-                  "type": "forge:not",
+                  "condition": "forge:not",
                   "value": {
                     "type": "forge:tag_empty",
                     "tag": "quark:shards"
                   }
                 },
                 {
-                  "type": "quark:flag",
+                  "condition": "quark:flag",
                   "flag": "glass_shard"
                 }
               ],
