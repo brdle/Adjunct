@@ -1,14 +1,14 @@
 package net.onvoid.adjunct;
 
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.util.Hand;
-import net.minecraft.util.text.Color;
-import net.minecraft.util.text.IFormattableTextComponent;
-import net.minecraft.util.text.ITextComponent;
+import net.minecraft.util.text.*;
 import net.minecraftforge.items.ItemHandlerHelper;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class AdjunctHelper {
@@ -131,5 +131,29 @@ public class AdjunctHelper {
             return 1;
         }
         return 0;
+    }
+
+    public static ArrayList<String> arrOf(String... items){
+        ArrayList<String> ret = new ArrayList<String>();
+        for (String item : items){
+            ret.add(item);
+        }
+        return ret;
+    }
+
+    public static ArrayList<ItemStack> arrOf(Item... items){
+        ArrayList<ItemStack> ret = new ArrayList<ItemStack>();
+        for (Item item : items){
+            ret.add(new ItemStack(item));
+        }
+        return ret;
+    }
+
+    public static ArrayList<ITextComponent> tt(TextFormatting formatting, String... lines){
+        ArrayList<ITextComponent> ret = new ArrayList<ITextComponent>();
+        for (String line : lines){
+            ret.add(new StringTextComponent(line).withStyle(formatting));
+        }
+        return ret;
     }
 }

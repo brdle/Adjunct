@@ -35,7 +35,14 @@ public class AdjunctItems {
         public void fillItemList(NonNullList<ItemStack> stackList) {
             for (Item item : Registry.ITEM) {
                 if (item instanceof PizzaItem) {
-                    continue;
+                    ItemStack stack = new Pizza(new ItemStack(item), true)
+                            .add(Topping.CRUST, "original")
+                            .add(Topping.SAUCE, "tomato")
+                            .add(Topping.CHEESE, "cheese")
+                            .add(Topping.TOPPING, "pepperoni")
+                            .add(Topping.TOPPING, "pineapple")
+                            .bakeStack();
+                    stackList.add(stack);
                 } else if (item instanceof BlockItemAddon && !ModList.get().isLoaded(((BlockItemAddon)item).getAddonMod())){
                     continue;
                 } else {

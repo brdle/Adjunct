@@ -48,55 +48,48 @@ public class PizzaStationTile extends TileEntity implements ICapabilityProvider 
             }
 
             @Override
-            public ItemStack insertItem(int slot, @Nonnull ItemStack stack, boolean simulate)
-            {
-                Adjunct.LOGGER.info("A");
-                if (stack.isEmpty()) {
-                    return ItemStack.EMPTY;
-                }
-                Adjunct.LOGGER.info("A_B");
-                if (!isItemValid(slot, stack)) {
+            public ItemStack insertItem(int slot, @Nonnull ItemStack stack, boolean simulate) {
+                if (stack.isEmpty() || !isItemValid(slot, stack)) {
                     return stack;
                 }
-                Adjunct.LOGGER.info("AB");
                 validateSlotIndex(slot);
-                Adjunct.LOGGER.info("ABC");
                 ItemStack existing = this.stacks.get(slot);
-                Adjunct.LOGGER.info("AA");
+                ItemStack updated = stack.copy();
                 if (stack.getItem() instanceof PizzaItem){
-                    if (existing.isEmpty()){
-                        this.stacks.set(slot, stack);
-                        onContentsChanged(slot);
-                        return ItemStack.EMPTY;
-                    } else {
-                        this.stacks.set(slot, stack);
-                        onContentsChanged(slot);
-                        return existing;
-                    }
-                } else {
-                    Adjunct.LOGGER.info("AAA");
                     if (existing.isEmpty()) {
-                        if (!Topping.is(stack, Topping.CRUST)){
+                        existing = ItemStack.EMPTY;
+                    }
+                    this.stacks.set(slot, stack);
+                    onContentsChanged(slot);
+                    return existing;
+                } else {
+                    if (existing.isEmpty()) {
+                        if (!Topping.is(updated, Topping.CRUST)){
                             return stack;
                         }
                         //Create new pizza
-                        this.stacks.set(slot, new Pizza(stack, false).buildStack());
+                        this.stacks.set(slot, new Pizza(updated, false).buildStack());
                         onContentsChanged(slot);
-                        stack.shrink(1);
+                        updated.shrink(1);
+                        return updated;
                     } else {
                         if (!(existing.getItem() instanceof PizzaItem)) {
+                            this.stacks.set(slot, ItemStack.EMPTY);
+                            onContentsChanged(slot);
                             return stack;
                         }
                         //Modify existing pizza
-                        ItemStack modified = new Pizza(existing, true).addStack(stack).buildStack();
-                        if (!modified.equals(existing, false)) {
-                            this.stacks.set(slot, modified);
-                            stack.shrink(1);
+                        Pizza modified = new Pizza(existing, true);
+                        if (modified.addStack(updated)){
+                            this.stacks.set(slot, modified.buildStack());
                             onContentsChanged(slot);
+                            updated.shrink(1);
+                            return updated;
+                        } else {
+                            return stack;
                         }
                     }
                 }
-                return stack;
             }
         };
     }

@@ -9,11 +9,16 @@ import mezz.jei.api.ingredients.IIngredients;
 import mezz.jei.api.recipe.category.IRecipeCategory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.text.ITextComponent;
+import net.minecraft.util.text.TextFormatting;
 import net.minecraft.util.text.TranslationTextComponent;
 import net.onvoid.adjunct.Adjunct;
+import net.onvoid.adjunct.AdjunctHelper;
 import net.onvoid.adjunct.common.item.AdjunctItems;
 
 import javax.annotation.Nonnull;
+import java.util.Collections;
+import java.util.List;
 
 public class PizzaOvenRecipeCategory implements IRecipeCategory<PizzaOvenRecipe> {
     public static final ResourceLocation UID = new ResourceLocation(Adjunct.MODID, "pizza_oven");
@@ -65,5 +70,13 @@ public class PizzaOvenRecipeCategory implements IRecipeCategory<PizzaOvenRecipe>
         guiItemStacks.init(0, true, 5, 5);
         guiItemStacks.init(1, false, 57, 5);
         guiItemStacks.set(ingredients);
+    }
+
+    @Override
+    public List<ITextComponent> getTooltipStrings(PizzaOvenRecipe recipe, double mouseX, double mouseY) {
+        if (mouseX > 28 && mouseX < 51 && mouseY > 5 && mouseY < 21){
+            return AdjunctHelper.tt(TextFormatting.GREEN, "All Pizzas can", "be baked...", "Oven must", "be fueled!");
+        }
+        return Collections.emptyList();
     }
 }

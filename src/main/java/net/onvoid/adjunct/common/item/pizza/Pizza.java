@@ -22,29 +22,11 @@ public class Pizza {
 
     public Pizza(ItemStack stack, boolean pizza){
         this.pizzaStack = new ItemStack(AdjunctItems.PIZZA_ITEM.get(), 1);
-        this.getNbt().putBoolean("cooked", false);
-        if (pizza && stack.getItem() instanceof PizzaItem && stack.hasTag()) {
-                CompoundNBT nbt = stack.getTag();
-                if (nbt.contains(Topping.CRUST.get())) {
-                    this.getNbt().putInt(Topping.CRUST.get(), nbt.getInt(Topping.CRUST.get()));
-                }
-                if (nbt.contains(Topping.SAUCE.get())) {
-                    this.getNbt().putInt(Topping.SAUCE.get(), nbt.getInt(Topping.SAUCE.get()));
-                }
-                if (nbt.contains(Topping.CHEESE.get())) {
-                    this.getNbt().putInt(Topping.CHEESE.get(), nbt.getInt(Topping.CHEESE.get()));
-                }
-                if (nbt.contains(Topping.TOPPING.get() + "1")) {
-                    this.getNbt().putInt(Topping.TOPPING.get() + "1", nbt.getInt((Topping.TOPPING.get() + "1")));
-                }
-                if (nbt.contains(Topping.TOPPING.get() + "2")) {
-                    this.getNbt().putInt(Topping.TOPPING.get() + "2", nbt.getInt((Topping.TOPPING.get() + "2")));
-                }
-                if (nbt.contains("cooked")) {
-                    this.getNbt().putBoolean("cooked", nbt.getBoolean("cooked"));
-                }
+        if (pizza && stack.hasTag() && stack.getItem() instanceof PizzaItem) {
+            this.pizzaStack.setTag(stack.getOrCreateTag().copy());
         } else if (!pizza && Topping.is(stack, Topping.CRUST)){
             this.getNbt().putInt(Topping.CRUST.get(), Topping.getSpecificInt(Topping.CRUST, stack));
+            this.uncooked();
         }
         this.pizzaStack.setTag(this.getNbt());
     }
@@ -140,21 +122,30 @@ public class Pizza {
         return this.add(type, Topping.fromStr(type, topping));
     }
 
-    public Pizza addStack(Topping type, ItemStack topping){
+    public boolean addStack(Topping type, ItemStack topping){
         if (type != Topping.CRUST && topping.getItem().is(Topping.getTag(type))){
-            this.add(type, Topping.getSpecificInt(type, topping));
+            int toppingNum = Topping.getSpecificInt(type, topping);
+            if (this.has(type, toppingNum)){
+                return false;
+            }
+            this.add(type, toppingNum);
+            return true;
         }
-        return this;
+        return false;
     }
 
-    public Pizza addStack(ItemStack topping){
+    public boolean addStack(ItemStack topping){
         for (Topping type : Topping.values()){
             if (type != Topping.CRUST && Topping.is(topping, type)) {
-                Adjunct.LOGGER.info(Topping.getSpecificInt(type, topping));
-                this.add(type, Topping.getSpecificInt(type, topping));
+                int toppingNum = Topping.getSpecificInt(type, topping);
+                if (this.has(type, toppingNum)){
+                    return false;
+                }
+                this.add(type, toppingNum);
+                return true;
             }
         }
-        return this;
+        return false;
     }
 
     public boolean has(Topping type){
@@ -168,6 +159,21 @@ public class Pizza {
         }
         // Checks if the Pizza has specific topping
         return this.getNbt().getInt(type.get()) > 0;
+    }
+
+    public boolean has(Topping type, int topping){
+        if (type.equals(Topping.TOPPING)){
+            if (this.hasTopping(1)){
+                return this.getNbt().getInt(Topping.TOPPING.get() + "1") == topping;
+            } else if (this.hasTopping(2)){
+                return this.getNbt().getInt(Topping.TOPPING.get() + "2") == topping;
+            }
+            return false;
+        }
+        if (!this.getNbt().contains(type.get())){
+            return false;
+        }
+        return this.getNbt().getInt(type.get()) == topping;
     }
 
     public boolean has(Topping type, String topping){
@@ -272,5 +278,9 @@ public class Pizza {
             num++;
         }
         return num;
+    }
+
+    public boolean isFull(){
+        return this.getNumToppings() == Topping.size();
     }
 }

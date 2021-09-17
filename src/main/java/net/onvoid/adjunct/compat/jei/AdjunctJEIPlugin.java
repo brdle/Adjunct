@@ -1,6 +1,7 @@
 package net.onvoid.adjunct.compat.jei;
 import mezz.jei.api.IModPlugin;
 import mezz.jei.api.JeiPlugin;
+import mezz.jei.api.constants.VanillaTypes;
 import mezz.jei.api.helpers.IJeiHelpers;
 import mezz.jei.api.registration.*;
 import net.minecraft.item.Item;
@@ -45,7 +46,11 @@ public class AdjunctJEIPlugin implements IModPlugin {
     @Override
     public void registerRecipes(IRecipeRegistration registration) {
         IModPlugin.super.registerRecipes(registration);
-        PizzaHandler.createPizzaLists();
+        if (PizzaHandler.getAllUncookedPizzas().isEmpty()) {
+            PizzaHandler.createPizzaLists();
+        }
+        // Hide error pizza from JEI
+        //registration.getIngredientManager().removeIngredientsAtRuntime(VanillaTypes.ITEM, Collections.singletonList(new ItemStack(AdjunctItems.PIZZA_ITEM.get())));
         List<ItemStack> uncooked = PizzaHandler.getAllUncookedPizzas();
         List<ItemStack> cooked = PizzaHandler.getAllCookedPizzas();
         // PIZZA STATION

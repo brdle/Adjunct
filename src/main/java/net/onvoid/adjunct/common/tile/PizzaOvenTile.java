@@ -96,30 +96,28 @@ public class PizzaOvenTile extends TileEntity implements ICapabilityProvider, IT
             @Override
             public boolean isItemValid(int slot, @Nonnull ItemStack stack)
             {
-                return Topping.is(stack, Topping.CRUST) || stack.getItem() instanceof PizzaItem;
+                return Topping.is(stack, Topping.CRUST) || (stack.getItem() instanceof PizzaItem && !new Pizza(stack, true).isCooked());
             }
 
             @Override
             public ItemStack insertItem(int slot, @Nonnull ItemStack stack, boolean simulate) {
-                if (stack.isEmpty()) {
-                    return ItemStack.EMPTY;
-                }
-                if (!isItemValid(slot, stack)) {
+                if (stack.isEmpty() || !isItemValid(slot, stack)) {
                     return stack;
                 }
                 validateSlotIndex(slot);
-                Pizza pizza = new Pizza();
+                Pizza pizza;
+                ItemStack updated = stack.copy();
                 if (this.stacks.get(slot).isEmpty()){
-                    if (Topping.is(stack, Topping.CRUST)){
-                        pizza.add(Topping.CRUST, Topping.getSpecificInt(Topping.CRUST, stack));
-                    } else if (stack.getItem() instanceof PizzaItem){
-                        pizza = new Pizza(stack, true);
+                    if (stack.getItem() instanceof PizzaItem){
+                        pizza = new Pizza(updated, true);
+                    } else if (Topping.is(updated, Topping.CRUST)){
+                        pizza = new Pizza(updated, false);
                     } else {
                         return stack;
                     }
                     this.stacks.set(slot, pizza.buildStack());
-                    stack.shrink(1);
-                    return stack;
+                    updated.shrink(1);
+                    return updated;
                 } else {
                     return stack;
                 }
@@ -140,7 +138,7 @@ public class PizzaOvenTile extends TileEntity implements ICapabilityProvider, IT
         if (handler != null && !handler.getStackInSlot(0).isEmpty()) {
             if (!this.getLevel().isClientSide()) {
                 if (this.getFuelTicks() > 0) {
-                    if (this.getPizzaTicks() == PizzaHandler.COOK_TIME * 60) {
+                    if (this.getPizzaTicks() >= PizzaHandler.COOK_TIME * 60) {
                         if (this.isPizzaBurning()) {
                             handler.extractItem(0, 1, false);
                             this.setChanged();
@@ -151,13 +149,12 @@ public class PizzaOvenTile extends TileEntity implements ICapabilityProvider, IT
                             setPizzaBurning(true);
                         }
                     } else if (this.getPizzaTicks() == PizzaHandler.COOK_TIME * 20) {
-                        CompoundNBT nbt = handler.getStackInSlot(0).getOrCreateTag();
-                        nbt.putBoolean("cooked", true);
+                        handler.getStackInSlot(0).setTag(new Pizza(handler.getStackInSlot(0), true).cooked().getNbt());
                         setPizzaBurning(true);
                     }
                     this.incrementPizzaTicks();
+                    this.decrementFuelTicks();
                 }
-                this.decrementFuelTicks();
             } else {
                 // TODO: SEND PACKET
                 //if (getFuelTicks() > 0) {

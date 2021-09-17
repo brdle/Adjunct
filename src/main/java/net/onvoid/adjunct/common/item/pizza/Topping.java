@@ -25,6 +25,10 @@ public enum Topping {
     private static Tags.IOptionalNamedTag<Item> toppingTag;
     public static ArrayList<String> allKeys = new ArrayList<String>();
 
+    public static int size() {
+        return allKeys.size();
+    }
+
     public static void registerTags(){
         allTag = ItemTags.createOptional(new ResourceLocation(Adjunct.MODID, "pizza"));
         crustTag = ItemTags.createOptional(new ResourceLocation(Adjunct.MODID, "pizza/crust"));
@@ -215,6 +219,15 @@ public enum Topping {
 
     public static boolean is(ItemStack stack, Topping type, String topping){
         return stack.getItem().is(getTag(type, topping));
+    }
+
+    public static Topping parse(ItemStack stack){
+        for (Topping type : Topping.values()){
+            if (is(stack, type)){
+                return type;
+            }
+        }
+        return Topping.TOPPING;
     }
 
     public static int getSpecificInt(Topping type, ItemStack topping){

@@ -75,10 +75,6 @@ public class PizzaStationRecipeCategory implements IRecipeCategory<PizzaStationR
         guiItemStacks.init(1, true, 29, 5);
         guiItemStacks.init(2, false, 81, 5);
 
-        //guiItemStacks.set(1, new ItemStack(Items.BAKED_POTATO));
-        //if (!ingredients.getInputs(VanillaTypes.ITEM).get(0).get(0).equals(ItemStack.EMPTY)) {
-        //    guiItemStacks.set(0, ingredients.getInputs(VanillaTypes.ITEM).get(0).get(0));
-        //}
         if (ingredients.getInputs(VanillaTypes.ITEM).size() > 1) {
             guiItemStacks.set(0, ingredients.getInputs(VanillaTypes.ITEM).get(0));
             guiItemStacks.set(1, ingredients.getInputs(VanillaTypes.ITEM).get(1));
@@ -86,5 +82,7 @@ public class PizzaStationRecipeCategory implements IRecipeCategory<PizzaStationR
             guiItemStacks.set(1, ingredients.getInputs(VanillaTypes.ITEM).get(0));
         }
         guiItemStacks.set(2, ingredients.getOutputs(VanillaTypes.ITEM).get(0).get(0));
+
+        guiItemStacks.addTooltipCallback(new PizzaStationTooltipCallback());
     }
 }

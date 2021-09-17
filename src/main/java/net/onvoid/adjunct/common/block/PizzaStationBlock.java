@@ -2,29 +2,21 @@ package net.onvoid.adjunct.common.block;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.item.BlockItemUseContext;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.state.DirectionProperty;
 import net.minecraft.state.StateContainer;
 import net.minecraft.state.properties.BlockStateProperties;
-import net.minecraft.stats.Stats;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.ActionResultType;
 import net.minecraft.util.Direction;
 import net.minecraft.util.Hand;
-import net.minecraft.util.Util;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.BlockRayTraceResult;
-import net.minecraft.util.text.ITextComponent;
-import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.world.World;
 import net.minecraftforge.common.ToolType;
@@ -32,13 +24,8 @@ import net.minecraftforge.common.extensions.IForgeBlock;
 import net.minecraftforge.common.util.Constants;
 import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandler;
-import net.minecraftforge.items.ItemHandlerHelper;
-import net.onvoid.adjunct.Adjunct;
 import net.onvoid.adjunct.AdjunctHelper;
-import net.onvoid.adjunct.common.item.pizza.Topping;
 import net.onvoid.adjunct.common.tile.PizzaStationTile;
-
-import java.util.UUID;
 
 public class PizzaStationBlock extends FlammableBlock implements IForgeBlock {
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
@@ -83,13 +70,14 @@ public class PizzaStationBlock extends FlammableBlock implements IForgeBlock {
                 ItemStack remaining = null;
                 if (insert.hasContainerItem()){
                     remaining = insert.getContainerItem();
-                    Adjunct.LOGGER.debug("Container Item!: " + remaining.toString());
                 }
                 ItemStack retrieved = handler.insertItem(0, insert, false);
                 if (!player.isCreative()){
-                    player.setItemInHand(hand, retrieved);
-                    if (retrieved.isEmpty() && remaining != null){
-                        AdjunctHelper.giveToHand(player, hand, remaining);
+                    if (!retrieved.equals(insert)){
+                        player.setItemInHand(hand, retrieved);
+                        if (remaining != null) {
+                            AdjunctHelper.giveToHand(player, hand, remaining);
+                        }
                     }
                 }
                 pizzaStation.setChanged();

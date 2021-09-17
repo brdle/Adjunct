@@ -72,6 +72,7 @@ public class PizzaOvenBlock extends Block implements IForgeBlock {
             return ActionResultType.CONSUME;
         }
         ItemStack insert = player.getItemInHand(hand);
+        ItemStack copy = insert.copy();
         TileEntity entity = world.getBlockEntity(pos);
         if (!insert.isEmpty() && insert.getCount() >= 1 && entity instanceof PizzaOvenTile) {
             PizzaOvenTile pizzaOven = (PizzaOvenTile) entity;
@@ -125,7 +126,7 @@ public class PizzaOvenBlock extends Block implements IForgeBlock {
                                                 .withStyle(TextFormatting.GRAY)), ChatType.GAME_INFO, Util.NIL_UUID);
                     } else {
                         //not enough fuel
-                        /*((ServerPlayerEntity) player).sendMessage(
+                        ((ServerPlayerEntity) player).sendMessage(
                                 new TranslationTextComponent("item." + Adjunct.MODID + ".pizza")
                                         .withStyle(TextFormatting.GRAY)
                                         .append(new TranslationTextComponent(Adjunct.MODID + ":desc.pizza_oven_not_enough_fuel")
@@ -135,15 +136,7 @@ public class PizzaOvenBlock extends Block implements IForgeBlock {
                                         .append(new TranslationTextComponent(Adjunct.MODID + ":desc.seconds")
                                                 .withStyle(TextFormatting.GRAY))
                                         .append(new TranslationTextComponent(Adjunct.MODID + ":desc.pizza_oven_not_enough_fuel_1")
-                                                .withStyle(TextFormatting.RED)), ChatType.GAME_INFO, Util.NIL_UUID);*/
-                        ((ServerPlayerEntity)player).sendMessage(
-                                new StringTextComponent("I: " + insert.getOrCreateTag().toString()), ChatType.CHAT, Util.NIL_UUID);
-                        Pizza p = new Pizza(insert, true);
-                        ((ServerPlayerEntity)player).sendMessage(
-                                new StringTextComponent("P: " + p.getNbt().toString() + " TOPS: " + p.getNumToppings()), ChatType.CHAT, Util.NIL_UUID);
-                        Pizza p2 = new Pizza(p.getLesserPizza(), true);
-                        ((ServerPlayerEntity)player).sendMessage(
-                                new StringTextComponent("LT: " + p2.getNbt().toString() + " P2T: " + p2.getNumToppings()), ChatType.CHAT, Util.NIL_UUID);
+                                                .withStyle(TextFormatting.RED)), ChatType.GAME_INFO, Util.NIL_UUID);
                     }
                 }
                 pizzaOven.setChanged();

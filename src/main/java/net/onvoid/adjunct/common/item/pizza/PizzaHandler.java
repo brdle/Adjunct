@@ -11,6 +11,7 @@ public class PizzaHandler {
     public static final int COOK_TIME = 10;
     private static ArrayList<ItemStack> allUncookedPizzas = new ArrayList<ItemStack>();
     private static ArrayList<ItemStack> allCookedPizzas = new ArrayList<ItemStack>();
+    private static ArrayList<ItemStack> allMaxCookedPizzas = new ArrayList<ItemStack>();
 
     public static void registerToppings(){
         Topping.register(Topping.CRUST, "original");
@@ -37,8 +38,13 @@ public class PizzaHandler {
         return allCookedPizzas;
     }
 
+    public static ArrayList<ItemStack> getAllMaxCookedPizzas() {
+        return allMaxCookedPizzas;
+    }
+
     public static ArrayList<ArrayList<Integer>> createPairs() {
         ArrayList<ArrayList<Integer>> pairs = new ArrayList<ArrayList<Integer>>();
+        pairs.clear();
         for (int i = 1; i < Topping.toppings.size(); i++) {
             for (int j = i + 1; j < Topping.toppings.size() + 1 ; j++) {
                 if (i == j){
@@ -50,12 +56,31 @@ public class PizzaHandler {
         return pairs;
     }
 
-    private static void addtoLists(Pizza p){
-        allUncookedPizzas.add(p.buildStack());
-        allCookedPizzas.add(p.bakeStack());
+    private static void addtoLists(Pizza p) {
+        ItemStack uncooked = p.buildStack();
+        ItemStack cooked = p.bakeStack();
+        if (!allUncookedPizzas.contains(uncooked)){
+            allUncookedPizzas.add(uncooked);
+        }
+        if (!allCookedPizzas.contains(cooked)) {
+            allCookedPizzas.add(cooked);
+        }
+    }
+
+    private static void addtoLists(Pizza p, boolean max)  {
+        addtoLists(p);
+        if (max){
+            ItemStack cooked = p.bakeStack();
+            if (!allMaxCookedPizzas.contains(cooked)){
+                allMaxCookedPizzas.add(cooked);
+            }
+        }
     }
 
     public static void createPizzaLists(){
+        allUncookedPizzas.clear();
+        allCookedPizzas.clear();
+        allMaxCookedPizzas.clear();
         ArrayList<ArrayList<Integer>> pairs = createPairs();
         for (int crust = 1; crust < Topping.crusts.size() + 1; crust++){
             addtoLists(new Pizza()
@@ -134,7 +159,7 @@ public class PizzaHandler {
                                 .add(Topping.SAUCE, sauce)
                                 .add(Topping.CHEESE, cheese)
                                 .add(Topping.TOPPING, pair.get(0))
-                                .add(Topping.TOPPING, pair.get(1)));
+                                .add(Topping.TOPPING, pair.get(1)), true);
                     }
                 }
             }
