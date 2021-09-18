@@ -6,7 +6,6 @@
         "pizza_oven_side": "minecraft:block/bricks",
         "pizza_oven_top": "adjunct:block/pizza_oven_top",
         "pizza_oven_inside_bottom": "adjunct:block/pizza_oven_inside_bottom",
-        "pizza_oven_front": "adjunct:block/pizza_oven_front",
         "pizza_oven_bottom": "adjunct:block/pizza_oven_bottom",
         "pizza_oven_inside": "adjunct:block/pizza_oven_inside"
     },
@@ -44,7 +43,6 @@
     },
     "elements": [
         {
-            "name": "Cube",
             "from": [ 0, 14, 0 ], 
             "to": [ 16, 16, 16 ], 
             "faces": {
@@ -57,42 +55,38 @@
             }
         },
         {
-            "name": "Cube",
             "from": [ 0, 6, 0 ], 
-            "to": [ 2, 14, 16 ], 
+            "to": [ 1, 14, 16 ], 
             "faces": {
-                "north": { "texture": "#pizza_oven_front", "uv": [ 14, 2, 16, 10 ] },
+                "north": { "texture": "#pizza_oven_side", "uv": [ 15, 2, 16, 10 ] },
                 "east": { "texture": "#pizza_oven_inside", "uv": [ 0, 2, 16, 10 ] },
-                "south": { "texture": "#pizza_oven_side", "uv": [ 0, 2, 2, 10 ] },
+                "south": { "texture": "#pizza_oven_side", "uv": [ 0, 2, 1, 10 ] },
                 "west": { "texture": "#pizza_oven_side", "uv": [ 0, 2, 16, 10 ] }
             }
         },
         {
-            "name": "Cube",
-            "from": [ 14, 6, 0 ], 
+            "from": [ 15, 6, 0 ], 
             "to": [ 16, 14, 16 ], 
             "faces": {
-                "north": { "texture": "#pizza_oven_front", "uv": [ 0, 2, 2, 10 ] },
+                "north": { "texture": "#pizza_oven_side", "uv": [ 0, 2, 1, 10 ] },
                 "east": { "texture": "#pizza_oven_side", "uv": [ 0, 2, 16, 10 ] },
-                "south": { "texture": "#pizza_oven_side", "uv": [ 14, 2, 16, 10 ] },
+                "south": { "texture": "#pizza_oven_side", "uv": [ 15, 2, 16, 10 ] },
                 "west": { "texture": "#pizza_oven_inside", "uv": [ 0, 2, 16, 10 ] }
             }
         },
         {
-            "name": "Cube",
-            "from": [ 2, 6, 14 ], 
-            "to": [ 14, 14, 16 ], 
+            "from": [ 1, 6, 14 ], 
+            "to": [ 15, 14, 16 ], 
             "faces": {
-                "north": { "texture": "#pizza_oven_inside", "uv": [ 2, 2, 14, 10 ] },
-                "south": { "texture": "#pizza_oven_side", "uv": [ 2, 2, 14, 10 ] }
+                "north": { "texture": "#pizza_oven_inside", "uv": [ 1, 2, 15, 10 ] },
+                "south": { "texture": "#pizza_oven_side", "uv": [ 1, 2, 15, 10 ] }
             }
         },
         {
-            "name": "Cube",
             "from": [ 0, 0, 0 ], 
             "to": [ 16, 6, 16 ], 
             "faces": {
-                "north": { "texture": "#pizza_oven_front", "uv": [ 0, 10, 16, 16 ] },
+                "north": { "texture": "#pizza_oven_side", "uv": [ 0, 10, 16, 16 ] },
                 "east": { "texture": "#pizza_oven_side", "uv": [ 0, 10, 16, 16 ] },
                 "south": { "texture": "#pizza_oven_side", "uv": [ 0, 10, 16, 16 ] },
                 "west": { "texture": "#pizza_oven_side", "uv": [ 0, 10, 16, 16 ] },
@@ -101,23 +95,13 @@
             }
         },
         {
-            "name": "Cube",
-            "from": [ 2, 6, 0 ], 
-            "to": [ 14, 13, 1 ], 
+            "from": [ 1, 6, 0 ], 
+            "to": [ 15, 14, 1 ], 
             "faces": {
-                "north": { "texture": "#glass", "uv": [ 1, 1, 13, 8 ] }
+                "north": { "texture": "#glass", "uv": [ 1, 1, 15, 9 ] }
             }
         },
         {
-            "name": "Cube",
-            "from": [ 2, 13, 0 ], 
-            "to": [ 14, 14, 1 ], 
-            "faces": {
-                "north": { "texture": "#pizza_oven_front", "uv": [ 2, 1, 14, 2 ] }
-            }
-        },
-        {
-            "name": "Cube",
             "from": [ 6, 13, -1 ], 
             "to": [ 10, 14, 0 ], 
             "faces": {
@@ -129,7 +113,6 @@
             }
         },
         {
-            "name": "Cube",
             "from": [ 4, 16, 5 ], 
             "to": [ 12, 17, 11 ], 
             "faces": {

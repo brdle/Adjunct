@@ -2,7 +2,7 @@
   "parent": "minecraft:block/cube",
   "textures": {
     "particle": "adjunct:block/pizza_station_side",
-    "north": "adjunct:block/pizza_station_side",
+    "north": "adjunct:block/pizza_station_front",
     "south": "adjunct:block/pizza_station_side",
     "east": "adjunct:block/pizza_station_side",
     "west": "adjunct:block/pizza_station_side",

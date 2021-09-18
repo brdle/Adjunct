@@ -9,14 +9,11 @@ import mezz.jei.api.helpers.IGuiHelper;
 import mezz.jei.api.ingredients.IIngredients;
 import mezz.jei.api.recipe.category.IRecipeCategory;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.text.TranslationTextComponent;
 import net.onvoid.adjunct.Adjunct;
 import net.onvoid.adjunct.common.item.AdjunctItems;
 import javax.annotation.Nonnull;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 
 public class PizzaStationRecipeCategory implements IRecipeCategory<PizzaStationRecipe> {
@@ -27,7 +24,7 @@ public class PizzaStationRecipeCategory implements IRecipeCategory<PizzaStationR
     private final IDrawable icon;
 
     public PizzaStationRecipeCategory(IGuiHelper guiHelper){
-        this.background = guiHelper.createDrawable(new ResourceLocation(Adjunct.MODID, "textures/jei/pizza_station.png"), 0, 0, 104, 28);
+        this.background = guiHelper.createDrawable(AdjunctJEIPlugin.PIZZA_TEXTURE, 0, 49, 104, 28);
         this.icon = guiHelper.createDrawableIngredient(new ItemStack(AdjunctItems.PIZZA_STATION_ITEM.get()));
     }
 

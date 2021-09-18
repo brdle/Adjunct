@@ -36,7 +36,7 @@ public class PizzaOvenTileRenderer extends TileEntityRenderer<PizzaOvenTile> {
                 if (!stack.isEmpty()) {
                     matrices.pushPose(); {
                         matrices.translate(0.5D, 0.391D, 0.5D);
-                        matrices.scale(0.75F, 0.75F, 0.75F);
+                        //matrices.scale(0.75F, 0.75F, 0.75F);
                         Direction facing = tile.getBlockState().getValue(PizzaOvenBlock.FACING);
                         matrices.mulPose(Vector3f.XP.rotationDegrees(90.0F));
                         if (facing.equals(Direction.EAST)) {
@@ -46,7 +46,8 @@ public class PizzaOvenTileRenderer extends TileEntityRenderer<PizzaOvenTile> {
                         } else if (facing.equals(Direction.WEST)) {
                             matrices.mulPose(Vector3f.ZP.rotationDegrees(270.0F));
                         }
-                        Minecraft.getInstance().getItemRenderer().render(stack, ItemCameraTransforms.TransformType.FIXED, true, matrices, buffer, itemBrightness, combinedOverlayIn, Minecraft.getInstance().getItemRenderer().getModel(stack, tile.getLevel(), null));
+                        //itemBrightness = WorldRenderer.getLightColor(tile.getLevel(), tile.getBlockPos().above());
+                        Minecraft.getInstance().getItemRenderer().renderStatic(null, stack, ItemCameraTransforms.TransformType.FIXED, true, matrices, buffer, null, itemBrightness, combinedOverlayIn);
                     } matrices.popPose();
                 }
             }

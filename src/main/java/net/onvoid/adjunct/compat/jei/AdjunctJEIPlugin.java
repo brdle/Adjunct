@@ -22,6 +22,7 @@ import java.util.List;
 public class AdjunctJEIPlugin implements IModPlugin {
     public static IJeiHelpers jeiHelper;
     private static final ResourceLocation UID = new ResourceLocation(Adjunct.MODID, "jei");
+    public static final ResourceLocation PIZZA_TEXTURE = new ResourceLocation(Adjunct.MODID, "textures/jei/pizza.png");
     private static ArrayList<PizzaStationRecipe> pizzaStationRecipes = new ArrayList<PizzaStationRecipe>();
     private static ArrayList<PizzaOvenRecipe> pizzaOvenRecipes = new ArrayList<PizzaOvenRecipe>();
 

@@ -121,6 +121,7 @@
   "adjunct:desc.addon_1": "addon",
   "adjunct:desc.addon_2": "Missing compatible mod:",
   "adjunct:desc.seconds": "seconds",
+  "adjunct:desc.seconds_abbreviated": "s",
   "adjunct:desc.pizza_oven_fueling": " fueled for ",
   "adjunct:desc.pizza_oven_fueling_1": "total)",
   "adjunct:desc.pizza_oven_inserting": " ready in ",
